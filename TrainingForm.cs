@@ -15,6 +15,7 @@ namespace TriathlonTraining
     public partial class TrainingForm : Form
     {
         BikePowerZones powerZones = new BikePowerZones();
+        // Methods
         public TrainingForm()
         {
             InitializeComponent();
@@ -31,12 +32,42 @@ namespace TriathlonTraining
 
         private void button1_Click(object sender, EventArgs e)
         {
-           powerZones.BikeFtpPower = Convert.ToInt32(powerBikeFtp.Text);
-           // testValues.Text = Convert.ToString(powerZones.ZonesArray());
+            powerZones.BikeFtpPower = Convert.ToInt32(powerBikeFtp.Text);
+            bikeZonesTextBox4.Text = Convert.ToString(powerZones.ZonesArray(0, 0));
+            bikeZonesTextBox5.Text = Convert.ToString(powerZones.ZonesArray(1, 0));
+            bikeZonesTextBox6.Text = Convert.ToString(powerZones.ZonesArray(2, 0));
+            bikeZonesTextBox7.Text = Convert.ToString(powerZones.ZonesArray(0, 1));
+            bikeZonesTextBox8.Text = Convert.ToString(powerZones.ZonesArray(1, 1));
+            bikeZonesTextBox9.Text = Convert.ToString(powerZones.ZonesArray(2, 1));
+            bikeZonesTextBox10.Text = Convert.ToString(powerZones.ZonesArray(0, 2));
+            bikeZonesTextBox11.Text = Convert.ToString(powerZones.ZonesArray(1, 2));
+            bikeZonesTextBox12.Text = Convert.ToString(powerZones.ZonesArray(2, 2));
+            bikeZonesTextBox13.Text = Convert.ToString(powerZones.ZonesArray(0, 3));
+            bikeZonesTextBox14.Text = Convert.ToString(powerZones.ZonesArray(1, 3));
+            bikeZonesTextBox15.Text = Convert.ToString(powerZones.ZonesArray(2, 3));
+            bikeZonesTextBox16.Text = Convert.ToString(powerZones.ZonesArray(0, 4));
+            bikeZonesTextBox17.Text = Convert.ToString(powerZones.ZonesArray(1, 4));
+            bikeZonesTextBox18.Text = Convert.ToString(powerZones.ZonesArray(2, 4));
+            bikeZonesTextBox19.Text = Convert.ToString(powerZones.ZonesArray(0, 5));
+            bikeZonesTextBox20.Text = Convert.ToString(powerZones.ZonesArray(1, 5));
+            bikeZonesTextBox21.Text = Convert.ToString(powerZones.ZonesArray(2, 5));
+            bikeZonesTextBox22.Text = Convert.ToString(powerZones.ZonesArray(0, 6));
+            bikeZonesTextBox23.Text = Convert.ToString(powerZones.ZonesArray(1, 6));
+            bikeZonesTextBox24.Text = Convert.ToString(powerZones.ZonesArray(2, 6));
+            // testValues.Text = Convert.ToString(powerZones.ZonesArray());
         }
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        { 
+
+        }
+        private void bikeZonesTextBox4_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
+
     }
 }

@@ -45,7 +45,7 @@ namespace TriathlonTraining
             message = message + "ZoneNumber: " + ZoneNumber + "\n";
             return message;
         }
-        public Array LowerPowerZones()
+        public double LowerPowerZones(int ArrayIndex)
         {
             double[] LowerPower = new double[7];
             LowerPower[0] = 0;
@@ -55,9 +55,9 @@ namespace TriathlonTraining
             LowerPower[4] = BikeFtpPower * 1.06;
             LowerPower[5] = BikeFtpPower * 1.21;
             LowerPower[6] = BikeFtpPower * 1.51;
-            return LowerPower;
+            return LowerPower[ArrayIndex];
         }
-        public Array UpperPowerZones()
+        public double UpperPowerZones(int ArrayIndex)
         {
             double[] UpperPower = new double[7];
             UpperPower[0] = BikeFtpPower * .55;
@@ -67,15 +67,26 @@ namespace TriathlonTraining
             UpperPower[4] = BikeFtpPower * 1.20;
             UpperPower[5] = BikeFtpPower * 1.50;
             UpperPower[6] = BikeFtpPower * 3;
-            return UpperPower;
+            return UpperPower[ArrayIndex];
         }
-        public Array ZonesArray()
+        public double ZonesArray(int ArrayNumber, int NumberInArray)
         {
-            Array[] PowerZoneData = new Array[3];
-            PowerZoneData[0] = ZoneNumber;
-            PowerZoneData[1] = LowerPowerZones();
-            PowerZoneData[2] = UpperPowerZones();
-            return PowerZoneData;
-        }
+            if (ArrayNumber == 0)
+            {
+                return ZoneNumber[NumberInArray];
+            }
+            else if (ArrayNumber == 1)
+            {
+                return LowerPowerZones(NumberInArray);
+            }
+            else if (ArrayNumber == 2)
+            {
+                return UpperPowerZones(NumberInArray);
+            }
+            else
+            {
+                return 0.00;
+            }
+        }   
     }
 }
