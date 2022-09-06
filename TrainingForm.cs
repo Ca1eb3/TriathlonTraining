@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Caleb Smith
+// 09/05/2022
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,10 +12,10 @@ using System.Windows.Forms;
 
 namespace TriathlonTraining
 {
-    public partial class Form1 : Form
+    public partial class TrainingForm : Form
     {
-        int bikePower = 0;
-        public Form1()
+        BikePowerZones powerZones = new BikePowerZones();
+        public TrainingForm()
         {
             InitializeComponent();
         }
@@ -25,12 +27,12 @@ namespace TriathlonTraining
 
         private void tabPage4_Click(object sender, EventArgs e)
         {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            bikePower = Convert.ToInt32(powerBikeFtp.Text);
+           powerZones.BikeFtpPower = Convert.ToInt32(powerBikeFtp.Text);
+           // testValues.Text = Convert.ToString(powerZones.ZonesArray());
         }
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {

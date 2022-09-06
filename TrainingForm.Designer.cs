@@ -1,6 +1,6 @@
 ﻿namespace TriathlonTraining
 {
-    partial class Form1
+    partial class TrainingForm
     {
         /// <summary>
         /// Required designer variable.
@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.testValues = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.ftpPower = new System.Windows.Forms.Label();
@@ -64,6 +65,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.testValues);
             this.tabPage4.Controls.Add(this.button1);
             this.tabPage4.Controls.Add(this.label1);
             this.tabPage4.Controls.Add(this.ftpPower);
@@ -75,6 +77,14 @@
             this.tabPage4.Text = "Benchmark Tests";
             this.tabPage4.UseVisualStyleBackColor = true;
             this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
+            // 
+            // testValues
+            // 
+            this.testValues.AutoSize = true;
+            this.testValues.Location = new System.Drawing.Point(59, 324);
+            this.testValues.Name = "testValues";
+            this.testValues.Size = new System.Drawing.Size(0, 25);
+            this.testValues.TabIndex = 4;
             // 
             // button1
             // 
@@ -170,16 +180,16 @@
             // 
             // form1BindingSource
             // 
-            this.form1BindingSource.DataSource = typeof(TriathlonTraining.Form1);
+            this.form1BindingSource.DataSource = typeof(TriathlonTraining.TrainingForm);
             // 
-            // Form1
+            // TrainingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1308, 746);
             this.Controls.Add(this.tabControl1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "TrainingForm";
+            this.Text = "Training Data";
             this.tabControl1.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
@@ -203,6 +213,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.BindingSource form1BindingSource;
         private System.Windows.Forms.TableLayoutPanel bikePowerZones;
+        private System.Windows.Forms.Label testValues;
     }
 }
 
