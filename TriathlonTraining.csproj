@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BikePowerZones.cs" />
+    <Compile Include="RaceTimePredictor.cs" />
     <Compile Include="TrainingForm.cs">
       <SubType>Form</SubType>
     </Compile>
