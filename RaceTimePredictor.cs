@@ -15,6 +15,7 @@ namespace TriathlonTraining
         // Class Variables
         private int timeSeconds1 = 0;
         private double bFactor = 1.06;
+        // Both distance must be in the same units can be either m or yds
         private int distance1 = 0;
         private int distance2 = 0;
 
@@ -56,6 +57,7 @@ namespace TriathlonTraining
         {
 
         }
+
         // methods
         public override string ToString()
         {

@@ -64,12 +64,19 @@
             this.bikeZonesTextBox2 = new System.Windows.Forms.TextBox();
             this.bikeZonesTextBox1 = new System.Windows.Forms.TextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.TimeMinutes3k = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
+            this.TimeSeconds3k = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
             this.form1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.powerBikeFtp)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.bikePowerZones.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TimeMinutes3k)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TimeSeconds3k)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,6 +97,11 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.label4);
+            this.tabPage4.Controls.Add(this.TimeSeconds3k);
+            this.tabPage4.Controls.Add(this.label3);
+            this.tabPage4.Controls.Add(this.TimeMinutes3k);
+            this.tabPage4.Controls.Add(this.label2);
             this.tabPage4.Controls.Add(this.testValues);
             this.tabPage4.Controls.Add(this.button1);
             this.tabPage4.Controls.Add(this.label1);
@@ -499,6 +511,54 @@
             this.tabPage1.Text = "Running Metrics";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(59, 324);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(265, 25);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Run Time for 3k Time Trial";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // TimeMinutes3k
+            // 
+            this.TimeMinutes3k.Location = new System.Drawing.Point(59, 372);
+            this.TimeMinutes3k.Name = "TimeMinutes3k";
+            this.TimeMinutes3k.Size = new System.Drawing.Size(120, 31);
+            this.TimeMinutes3k.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(185, 378);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(88, 25);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Minutes";
+            // 
+            // TimeSeconds3k
+            // 
+            this.TimeSeconds3k.Location = new System.Drawing.Point(280, 371);
+            this.TimeSeconds3k.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+            this.TimeSeconds3k.Name = "TimeSeconds3k";
+            this.TimeSeconds3k.Size = new System.Drawing.Size(120, 31);
+            this.TimeSeconds3k.TabIndex = 8;
+            this.TimeSeconds3k.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(406, 378);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(96, 25);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Seconds";
+            // 
             // form1BindingSource
             // 
             this.form1BindingSource.DataSource = typeof(TriathlonTraining.TrainingForm);
@@ -518,6 +578,8 @@
             this.tabPage3.ResumeLayout(false);
             this.bikePowerZones.ResumeLayout(false);
             this.bikePowerZones.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TimeMinutes3k)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TimeSeconds3k)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -561,6 +623,11 @@
         private System.Windows.Forms.TextBox bikeZonesTextBox5;
         private System.Windows.Forms.TextBox bikeZonesTextBox4;
         private System.Windows.Forms.TextBox bikeZonesTextBox3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.NumericUpDown TimeSeconds3k;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.NumericUpDown TimeMinutes3k;
     }
 }
 
