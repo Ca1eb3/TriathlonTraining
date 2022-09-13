@@ -8,18 +8,20 @@ using System.Threading.Tasks;
 
 namespace TriathlonTraining
 {
-    public class RaceTimePredictor
+    public static class RaceTimePredictor
     {
         // t2=t1* (d2/d1)^b
         // b = 1.06 typically for running
         // Class Variables
-        private int timeSeconds1 = 0;
-        private double bFactor = 1.06;
+        
+        //private int timeSeconds1 = 0;
+        //private static double bFactor = 1.06;
         // Both distance must be in the same units can be either m or yds
-        private int distance1 = 0;
-        private int distance2 = 0;
+       // private int distance1 = 0;
+       // private int distance2 = 0;
 
         // encapsulation
+        /*
         public int TimeSeconds1
         {
             get { return timeSeconds1; }
@@ -68,9 +70,16 @@ namespace TriathlonTraining
             message += "Distance 2: " + Distance2 + "\n";
             return message;
         }
-        public int PredictTime2()
+        */
+        public static int PredictTime2(int timeSeconds1, int distance1, int distance2)
         {
-            double TimeSeconds2 = TimeSeconds1 * (Math.Pow((Distance2 / Distance1), BFactor));
+            double TimeSeconds2 = timeSeconds1 * (Math.Pow((distance2 / distance1), 1.06));
+            int TimeSeconds2Rounded = Convert.ToInt32(TimeSeconds2);
+            return TimeSeconds2Rounded;
+        }
+        public static int PredictTime2Custom(int timeSeconds1, int distance1, int distance2, double bFactor)
+        {
+            double TimeSeconds2 = timeSeconds1 * (Math.Pow((distance2 / distance1), bFactor));
             int TimeSeconds2Rounded = Convert.ToInt32(TimeSeconds2);
             return TimeSeconds2Rounded;
         }

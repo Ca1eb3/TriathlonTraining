@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 
 namespace TriathlonTraining
 {
-    public class TimeConverter
+    public static class TimeConverter
     {
+        /*
         // Class variables
         private int hours = 0;
         private int minutes = 0;
@@ -49,8 +50,9 @@ namespace TriathlonTraining
                 }
             }
         }
-
+        */
         // Constructors
+        /*
         public TimeConverter(): this(0, 0, 0)
         {
 
@@ -69,8 +71,9 @@ namespace TriathlonTraining
         {
 
         }
-
+        */
         // Methods
+        /*
         public override string ToString()
         {
             string message = "";
@@ -79,25 +82,24 @@ namespace TriathlonTraining
             message += "Seconds: " + Seconds + "\n";
             return message;
         }
+        */
         // Converts time to seconds
-        public int ConvertedToSeconds()
+        public static int ConvertedToSeconds(int Hours, int Minutes, int Seconds)
         {
             int ConvertedSeconds = 0;
             ConvertedSeconds += (Hours * 3600) + (Minutes * 60) + Seconds;
             return ConvertedSeconds;
         }
         // Converts Seconds back to time
-        public int[] ConvertedToTime()
+        public static int ConvertedToTime(int Seconds, int V)
         {
             int[] ConvertedTime = new int[3];
             ConvertedTime[0] = Seconds / 3600;
-            Hours = ConvertedTime[0];
-            Seconds = Seconds - (Hours * 3600);
+            Seconds = Seconds - (ConvertedTime[0] * 3600);
             ConvertedTime[1] = Seconds / 60;
-            Minutes = ConvertedTime[1];
-            Seconds = Seconds - (Seconds * 60);
+            Seconds = Seconds - (ConvertedTime[1] * 60);
             ConvertedTime[2] = Seconds;
-            return ConvertedTime;
+            return ConvertedTime[V];
         }
     }
 }
