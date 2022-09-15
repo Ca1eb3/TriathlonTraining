@@ -78,5 +78,20 @@ namespace TriathlonTraining
         {
 
         }
+
+        private void tableLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void RunningZonesTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox34_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
