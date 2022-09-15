@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace TriathlonTraining
 {
-    internal class BikePowerZones
+    public class BikePowerZones
     {
         // Class Variables
         private int bikeFtpPower = 0;
