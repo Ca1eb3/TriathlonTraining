@@ -61,6 +61,53 @@ namespace TriathlonTraining
                 }
             }
         }
+        // constructors 
+        public RunPaceZones(): this(0, 0, 0, 0)
+        {
+
+        }
+        public RunPaceZones(int RunHours, int RunMinutes, int RunSeconds, double DistanceMeasured)
+        {
+            this.RunHours = RunHours;
+            this.RunMinutes = RunMinutes;
+            this.RunSeconds = RunSeconds;
+            this.DistanceMeasured = DistanceMeasured;
+        }
+        public RunPaceZones(int RunMinutes, int RunSeconds, double DistanceMeasured) : this(0, RunMinutes, RunSeconds, DistanceMeasured)
+        {
+
+        }
+        public RunPaceZones( int RunSeconds, double DistanceMeasured) : this(0, 0, RunSeconds, DistanceMeasured)
+        {
+
+        }
+
         // methods
+        public override string ToString()
+        {
+            string message = "";
+            message += $"Time: {RunHours}:{RunMinutes}:{RunSeconds}\nDistance: {DistanceMeasured}";
+            return message;
+        }
+        public int PaceActual()
+        {
+            int pace = Convert.ToInt32(TimeConverter.ConvertedToSeconds(RunHours, RunMinutes, RunSeconds) / (DistanceMeasured / 1000));
+            return pace;
+        }
+        public int PaceLower()
+        {
+            int pace = Convert.ToInt32(PaceActual() * .97);
+            return pace;
+        }
+        public int PaceUpper()
+        {
+            int pace = Convert.ToInt32(PaceActual() * 1.03);
+            return pace;
+        }
+        public string PaceString(int pace)
+        {
+            string time = Convert.ToString($"{TimeConverter.ConvertedToTime(pace, 0)}:{TimeConverter.ConvertedToTime(pace, 1)}:{TimeConverter.ConvertedToTime(pace, 2)}");
+            return time;
+        }
     }
 }

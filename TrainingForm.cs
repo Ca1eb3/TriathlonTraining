@@ -93,5 +93,15 @@ namespace TriathlonTraining
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            RunPaceZones Zone1 = new RunPaceZones(Convert.ToInt32(TimeMinutes3k.Value), Convert.ToInt32(TimeSeconds3k.Value), 3000);
+            RunningZonesTextBox16.Text = Convert.ToString(Zone1.DistanceMeasured);
+            RunningZonesTextBox17.Text = Convert.ToString($"{Zone1.RunMinutes}:{Zone1.RunSeconds}");
+            RunningZonesTextBox18.Text = Zone1.PaceString(Zone1.PaceLower());
+            RunningZonesTextBox19.Text = Zone1.PaceString(Zone1.PaceActual());
+            RunningZonesTextBox20.Text = Zone1.PaceString(Zone1.PaceUpper());
+        }
     }
 }

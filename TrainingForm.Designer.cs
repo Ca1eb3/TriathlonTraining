@@ -109,6 +109,8 @@
             this.RunningZonesTextBox3 = new System.Windows.Forms.TextBox();
             this.RunningZonesTextBox2 = new System.Windows.Forms.TextBox();
             this.RunningZonesTextBox1 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TimeSeconds3k)).BeginInit();
@@ -137,6 +139,8 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.button3);
+            this.tabPage4.Controls.Add(this.button2);
             this.tabPage4.Controls.Add(this.label4);
             this.tabPage4.Controls.Add(this.TimeSeconds3k);
             this.tabPage4.Controls.Add(this.label3);
@@ -217,7 +221,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(193, 38);
             this.button1.TabIndex = 3;
-            this.button1.Text = "Start";
+            this.button1.Text = "Calculate";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -662,7 +666,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(833, 458);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(943, 493);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint_1);
             // 
@@ -671,9 +675,9 @@
             this.RunningZonesTextBox40.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox40.Location = new System.Drawing.Point(667, 402);
+            this.RunningZonesTextBox40.Location = new System.Drawing.Point(755, 430);
             this.RunningZonesTextBox40.Name = "RunningZonesTextBox40";
-            this.RunningZonesTextBox40.Size = new System.Drawing.Size(163, 31);
+            this.RunningZonesTextBox40.Size = new System.Drawing.Size(185, 31);
             this.RunningZonesTextBox40.TabIndex = 39;
             // 
             // RunningZonesTextBox39
@@ -681,9 +685,9 @@
             this.RunningZonesTextBox39.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox39.Location = new System.Drawing.Point(501, 402);
+            this.RunningZonesTextBox39.Location = new System.Drawing.Point(567, 430);
             this.RunningZonesTextBox39.Name = "RunningZonesTextBox39";
-            this.RunningZonesTextBox39.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox39.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox39.TabIndex = 38;
             // 
             // RunningZonesTextBox38
@@ -691,9 +695,9 @@
             this.RunningZonesTextBox38.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox38.Location = new System.Drawing.Point(335, 402);
+            this.RunningZonesTextBox38.Location = new System.Drawing.Point(379, 430);
             this.RunningZonesTextBox38.Name = "RunningZonesTextBox38";
-            this.RunningZonesTextBox38.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox38.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox38.TabIndex = 37;
             // 
             // RunningZonesTextBox37
@@ -701,9 +705,9 @@
             this.RunningZonesTextBox37.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox37.Location = new System.Drawing.Point(169, 402);
+            this.RunningZonesTextBox37.Location = new System.Drawing.Point(191, 430);
             this.RunningZonesTextBox37.Name = "RunningZonesTextBox37";
-            this.RunningZonesTextBox37.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox37.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox37.TabIndex = 36;
             // 
             // RunningZonesTextBox36
@@ -711,9 +715,9 @@
             this.RunningZonesTextBox36.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox36.Location = new System.Drawing.Point(3, 402);
+            this.RunningZonesTextBox36.Location = new System.Drawing.Point(3, 430);
             this.RunningZonesTextBox36.Name = "RunningZonesTextBox36";
-            this.RunningZonesTextBox36.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox36.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox36.TabIndex = 35;
             // 
             // RunningZonesTextBox35
@@ -721,9 +725,9 @@
             this.RunningZonesTextBox35.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox35.Location = new System.Drawing.Point(667, 345);
+            this.RunningZonesTextBox35.Location = new System.Drawing.Point(755, 369);
             this.RunningZonesTextBox35.Name = "RunningZonesTextBox35";
-            this.RunningZonesTextBox35.Size = new System.Drawing.Size(163, 31);
+            this.RunningZonesTextBox35.Size = new System.Drawing.Size(185, 31);
             this.RunningZonesTextBox35.TabIndex = 34;
             this.RunningZonesTextBox35.TextChanged += new System.EventHandler(this.textBox34_TextChanged);
             // 
@@ -732,9 +736,9 @@
             this.RunningZonesTextBox34.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox34.Location = new System.Drawing.Point(501, 345);
+            this.RunningZonesTextBox34.Location = new System.Drawing.Point(567, 369);
             this.RunningZonesTextBox34.Name = "RunningZonesTextBox34";
-            this.RunningZonesTextBox34.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox34.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox34.TabIndex = 33;
             // 
             // RunningZonesTextBox33
@@ -742,9 +746,9 @@
             this.RunningZonesTextBox33.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox33.Location = new System.Drawing.Point(335, 345);
+            this.RunningZonesTextBox33.Location = new System.Drawing.Point(379, 369);
             this.RunningZonesTextBox33.Name = "RunningZonesTextBox33";
-            this.RunningZonesTextBox33.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox33.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox33.TabIndex = 32;
             // 
             // RunningZonesTextBox32
@@ -752,9 +756,9 @@
             this.RunningZonesTextBox32.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox32.Location = new System.Drawing.Point(169, 345);
+            this.RunningZonesTextBox32.Location = new System.Drawing.Point(191, 369);
             this.RunningZonesTextBox32.Name = "RunningZonesTextBox32";
-            this.RunningZonesTextBox32.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox32.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox32.TabIndex = 31;
             // 
             // RunningZonesTextBox31
@@ -762,9 +766,9 @@
             this.RunningZonesTextBox31.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox31.Location = new System.Drawing.Point(3, 345);
+            this.RunningZonesTextBox31.Location = new System.Drawing.Point(3, 369);
             this.RunningZonesTextBox31.Name = "RunningZonesTextBox31";
-            this.RunningZonesTextBox31.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox31.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox31.TabIndex = 30;
             // 
             // RunningZonesTextBox30
@@ -772,9 +776,9 @@
             this.RunningZonesTextBox30.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox30.Location = new System.Drawing.Point(667, 288);
+            this.RunningZonesTextBox30.Location = new System.Drawing.Point(755, 308);
             this.RunningZonesTextBox30.Name = "RunningZonesTextBox30";
-            this.RunningZonesTextBox30.Size = new System.Drawing.Size(163, 31);
+            this.RunningZonesTextBox30.Size = new System.Drawing.Size(185, 31);
             this.RunningZonesTextBox30.TabIndex = 29;
             // 
             // RunningZonesTextBox29
@@ -782,9 +786,9 @@
             this.RunningZonesTextBox29.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox29.Location = new System.Drawing.Point(501, 288);
+            this.RunningZonesTextBox29.Location = new System.Drawing.Point(567, 308);
             this.RunningZonesTextBox29.Name = "RunningZonesTextBox29";
-            this.RunningZonesTextBox29.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox29.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox29.TabIndex = 28;
             // 
             // RunningZonesTextBox28
@@ -792,9 +796,9 @@
             this.RunningZonesTextBox28.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox28.Location = new System.Drawing.Point(335, 288);
+            this.RunningZonesTextBox28.Location = new System.Drawing.Point(379, 308);
             this.RunningZonesTextBox28.Name = "RunningZonesTextBox28";
-            this.RunningZonesTextBox28.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox28.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox28.TabIndex = 27;
             // 
             // RunningZonesTextBox27
@@ -802,9 +806,9 @@
             this.RunningZonesTextBox27.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox27.Location = new System.Drawing.Point(169, 288);
+            this.RunningZonesTextBox27.Location = new System.Drawing.Point(191, 308);
             this.RunningZonesTextBox27.Name = "RunningZonesTextBox27";
-            this.RunningZonesTextBox27.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox27.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox27.TabIndex = 26;
             // 
             // RunningZonesTextBox26
@@ -812,9 +816,9 @@
             this.RunningZonesTextBox26.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox26.Location = new System.Drawing.Point(3, 288);
+            this.RunningZonesTextBox26.Location = new System.Drawing.Point(3, 308);
             this.RunningZonesTextBox26.Name = "RunningZonesTextBox26";
-            this.RunningZonesTextBox26.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox26.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox26.TabIndex = 25;
             // 
             // RunningZonesTextBox25
@@ -822,9 +826,9 @@
             this.RunningZonesTextBox25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox25.Location = new System.Drawing.Point(667, 231);
+            this.RunningZonesTextBox25.Location = new System.Drawing.Point(755, 247);
             this.RunningZonesTextBox25.Name = "RunningZonesTextBox25";
-            this.RunningZonesTextBox25.Size = new System.Drawing.Size(163, 31);
+            this.RunningZonesTextBox25.Size = new System.Drawing.Size(185, 31);
             this.RunningZonesTextBox25.TabIndex = 24;
             // 
             // RunningZonesTextBox24
@@ -832,9 +836,9 @@
             this.RunningZonesTextBox24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox24.Location = new System.Drawing.Point(501, 231);
+            this.RunningZonesTextBox24.Location = new System.Drawing.Point(567, 247);
             this.RunningZonesTextBox24.Name = "RunningZonesTextBox24";
-            this.RunningZonesTextBox24.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox24.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox24.TabIndex = 23;
             // 
             // RunningZonesTextBox23
@@ -842,9 +846,9 @@
             this.RunningZonesTextBox23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox23.Location = new System.Drawing.Point(335, 231);
+            this.RunningZonesTextBox23.Location = new System.Drawing.Point(379, 247);
             this.RunningZonesTextBox23.Name = "RunningZonesTextBox23";
-            this.RunningZonesTextBox23.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox23.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox23.TabIndex = 22;
             // 
             // RunningZonesTextBox22
@@ -852,9 +856,9 @@
             this.RunningZonesTextBox22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox22.Location = new System.Drawing.Point(169, 231);
+            this.RunningZonesTextBox22.Location = new System.Drawing.Point(191, 247);
             this.RunningZonesTextBox22.Name = "RunningZonesTextBox22";
-            this.RunningZonesTextBox22.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox22.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox22.TabIndex = 21;
             // 
             // RunningZonesTextBox21
@@ -862,9 +866,9 @@
             this.RunningZonesTextBox21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox21.Location = new System.Drawing.Point(3, 231);
+            this.RunningZonesTextBox21.Location = new System.Drawing.Point(3, 247);
             this.RunningZonesTextBox21.Name = "RunningZonesTextBox21";
-            this.RunningZonesTextBox21.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox21.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox21.TabIndex = 20;
             // 
             // RunningZonesTextBox20
@@ -872,9 +876,9 @@
             this.RunningZonesTextBox20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox20.Location = new System.Drawing.Point(667, 174);
+            this.RunningZonesTextBox20.Location = new System.Drawing.Point(755, 186);
             this.RunningZonesTextBox20.Name = "RunningZonesTextBox20";
-            this.RunningZonesTextBox20.Size = new System.Drawing.Size(163, 31);
+            this.RunningZonesTextBox20.Size = new System.Drawing.Size(185, 31);
             this.RunningZonesTextBox20.TabIndex = 19;
             // 
             // RunningZonesTextBox19
@@ -882,9 +886,9 @@
             this.RunningZonesTextBox19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox19.Location = new System.Drawing.Point(501, 174);
+            this.RunningZonesTextBox19.Location = new System.Drawing.Point(567, 186);
             this.RunningZonesTextBox19.Name = "RunningZonesTextBox19";
-            this.RunningZonesTextBox19.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox19.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox19.TabIndex = 18;
             // 
             // RunningZonesTextBox18
@@ -892,9 +896,9 @@
             this.RunningZonesTextBox18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox18.Location = new System.Drawing.Point(335, 174);
+            this.RunningZonesTextBox18.Location = new System.Drawing.Point(379, 186);
             this.RunningZonesTextBox18.Name = "RunningZonesTextBox18";
-            this.RunningZonesTextBox18.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox18.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox18.TabIndex = 17;
             // 
             // RunningZonesTextBox17
@@ -902,9 +906,9 @@
             this.RunningZonesTextBox17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox17.Location = new System.Drawing.Point(169, 174);
+            this.RunningZonesTextBox17.Location = new System.Drawing.Point(191, 186);
             this.RunningZonesTextBox17.Name = "RunningZonesTextBox17";
-            this.RunningZonesTextBox17.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox17.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox17.TabIndex = 16;
             // 
             // RunningZonesTextBox16
@@ -912,9 +916,9 @@
             this.RunningZonesTextBox16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox16.Location = new System.Drawing.Point(3, 174);
+            this.RunningZonesTextBox16.Location = new System.Drawing.Point(3, 186);
             this.RunningZonesTextBox16.Name = "RunningZonesTextBox16";
-            this.RunningZonesTextBox16.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox16.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox16.TabIndex = 15;
             // 
             // RunningZonesTextBox15
@@ -922,9 +926,9 @@
             this.RunningZonesTextBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox15.Location = new System.Drawing.Point(667, 117);
+            this.RunningZonesTextBox15.Location = new System.Drawing.Point(755, 125);
             this.RunningZonesTextBox15.Name = "RunningZonesTextBox15";
-            this.RunningZonesTextBox15.Size = new System.Drawing.Size(163, 31);
+            this.RunningZonesTextBox15.Size = new System.Drawing.Size(185, 31);
             this.RunningZonesTextBox15.TabIndex = 14;
             // 
             // RunningZonesTextBox14
@@ -932,9 +936,9 @@
             this.RunningZonesTextBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox14.Location = new System.Drawing.Point(501, 117);
+            this.RunningZonesTextBox14.Location = new System.Drawing.Point(567, 125);
             this.RunningZonesTextBox14.Name = "RunningZonesTextBox14";
-            this.RunningZonesTextBox14.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox14.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox14.TabIndex = 13;
             // 
             // RunningZonesTextBox13
@@ -942,9 +946,9 @@
             this.RunningZonesTextBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox13.Location = new System.Drawing.Point(335, 117);
+            this.RunningZonesTextBox13.Location = new System.Drawing.Point(379, 125);
             this.RunningZonesTextBox13.Name = "RunningZonesTextBox13";
-            this.RunningZonesTextBox13.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox13.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox13.TabIndex = 12;
             // 
             // RunningZonesTextBox12
@@ -952,9 +956,9 @@
             this.RunningZonesTextBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox12.Location = new System.Drawing.Point(169, 117);
+            this.RunningZonesTextBox12.Location = new System.Drawing.Point(191, 125);
             this.RunningZonesTextBox12.Name = "RunningZonesTextBox12";
-            this.RunningZonesTextBox12.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox12.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox12.TabIndex = 11;
             // 
             // RunningZonesTextBox11
@@ -962,9 +966,9 @@
             this.RunningZonesTextBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox11.Location = new System.Drawing.Point(3, 117);
+            this.RunningZonesTextBox11.Location = new System.Drawing.Point(3, 125);
             this.RunningZonesTextBox11.Name = "RunningZonesTextBox11";
-            this.RunningZonesTextBox11.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox11.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox11.TabIndex = 10;
             // 
             // RunningZonesTextBox10
@@ -972,9 +976,9 @@
             this.RunningZonesTextBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox10.Location = new System.Drawing.Point(667, 60);
+            this.RunningZonesTextBox10.Location = new System.Drawing.Point(755, 64);
             this.RunningZonesTextBox10.Name = "RunningZonesTextBox10";
-            this.RunningZonesTextBox10.Size = new System.Drawing.Size(163, 31);
+            this.RunningZonesTextBox10.Size = new System.Drawing.Size(185, 31);
             this.RunningZonesTextBox10.TabIndex = 9;
             // 
             // RunningZonesTextBox9
@@ -982,9 +986,9 @@
             this.RunningZonesTextBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox9.Location = new System.Drawing.Point(501, 60);
+            this.RunningZonesTextBox9.Location = new System.Drawing.Point(567, 64);
             this.RunningZonesTextBox9.Name = "RunningZonesTextBox9";
-            this.RunningZonesTextBox9.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox9.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox9.TabIndex = 8;
             // 
             // RunningZonesTextBox8
@@ -992,9 +996,9 @@
             this.RunningZonesTextBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox8.Location = new System.Drawing.Point(335, 60);
+            this.RunningZonesTextBox8.Location = new System.Drawing.Point(379, 64);
             this.RunningZonesTextBox8.Name = "RunningZonesTextBox8";
-            this.RunningZonesTextBox8.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox8.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox8.TabIndex = 7;
             // 
             // RunningZonesTextBox7
@@ -1002,9 +1006,9 @@
             this.RunningZonesTextBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox7.Location = new System.Drawing.Point(169, 60);
+            this.RunningZonesTextBox7.Location = new System.Drawing.Point(191, 64);
             this.RunningZonesTextBox7.Name = "RunningZonesTextBox7";
-            this.RunningZonesTextBox7.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox7.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox7.TabIndex = 6;
             // 
             // RunningZonesTextBox6
@@ -1012,9 +1016,9 @@
             this.RunningZonesTextBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox6.Location = new System.Drawing.Point(3, 60);
+            this.RunningZonesTextBox6.Location = new System.Drawing.Point(3, 64);
             this.RunningZonesTextBox6.Name = "RunningZonesTextBox6";
-            this.RunningZonesTextBox6.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox6.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox6.TabIndex = 5;
             // 
             // RunningZonesTextBox5
@@ -1022,9 +1026,9 @@
             this.RunningZonesTextBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox5.Location = new System.Drawing.Point(667, 3);
+            this.RunningZonesTextBox5.Location = new System.Drawing.Point(755, 3);
             this.RunningZonesTextBox5.Name = "RunningZonesTextBox5";
-            this.RunningZonesTextBox5.Size = new System.Drawing.Size(163, 31);
+            this.RunningZonesTextBox5.Size = new System.Drawing.Size(185, 31);
             this.RunningZonesTextBox5.TabIndex = 4;
             this.RunningZonesTextBox5.Text = "Pace/km (upper)";
             // 
@@ -1033,9 +1037,9 @@
             this.RunningZonesTextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox4.Location = new System.Drawing.Point(501, 3);
+            this.RunningZonesTextBox4.Location = new System.Drawing.Point(567, 3);
             this.RunningZonesTextBox4.Name = "RunningZonesTextBox4";
-            this.RunningZonesTextBox4.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox4.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox4.TabIndex = 3;
             this.RunningZonesTextBox4.Text = "Pace/km (actual)";
             // 
@@ -1044,9 +1048,9 @@
             this.RunningZonesTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox3.Location = new System.Drawing.Point(335, 3);
+            this.RunningZonesTextBox3.Location = new System.Drawing.Point(379, 3);
             this.RunningZonesTextBox3.Name = "RunningZonesTextBox3";
-            this.RunningZonesTextBox3.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox3.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox3.TabIndex = 2;
             this.RunningZonesTextBox3.Text = "Pace/km (lower)";
             // 
@@ -1055,9 +1059,9 @@
             this.RunningZonesTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RunningZonesTextBox2.Location = new System.Drawing.Point(169, 3);
+            this.RunningZonesTextBox2.Location = new System.Drawing.Point(191, 3);
             this.RunningZonesTextBox2.Name = "RunningZonesTextBox2";
-            this.RunningZonesTextBox2.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox2.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox2.TabIndex = 1;
             this.RunningZonesTextBox2.Text = "Time";
             // 
@@ -1068,10 +1072,29 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox1.Location = new System.Drawing.Point(3, 3);
             this.RunningZonesTextBox1.Name = "RunningZonesTextBox1";
-            this.RunningZonesTextBox1.Size = new System.Drawing.Size(160, 31);
+            this.RunningZonesTextBox1.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox1.TabIndex = 0;
-            this.RunningZonesTextBox1.Text = "Distance";
+            this.RunningZonesTextBox1.Text = "Distance (m)";
             this.RunningZonesTextBox1.TextChanged += new System.EventHandler(this.RunningZonesTextBox1_TextChanged);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(0, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(59, 440);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(193, 38);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "Calculate";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // TrainingForm
             // 
@@ -1180,6 +1203,8 @@
         private System.Windows.Forms.TextBox RunningZonesTextBox4;
         private System.Windows.Forms.TextBox RunningZonesTextBox3;
         private System.Windows.Forms.TextBox RunningZonesTextBox2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
     }
 }
 
