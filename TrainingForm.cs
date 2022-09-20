@@ -29,7 +29,7 @@ namespace TriathlonTraining
         private void tabPage4_Click(object sender, EventArgs e)
         {
         }
-
+        // Calculates bike zones after clicking the calculate button beneath FTP benchmark
         private void button1_Click(object sender, EventArgs e)
         {
             powerZones.BikeFtpPower = Convert.ToInt32(powerBikeFtp.Text);
@@ -93,15 +93,21 @@ namespace TriathlonTraining
         {
 
         }
-
+        // Calculates run zones after clicking the calculate button beneath 3k benchmark
         private void button3_Click(object sender, EventArgs e)
         {
-            RunPaceZones Zone1 = new RunPaceZones(Convert.ToInt32(TimeMinutes3k.Value), Convert.ToInt32(TimeSeconds3k.Value), 3000);
-            RunningZonesTextBox16.Text = Convert.ToString(Zone1.DistanceMeasured);
-            RunningZonesTextBox17.Text = Convert.ToString($"{Zone1.RunMinutes}:{Zone1.RunSeconds}");
-            RunningZonesTextBox18.Text = Zone1.PaceString(Zone1.PaceLower());
-            RunningZonesTextBox19.Text = Zone1.PaceString(Zone1.PaceActual());
-            RunningZonesTextBox20.Text = Zone1.PaceString(Zone1.PaceUpper());
+            RunPaceZones Zone3000 = new RunPaceZones(Convert.ToInt32(TimeMinutes3k.Value), Convert.ToInt32(TimeSeconds3k.Value), 3000);
+            RunningZonesTextBox16.Text = Convert.ToString(Zone3000.DistanceMeasured);
+            RunningZonesTextBox17.Text = Convert.ToString($"{Zone3000.RunMinutes}:{Zone3000.RunSeconds}");
+            RunningZonesTextBox18.Text = Zone3000.PaceString(Zone3000.PaceLower());
+            RunningZonesTextBox19.Text = Zone3000.PaceString(Zone3000.PaceActual());
+            RunningZonesTextBox20.Text = Zone3000.PaceString(Zone3000.PaceUpper());
+            int TotalSeconds3000 = TimeConverter.ConvertedToSeconds(Zone3000.RunHours, Zone3000.RunMinutes, Zone3000.RunSeconds);
+            int Seconds800 = RaceTimePredictor.PredictTime2(TotalSeconds3000, 3000, 800); // issue with RaceTimePredictor
+            int[] Time800 = new int[2] { TimeConverter.ConvertedToTime(Seconds800, 1), TimeConverter.ConvertedToTime(Seconds800, 2) };
+            RunPaceZones Zone800 = new RunPaceZones(Time800[0], Time800[1], 800);
+            RunningZonesTextBox6.Text = Convert.ToString(Zone800.DistanceMeasured);
+            RunningZonesTextBox7.Text = Convert.ToString($"{Zone800.RunMinutes}:{Zone800.RunSeconds}");
         }
     }
 }

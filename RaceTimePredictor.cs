@@ -73,7 +73,7 @@ namespace TriathlonTraining
         */
         public static int PredictTime2(int timeSeconds1, int distance1, int distance2)
         {
-            double TimeSeconds2 = timeSeconds1 * (Math.Pow((distance2 / distance1), 1.06));
+            double TimeSeconds2 = timeSeconds1 * Math.Pow(distance2 / distance1, 1.06);
             int TimeSeconds2Rounded = Convert.ToInt32(TimeSeconds2);
             return TimeSeconds2Rounded;
         }
