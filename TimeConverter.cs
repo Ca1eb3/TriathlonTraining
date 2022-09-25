@@ -10,79 +10,7 @@ namespace TriathlonTraining
 {
     public static class TimeConverter
     {
-        /*
-        // Class variables
-        private int hours = 0;
-        private int minutes = 0;
-        private int seconds = 0;
-
-        // gets and sets
-        public int Hours
-        {
-            get { return hours; }
-            set
-            {
-                if (value >= 0)
-                {
-                    hours = value;
-                }
-            }
-        }
-        public int Minutes
-        {
-            get { return minutes; }
-            set
-            {
-                if (value >= 0)
-                {
-                    minutes = value;
-                }
-            }
-        }
-        public int Seconds
-        {
-            get { return seconds; }
-            set
-            {
-                if (value >= 0)
-                {
-                    seconds = value;
-                }
-            }
-        }
-        */
-        // Constructors
-        /*
-        public TimeConverter(): this(0, 0, 0)
-        {
-
-        }
-        public TimeConverter(int aHours, int aMinutes, int aSeconds)
-        {
-            Hours = aHours;
-            Minutes = aMinutes;
-            Seconds = aSeconds;
-        }
-        public TimeConverter(int aSeconds): this(0, 0, aSeconds)
-        {
-
-        }
-        public TimeConverter(int aMinutes, int aSeconds): this(0, aMinutes, aSeconds)
-        {
-
-        }
-        */
         // Methods
-        /*
-        public override string ToString()
-        {
-            string message = "";
-            message += "Hours: " + Hours + "\n";
-            message += "Minutes: " + Minutes + "\n";
-            message += "Seconds: " + Seconds + "\n";
-            return message;
-        }
-        */
         // Converts time to seconds
         public static int ConvertedToSeconds(int Hours, int Minutes, int Seconds)
         {

@@ -106,7 +106,19 @@ namespace TriathlonTraining
         }
         public string PaceString(int pace)
         {
-            string time = Convert.ToString($"{TimeConverter.ConvertedToTime(pace, 0)}:{TimeConverter.ConvertedToTime(pace, 1)}:{TimeConverter.ConvertedToTime(pace, 2)}");
+            string time;
+            if (TimeConverter.ConvertedToTime(pace, 2) < 10 && TimeConverter.ConvertedToTime(pace, 2) > 0)
+            {
+                time = Convert.ToString($"{TimeConverter.ConvertedToTime(pace, 1)}:0{TimeConverter.ConvertedToTime(pace, 2)}");
+            }
+            else if (TimeConverter.ConvertedToTime(pace, 2) == 0)
+            {
+                time = Convert.ToString($"{TimeConverter.ConvertedToTime(pace, 1)}:00");
+            }
+            else
+            {
+                time = Convert.ToString($"{TimeConverter.ConvertedToTime(pace, 1)}:{TimeConverter.ConvertedToTime(pace, 2)}");
+            }
             return time;
         }
     }
