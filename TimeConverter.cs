@@ -29,5 +29,72 @@ namespace TriathlonTraining
             ConvertedTime[2] = Seconds;
             return ConvertedTime[V];
         }
+        // Displays Time in [h]:mm:ss format
+        public static string DisplayTime(int hours, int minutes, int seconds)
+        {
+            if (hours == 0)
+            {
+                if (seconds < 10 && seconds > 0)
+                {
+                    return Convert.ToString($"{minutes}:0{seconds}");
+                }
+                else if (seconds == 0)
+                {
+                    return Convert.ToString($"{minutes}:00");
+                }
+                else
+                {
+                    return Convert.ToString($"{minutes}:{seconds}");
+                }
+            }
+            else
+            {
+                if (minutes < 10 && minutes > 0)
+                {
+                    if (seconds < 10 && seconds > 0)
+                    {
+                        return Convert.ToString($"{hours}:0{minutes}:0{seconds}");
+                    }
+                    else if (seconds == 0)
+                    {
+                        return Convert.ToString($"{hours}:0{minutes}:00");
+                    }
+                    else
+                    {
+                        return Convert.ToString($"{hours}:0{minutes}:{seconds}");
+                    }
+                }
+                else if (minutes == 0)
+                {
+                    if (seconds < 10 && seconds > 0)
+                    {
+                        return Convert.ToString($"{hours}:00:0{seconds}");
+                    }
+                    else if (seconds == 0)
+                    {
+                        return Convert.ToString($"{hours}:00:00");
+                    }
+                    else
+                    {
+                        return Convert.ToString($"{hours}:00:{seconds}");
+                    }
+                }
+                else
+                {
+                    if (seconds < 10 && seconds > 0)
+                    {
+                        return Convert.ToString($"{hours}:{minutes}:0{seconds}");
+                    }
+                    else if (seconds == 0)
+                    {
+                        return Convert.ToString($"{hours}:{minutes}:00");
+                    }
+                    else
+                    {
+                        return Convert.ToString($"{hours}:{minutes}:{seconds}");
+                    }
+                }
+            }
+        }
     }
 }

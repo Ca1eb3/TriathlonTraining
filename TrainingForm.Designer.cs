@@ -31,7 +31,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.TimeSeconds3k = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
@@ -140,7 +139,6 @@
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.button3);
-            this.tabPage4.Controls.Add(this.button2);
             this.tabPage4.Controls.Add(this.label4);
             this.tabPage4.Controls.Add(this.TimeSeconds3k);
             this.tabPage4.Controls.Add(this.label3);
@@ -168,15 +166,6 @@
             this.button3.Text = "Calculate";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -1204,7 +1193,6 @@
         private System.Windows.Forms.TextBox RunningZonesTextBox3;
         private System.Windows.Forms.TextBox RunningZonesTextBox2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
     }
 }
 

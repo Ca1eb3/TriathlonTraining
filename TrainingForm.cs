@@ -100,18 +100,7 @@ namespace TriathlonTraining
             RunPaceZones Zone3000 = new RunPaceZones(Convert.ToInt32(TimeMinutes3k.Value), Convert.ToInt32(TimeSeconds3k.Value), 3000);
             RunningZonesTextBox16.Text = Convert.ToString(Zone3000.DistanceMeasured);
             // Displays Time
-            if (Zone3000.RunSeconds < 10 && Zone3000.RunSeconds > 0)
-            {
-                RunningZonesTextBox17.Text = Convert.ToString($"{Zone3000.RunMinutes}:0{Zone3000.RunSeconds}");
-            }
-            else if (Zone3000.RunSeconds == 0)
-            {
-                RunningZonesTextBox17.Text = Convert.ToString($"{Zone3000.RunMinutes}:00");
-            }
-            else
-            {
-                RunningZonesTextBox17.Text = Convert.ToString($"{Zone3000.RunMinutes}:{Zone3000.RunSeconds}");
-            }
+            RunningZonesTextBox17.Text = TimeConverter.DisplayTime(Zone3000.RunHours, Zone3000.RunMinutes, Zone3000.RunSeconds);
             // Dispays Pace
             RunningZonesTextBox18.Text = Zone3000.PaceString(Zone3000.PaceLower());
             RunningZonesTextBox19.Text = Zone3000.PaceString(Zone3000.PaceActual());
@@ -123,18 +112,7 @@ namespace TriathlonTraining
             RunPaceZones Zone800 = new RunPaceZones(Time800[0], Time800[1], 800);
             RunningZonesTextBox6.Text = Convert.ToString(Zone800.DistanceMeasured);
             // Displays Time
-            if (Zone800.RunSeconds < 10 && Zone800.RunSeconds > 0)
-            {
-                RunningZonesTextBox7.Text = Convert.ToString($"{Zone800.RunMinutes}:0{Zone800.RunSeconds}");
-            }
-            else if (Zone800.RunSeconds == 0)
-            {
-                RunningZonesTextBox7.Text = Convert.ToString($"{Zone800.RunMinutes}:00");
-            }
-            else
-            {
-                RunningZonesTextBox7.Text = Convert.ToString($"{Zone800.RunMinutes}:{Zone800.RunSeconds}");
-            }
+            RunningZonesTextBox7.Text = TimeConverter.DisplayTime(Zone800.RunHours, Zone800.RunMinutes, Zone800.RunSeconds);
             // Dispays Pace
             RunningZonesTextBox8.Text = Zone800.PaceString(Zone800.PaceLower());
             RunningZonesTextBox9.Text = Zone800.PaceString(Zone800.PaceActual());
@@ -145,18 +123,7 @@ namespace TriathlonTraining
             RunPaceZones Zone1609 = new RunPaceZones(Time1609[0], Time1609[1], 1609);
             RunningZonesTextBox11.Text = Convert.ToString(Zone1609.DistanceMeasured);
             // Displays Time
-            if (Zone1609.RunSeconds < 10 && Zone1609.RunSeconds > 0)
-            {
-                RunningZonesTextBox12.Text = Convert.ToString($"{Zone1609.RunMinutes}:0{Zone1609.RunSeconds}");
-            }
-            else if (Zone1609.RunSeconds == 0)
-            {
-                RunningZonesTextBox12.Text = Convert.ToString($"{Zone1609.RunMinutes}:00");
-            }
-            else
-            {
-                RunningZonesTextBox12.Text = Convert.ToString($"{Zone1609.RunMinutes}:{Zone1609.RunSeconds}");
-            }
+            RunningZonesTextBox12.Text = TimeConverter.DisplayTime(Zone1609.RunHours, Zone1609.RunMinutes, Zone1609.RunSeconds);
             // Dispays Pace
             RunningZonesTextBox13.Text = Zone1609.PaceString(Zone1609.PaceLower());
             RunningZonesTextBox14.Text = Zone1609.PaceString(Zone1609.PaceActual());
@@ -167,18 +134,7 @@ namespace TriathlonTraining
             RunPaceZones Zone5000 = new RunPaceZones(Time5000[0], Time5000[1], 5000);
             RunningZonesTextBox21.Text = Convert.ToString(Zone5000.DistanceMeasured);
             // Displays Time
-            if (Zone5000.RunSeconds < 10 && Zone5000.RunSeconds > 0)
-            {
-                RunningZonesTextBox22.Text = Convert.ToString($"{Zone5000.RunMinutes}:0{Zone5000.RunSeconds}");
-            }
-            else if (Zone5000.RunSeconds == 0)
-            {
-                RunningZonesTextBox22.Text = Convert.ToString($"{Zone5000.RunMinutes}:00");
-            }
-            else
-            {
-                RunningZonesTextBox22.Text = Convert.ToString($"{Zone5000.RunMinutes}:{Zone5000.RunSeconds}");
-            }
+            RunningZonesTextBox22.Text = TimeConverter.DisplayTime(Zone5000.RunHours, Zone5000.RunMinutes, Zone5000.RunSeconds);
             // Dispays Pace
             RunningZonesTextBox23.Text = Zone5000.PaceString(Zone5000.PaceLower());
             RunningZonesTextBox24.Text = Zone5000.PaceString(Zone5000.PaceActual());
@@ -189,69 +145,7 @@ namespace TriathlonTraining
             RunPaceZones Zone10000 = new RunPaceZones(Time10000[0], Time10000[1], 10000);
             RunningZonesTextBox26.Text = Convert.ToString(Zone10000.DistanceMeasured);
             // Displays Time
-            if (Zone10000.RunHours == 0)
-            {
-                if (Zone10000.RunSeconds < 10 && Zone10000.RunSeconds > 0)
-                {
-                    RunningZonesTextBox27.Text = Convert.ToString($"{Zone10000.RunMinutes}:0{Zone10000.RunSeconds}");
-                }
-                else if (Zone10000.RunSeconds == 0)
-                {
-                    RunningZonesTextBox27.Text = Convert.ToString($"{Zone10000.RunMinutes}:00");
-                }
-                else
-                {
-                    RunningZonesTextBox27.Text = Convert.ToString($"{Zone10000.RunMinutes}:{Zone10000.RunSeconds}");
-                }
-            }
-            else if (Zone10000.RunHours > 0)
-            {
-                if (Zone10000.RunMinutes < 10 && Zone10000.RunMinutes > 0)
-                {
-                    if (Zone10000.RunSeconds < 10 && Zone10000.RunSeconds > 0)
-                    {
-                        RunningZonesTextBox27.Text = Convert.ToString($"{Zone10000.RunHours}:0{Zone10000.RunMinutes}:0{Zone10000.RunSeconds}");
-                    }
-                    else if (Zone10000.RunSeconds == 0)
-                    {
-                        RunningZonesTextBox27.Text = Convert.ToString($"{Zone10000.RunHours}:0{Zone10000.RunMinutes}:00");
-                    }
-                    else
-                    {
-                        RunningZonesTextBox27.Text = Convert.ToString($"{Zone10000.RunHours}:0{Zone10000.RunMinutes}:{Zone10000.RunSeconds}");
-                    }
-                }
-                else if (Zone10000.RunMinutes == 0)
-                {
-                    if (Zone10000.RunSeconds < 10 && Zone10000.RunSeconds > 0)
-                    {
-                        RunningZonesTextBox27.Text = Convert.ToString($"{Zone10000.RunHours}:00:0{Zone10000.RunSeconds}");
-                    }
-                    else if (Zone10000.RunSeconds == 0)
-                    {
-                        RunningZonesTextBox27.Text = Convert.ToString($"{Zone10000.RunHours}:00:00");
-                    }
-                    else
-                    {
-                        RunningZonesTextBox27.Text = Convert.ToString($"{Zone10000.RunHours}:00:{Zone10000.RunSeconds}");
-                    }
-                }
-                else
-                {
-                    if (Zone10000.RunSeconds < 10 && Zone10000.RunSeconds > 0)
-                    {
-                        RunningZonesTextBox27.Text = Convert.ToString($"{Zone10000.RunHours}:{Zone10000.RunMinutes}:0{Zone10000.RunSeconds}");
-                    }
-                    else if (Zone10000.RunSeconds == 0)
-                    {
-                        RunningZonesTextBox27.Text = Convert.ToString($"{Zone10000.RunHours}:{Zone10000.RunMinutes}:00");
-                    }
-                    else
-                    {
-                        RunningZonesTextBox27.Text = Convert.ToString($"{Zone10000.RunHours}:{Zone10000.RunMinutes}:{Zone10000.RunSeconds}");
-                    }
-                }
-            }
+            RunningZonesTextBox27.Text = TimeConverter.DisplayTime(Zone10000.RunHours, Zone10000.RunMinutes, Zone10000.RunSeconds);
             // Dispays Pace
             RunningZonesTextBox28.Text = Zone10000.PaceString(Zone10000.PaceLower());
             RunningZonesTextBox29.Text = Zone10000.PaceString(Zone10000.PaceActual());
@@ -262,69 +156,7 @@ namespace TriathlonTraining
             RunPaceZones Zone21097 = new RunPaceZones(Time21097[0], Time21097[1], Time21097[2], 21097);
             RunningZonesTextBox31.Text = Convert.ToString(Zone21097.DistanceMeasured);
             // Displays Time
-            if (Zone21097.RunHours == 0)
-            {
-                if (Zone21097.RunSeconds < 10 && Zone21097.RunSeconds > 0)
-                {
-                    RunningZonesTextBox32.Text = Convert.ToString($"{Zone21097.RunMinutes}:0{Zone21097.RunSeconds}");
-                }
-                else if (Zone21097.RunSeconds == 0)
-                {
-                    RunningZonesTextBox32.Text = Convert.ToString($"{Zone21097.RunMinutes}:00");
-                }
-                else
-                {
-                    RunningZonesTextBox32.Text = Convert.ToString($"{Zone21097.RunMinutes}:{Zone21097.RunSeconds}");
-                }
-            }
-            else if (Zone21097.RunHours > 0)
-            {
-                if (Zone21097.RunMinutes < 10 && Zone21097.RunMinutes > 0)
-                {
-                    if (Zone21097.RunSeconds < 10 && Zone21097.RunSeconds > 0)
-                    {
-                        RunningZonesTextBox32.Text = Convert.ToString($"{Zone21097.RunHours}:0{Zone21097.RunMinutes}:0{Zone21097.RunSeconds}");
-                    }
-                    else if (Zone21097.RunSeconds == 0)
-                    {
-                        RunningZonesTextBox32.Text = Convert.ToString($"{Zone21097.RunHours}:0{Zone21097.RunMinutes}:00");
-                    }
-                    else
-                    {
-                        RunningZonesTextBox32.Text = Convert.ToString($"{Zone21097.RunHours}:0{Zone21097.RunMinutes}:{Zone21097.RunSeconds}");
-                    }
-                }
-                else if (Zone21097.RunMinutes == 0)
-                {
-                    if (Zone21097.RunSeconds < 10 && Zone21097.RunSeconds > 0)
-                    {
-                        RunningZonesTextBox32.Text = Convert.ToString($"{Zone21097.RunHours}:00:0{Zone21097.RunSeconds}");
-                    }
-                    else if (Zone21097.RunSeconds == 0)
-                    {
-                        RunningZonesTextBox32.Text = Convert.ToString($"{Zone21097.RunHours}:00:00");
-                    }
-                    else
-                    {
-                        RunningZonesTextBox32.Text = Convert.ToString($"{Zone21097.RunHours}:00:{Zone21097.RunSeconds}");
-                    }
-                }
-                else
-                {
-                    if (Zone21097.RunSeconds < 10 && Zone21097.RunSeconds > 0)
-                    {
-                        RunningZonesTextBox32.Text = Convert.ToString($"{Zone21097.RunHours}:{Zone21097.RunMinutes}:0{Zone21097.RunSeconds}");
-                    }
-                    else if (Zone21097.RunSeconds == 0)
-                    {
-                        RunningZonesTextBox32.Text = Convert.ToString($"{Zone21097.RunHours}:{Zone21097.RunMinutes}:00");
-                    }
-                    else
-                    {
-                        RunningZonesTextBox32.Text = Convert.ToString($"{Zone21097.RunHours}:{Zone21097.RunMinutes}:{Zone21097.RunSeconds}");
-                    }
-                }
-            }
+            RunningZonesTextBox32.Text = TimeConverter.DisplayTime(Zone21097.RunHours, Zone21097.RunMinutes, Zone21097.RunSeconds);
             // Dispays Pace
             RunningZonesTextBox33.Text = Zone21097.PaceString(Zone21097.PaceLower());
             RunningZonesTextBox34.Text = Zone21097.PaceString(Zone21097.PaceActual());
@@ -335,51 +167,7 @@ namespace TriathlonTraining
             RunPaceZones Zone42195 = new RunPaceZones(Time42195[0], Time42195[1], Time42195[2], 42195);
             RunningZonesTextBox36.Text = Convert.ToString(Zone42195.DistanceMeasured);
             // Displays Time
-            if (Zone42195.RunMinutes < 10 && Zone42195.RunMinutes > 0)
-            {
-                if (Zone42195.RunSeconds < 10 && Zone42195.RunSeconds > 0)
-                {
-                    RunningZonesTextBox37.Text = Convert.ToString($"{Zone42195.RunHours}:0{Zone42195.RunMinutes}:0{Zone42195.RunSeconds}");
-                }
-                else if (Zone42195.RunSeconds == 0)
-                {
-                    RunningZonesTextBox37.Text = Convert.ToString($"{Zone42195.RunHours}:0{Zone42195.RunMinutes}:00");
-                }
-                else
-                {
-                    RunningZonesTextBox37.Text = Convert.ToString($"{Zone42195.RunHours}:0{Zone42195.RunMinutes}:{Zone42195.RunSeconds}");
-                }
-            }
-            else if (Zone42195.RunMinutes == 0)
-            {
-                if (Zone42195.RunSeconds < 10 && Zone42195.RunSeconds > 0)
-                {
-                    RunningZonesTextBox37.Text = Convert.ToString($"{Zone42195.RunHours}:00:0{Zone42195.RunSeconds}");
-                }
-                else if (Zone42195.RunSeconds == 0)
-                {
-                    RunningZonesTextBox37.Text = Convert.ToString($"{Zone42195.RunHours}:00:00");
-                }
-                else
-                {
-                    RunningZonesTextBox37.Text = Convert.ToString($"{Zone42195.RunHours}:00:{Zone42195.RunSeconds}");
-                }
-            }
-            else
-            {
-                if (Zone42195.RunSeconds < 10 && Zone42195.RunSeconds > 0)
-                {
-                    RunningZonesTextBox37.Text = Convert.ToString($"{Zone42195.RunHours}:{Zone42195.RunMinutes}:0{Zone42195.RunSeconds}");
-                }
-                else if (Zone42195.RunSeconds == 0)
-                {
-                    RunningZonesTextBox37.Text = Convert.ToString($"{Zone42195.RunHours}:{Zone42195.RunMinutes}:00");
-                }
-                else
-                {
-                    RunningZonesTextBox37.Text = Convert.ToString($"{Zone42195.RunHours}:{Zone42195.RunMinutes}:{Zone42195.RunSeconds}");
-                }
-            }
+            RunningZonesTextBox37.Text = TimeConverter.DisplayTime(Zone42195.RunHours, Zone42195.RunMinutes, Zone42195.RunSeconds);
             // Dispays Pace
             RunningZonesTextBox38.Text = Zone42195.PaceString(Zone42195.PaceLower());
             RunningZonesTextBox39.Text = Zone42195.PaceString(Zone42195.PaceActual());
