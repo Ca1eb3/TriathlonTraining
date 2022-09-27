@@ -22,10 +22,13 @@ namespace TriathlonTraining
         public static int ConvertedToTime(int Seconds, int V)
         {
             int[] ConvertedTime = new int[3];
+            // hours
             ConvertedTime[0] = Seconds / 3600;
             Seconds = Seconds - (ConvertedTime[0] * 3600);
+            // minutes
             ConvertedTime[1] = Seconds / 60;
             Seconds = Seconds - (ConvertedTime[1] * 60);
+            // seconds
             ConvertedTime[2] = Seconds;
             return ConvertedTime[V];
         }
