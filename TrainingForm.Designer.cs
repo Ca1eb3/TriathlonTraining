@@ -30,6 +30,12 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.TimeSeconds500 = new System.Windows.Forms.NumericUpDown();
+            this.TimeMinutes500 = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.TimeSeconds3k = new System.Windows.Forms.NumericUpDown();
@@ -144,25 +150,72 @@
             this.RunThresholdTextBox30 = new System.Windows.Forms.TextBox();
             this.RunThresholdTextBox31 = new System.Windows.Forms.TextBox();
             this.RunThresholdTextBox32 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.TimeMinutes500 = new System.Windows.Forms.NumericUpDown();
-            this.TimeSeconds500 = new System.Windows.Forms.NumericUpDown();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.SwimZonesTextBox1 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox2 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox3 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox4 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox5 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox6 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox7 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox8 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox9 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox10 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox11 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox12 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox13 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox14 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox15 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox16 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox17 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox18 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox19 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox20 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox21 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox22 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox23 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox24 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox25 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox26 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox27 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox28 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox29 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox30 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox31 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox32 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox33 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox34 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox35 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox36 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox37 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox38 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox39 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox40 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox41 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox42 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox43 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox44 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox45 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox46 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox47 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox48 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox49 = new System.Windows.Forms.TextBox();
+            this.SwimZonesTextBox50 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TimeSeconds500)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TimeMinutes500)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TimeSeconds3k)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TimeMinutes3k)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.powerBikeFtp)).BeginInit();
+            this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.bikePowerZones.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TimeMinutes500)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TimeSeconds500)).BeginInit();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -207,6 +260,62 @@
             this.tabPage4.Text = "Benchmark Tests";
             this.tabPage4.UseVisualStyleBackColor = true;
             this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(19, 163);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(193, 38);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "Calculate";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(366, 95);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(96, 25);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Seconds";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(145, 95);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(88, 25);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Minutes";
+            // 
+            // TimeSeconds500
+            // 
+            this.TimeSeconds500.Location = new System.Drawing.Point(240, 89);
+            this.TimeSeconds500.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+            this.TimeSeconds500.Name = "TimeSeconds500";
+            this.TimeSeconds500.Size = new System.Drawing.Size(120, 31);
+            this.TimeSeconds500.TabIndex = 14;
+            // 
+            // TimeMinutes500
+            // 
+            this.TimeMinutes500.Location = new System.Drawing.Point(19, 89);
+            this.TimeMinutes500.Name = "TimeMinutes500";
+            this.TimeMinutes500.Size = new System.Drawing.Size(120, 31);
+            this.TimeMinutes500.TabIndex = 13;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(24, 22);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(313, 25);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Swim Time for 500yd Time Trial";
             // 
             // button3
             // 
@@ -318,6 +427,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.tableLayoutPanel3);
             this.tabPage2.Location = new System.Drawing.Point(8, 39);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -1528,61 +1638,587 @@
             this.RunThresholdTextBox32.Size = new System.Drawing.Size(239, 31);
             this.RunThresholdTextBox32.TabIndex = 31;
             // 
-            // label5
+            // tableLayoutPanel3
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 22);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(313, 25);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Swim Time for 500yd Time Trial";
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.ColumnCount = 5;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox50, 4, 9);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox49, 3, 9);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox48, 2, 9);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox47, 1, 9);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox46, 0, 9);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox45, 4, 8);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox44, 3, 8);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox43, 2, 8);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox42, 1, 8);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox41, 0, 8);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox40, 4, 7);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox39, 3, 7);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox38, 2, 7);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox37, 1, 7);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox36, 0, 7);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox35, 4, 6);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox34, 3, 6);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox33, 2, 6);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox32, 1, 6);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox31, 0, 6);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox30, 4, 5);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox29, 3, 5);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox28, 2, 5);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox27, 1, 5);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox26, 0, 5);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox25, 4, 4);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox24, 3, 4);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox23, 2, 4);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox22, 1, 4);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox21, 0, 4);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox20, 4, 3);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox19, 3, 3);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox18, 2, 3);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox17, 1, 3);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox16, 0, 3);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox15, 4, 2);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox14, 3, 2);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox13, 2, 2);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox12, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox11, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox10, 4, 1);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox9, 3, 1);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox8, 2, 1);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox7, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox6, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox5, 4, 0);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox4, 3, 0);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox2, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox1, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.SwimZonesTextBox3, 2, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(106, 36);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 10;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1044, 617);
+            this.tableLayoutPanel3.TabIndex = 0;
             // 
-            // TimeMinutes500
+            // SwimZonesTextBox1
             // 
-            this.TimeMinutes500.Location = new System.Drawing.Point(19, 89);
-            this.TimeMinutes500.Name = "TimeMinutes500";
-            this.TimeMinutes500.Size = new System.Drawing.Size(120, 31);
-            this.TimeMinutes500.TabIndex = 13;
+            this.SwimZonesTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox1.Location = new System.Drawing.Point(3, 3);
+            this.SwimZonesTextBox1.Name = "SwimZonesTextBox1";
+            this.SwimZonesTextBox1.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox1.TabIndex = 0;
+            this.SwimZonesTextBox1.Text = "Distance";
             // 
-            // TimeSeconds500
+            // SwimZonesTextBox2
             // 
-            this.TimeSeconds500.Location = new System.Drawing.Point(240, 89);
-            this.TimeSeconds500.Maximum = new decimal(new int[] {
-            59,
-            0,
-            0,
-            0});
-            this.TimeSeconds500.Name = "TimeSeconds500";
-            this.TimeSeconds500.Size = new System.Drawing.Size(120, 31);
-            this.TimeSeconds500.TabIndex = 14;
+            this.SwimZonesTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox2.Location = new System.Drawing.Point(211, 3);
+            this.SwimZonesTextBox2.Name = "SwimZonesTextBox2";
+            this.SwimZonesTextBox2.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox2.TabIndex = 1;
+            this.SwimZonesTextBox2.Text = "Time (predicted)";
             // 
-            // label6
+            // SwimZonesTextBox3
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(145, 95);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 25);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Minutes";
+            this.SwimZonesTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox3.Location = new System.Drawing.Point(419, 3);
+            this.SwimZonesTextBox3.Name = "SwimZonesTextBox3";
+            this.SwimZonesTextBox3.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox3.TabIndex = 2;
+            this.SwimZonesTextBox3.Text = "Pace/100 yds (lower)";
             // 
-            // label7
+            // SwimZonesTextBox4
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(366, 95);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 25);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Seconds";
+            this.SwimZonesTextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox4.Location = new System.Drawing.Point(627, 3);
+            this.SwimZonesTextBox4.Name = "SwimZonesTextBox4";
+            this.SwimZonesTextBox4.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox4.TabIndex = 3;
+            this.SwimZonesTextBox4.Text = "Pace/100 yds (actual)";
             // 
-            // button2
+            // SwimZonesTextBox5
             // 
-            this.button2.Location = new System.Drawing.Point(19, 163);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(193, 38);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Calculate";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.SwimZonesTextBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox5.Location = new System.Drawing.Point(835, 3);
+            this.SwimZonesTextBox5.Name = "SwimZonesTextBox5";
+            this.SwimZonesTextBox5.Size = new System.Drawing.Size(206, 31);
+            this.SwimZonesTextBox5.TabIndex = 4;
+            this.SwimZonesTextBox5.Text = "Pace/100 yds (upper)";
+            // 
+            // SwimZonesTextBox6
+            // 
+            this.SwimZonesTextBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox6.Location = new System.Drawing.Point(3, 64);
+            this.SwimZonesTextBox6.Name = "SwimZonesTextBox6";
+            this.SwimZonesTextBox6.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox6.TabIndex = 5;
+            // 
+            // SwimZonesTextBox7
+            // 
+            this.SwimZonesTextBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox7.Location = new System.Drawing.Point(211, 64);
+            this.SwimZonesTextBox7.Name = "SwimZonesTextBox7";
+            this.SwimZonesTextBox7.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox7.TabIndex = 6;
+            // 
+            // SwimZonesTextBox8
+            // 
+            this.SwimZonesTextBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox8.Location = new System.Drawing.Point(419, 64);
+            this.SwimZonesTextBox8.Name = "SwimZonesTextBox8";
+            this.SwimZonesTextBox8.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox8.TabIndex = 7;
+            // 
+            // SwimZonesTextBox9
+            // 
+            this.SwimZonesTextBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox9.Location = new System.Drawing.Point(627, 64);
+            this.SwimZonesTextBox9.Name = "SwimZonesTextBox9";
+            this.SwimZonesTextBox9.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox9.TabIndex = 8;
+            // 
+            // SwimZonesTextBox10
+            // 
+            this.SwimZonesTextBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox10.Location = new System.Drawing.Point(835, 64);
+            this.SwimZonesTextBox10.Name = "SwimZonesTextBox10";
+            this.SwimZonesTextBox10.Size = new System.Drawing.Size(206, 31);
+            this.SwimZonesTextBox10.TabIndex = 9;
+            // 
+            // SwimZonesTextBox11
+            // 
+            this.SwimZonesTextBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox11.Location = new System.Drawing.Point(3, 125);
+            this.SwimZonesTextBox11.Name = "SwimZonesTextBox11";
+            this.SwimZonesTextBox11.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox11.TabIndex = 10;
+            // 
+            // SwimZonesTextBox12
+            // 
+            this.SwimZonesTextBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox12.Location = new System.Drawing.Point(211, 125);
+            this.SwimZonesTextBox12.Name = "SwimZonesTextBox12";
+            this.SwimZonesTextBox12.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox12.TabIndex = 11;
+            // 
+            // SwimZonesTextBox13
+            // 
+            this.SwimZonesTextBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox13.Location = new System.Drawing.Point(419, 125);
+            this.SwimZonesTextBox13.Name = "SwimZonesTextBox13";
+            this.SwimZonesTextBox13.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox13.TabIndex = 12;
+            // 
+            // SwimZonesTextBox14
+            // 
+            this.SwimZonesTextBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox14.Location = new System.Drawing.Point(627, 125);
+            this.SwimZonesTextBox14.Name = "SwimZonesTextBox14";
+            this.SwimZonesTextBox14.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox14.TabIndex = 13;
+            // 
+            // SwimZonesTextBox15
+            // 
+            this.SwimZonesTextBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox15.Location = new System.Drawing.Point(835, 125);
+            this.SwimZonesTextBox15.Name = "SwimZonesTextBox15";
+            this.SwimZonesTextBox15.Size = new System.Drawing.Size(206, 31);
+            this.SwimZonesTextBox15.TabIndex = 14;
+            // 
+            // SwimZonesTextBox16
+            // 
+            this.SwimZonesTextBox16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox16.Location = new System.Drawing.Point(3, 186);
+            this.SwimZonesTextBox16.Name = "SwimZonesTextBox16";
+            this.SwimZonesTextBox16.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox16.TabIndex = 15;
+            // 
+            // SwimZonesTextBox17
+            // 
+            this.SwimZonesTextBox17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox17.Location = new System.Drawing.Point(211, 186);
+            this.SwimZonesTextBox17.Name = "SwimZonesTextBox17";
+            this.SwimZonesTextBox17.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox17.TabIndex = 16;
+            // 
+            // SwimZonesTextBox18
+            // 
+            this.SwimZonesTextBox18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox18.Location = new System.Drawing.Point(419, 186);
+            this.SwimZonesTextBox18.Name = "SwimZonesTextBox18";
+            this.SwimZonesTextBox18.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox18.TabIndex = 17;
+            // 
+            // SwimZonesTextBox19
+            // 
+            this.SwimZonesTextBox19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox19.Location = new System.Drawing.Point(627, 186);
+            this.SwimZonesTextBox19.Name = "SwimZonesTextBox19";
+            this.SwimZonesTextBox19.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox19.TabIndex = 18;
+            // 
+            // SwimZonesTextBox20
+            // 
+            this.SwimZonesTextBox20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox20.Location = new System.Drawing.Point(835, 186);
+            this.SwimZonesTextBox20.Name = "SwimZonesTextBox20";
+            this.SwimZonesTextBox20.Size = new System.Drawing.Size(206, 31);
+            this.SwimZonesTextBox20.TabIndex = 19;
+            // 
+            // SwimZonesTextBox21
+            // 
+            this.SwimZonesTextBox21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox21.Location = new System.Drawing.Point(3, 247);
+            this.SwimZonesTextBox21.Name = "SwimZonesTextBox21";
+            this.SwimZonesTextBox21.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox21.TabIndex = 20;
+            // 
+            // SwimZonesTextBox22
+            // 
+            this.SwimZonesTextBox22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox22.Location = new System.Drawing.Point(211, 247);
+            this.SwimZonesTextBox22.Name = "SwimZonesTextBox22";
+            this.SwimZonesTextBox22.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox22.TabIndex = 21;
+            // 
+            // SwimZonesTextBox23
+            // 
+            this.SwimZonesTextBox23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox23.Location = new System.Drawing.Point(419, 247);
+            this.SwimZonesTextBox23.Name = "SwimZonesTextBox23";
+            this.SwimZonesTextBox23.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox23.TabIndex = 22;
+            // 
+            // SwimZonesTextBox24
+            // 
+            this.SwimZonesTextBox24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox24.Location = new System.Drawing.Point(627, 247);
+            this.SwimZonesTextBox24.Name = "SwimZonesTextBox24";
+            this.SwimZonesTextBox24.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox24.TabIndex = 23;
+            // 
+            // SwimZonesTextBox25
+            // 
+            this.SwimZonesTextBox25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox25.Location = new System.Drawing.Point(835, 247);
+            this.SwimZonesTextBox25.Name = "SwimZonesTextBox25";
+            this.SwimZonesTextBox25.Size = new System.Drawing.Size(206, 31);
+            this.SwimZonesTextBox25.TabIndex = 24;
+            // 
+            // SwimZonesTextBox26
+            // 
+            this.SwimZonesTextBox26.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox26.Location = new System.Drawing.Point(3, 308);
+            this.SwimZonesTextBox26.Name = "SwimZonesTextBox26";
+            this.SwimZonesTextBox26.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox26.TabIndex = 25;
+            // 
+            // SwimZonesTextBox27
+            // 
+            this.SwimZonesTextBox27.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox27.Location = new System.Drawing.Point(211, 308);
+            this.SwimZonesTextBox27.Name = "SwimZonesTextBox27";
+            this.SwimZonesTextBox27.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox27.TabIndex = 26;
+            // 
+            // SwimZonesTextBox28
+            // 
+            this.SwimZonesTextBox28.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox28.Location = new System.Drawing.Point(419, 308);
+            this.SwimZonesTextBox28.Name = "SwimZonesTextBox28";
+            this.SwimZonesTextBox28.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox28.TabIndex = 27;
+            // 
+            // SwimZonesTextBox29
+            // 
+            this.SwimZonesTextBox29.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox29.Location = new System.Drawing.Point(627, 308);
+            this.SwimZonesTextBox29.Name = "SwimZonesTextBox29";
+            this.SwimZonesTextBox29.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox29.TabIndex = 28;
+            // 
+            // SwimZonesTextBox30
+            // 
+            this.SwimZonesTextBox30.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox30.Location = new System.Drawing.Point(835, 308);
+            this.SwimZonesTextBox30.Name = "SwimZonesTextBox30";
+            this.SwimZonesTextBox30.Size = new System.Drawing.Size(206, 31);
+            this.SwimZonesTextBox30.TabIndex = 29;
+            // 
+            // SwimZonesTextBox31
+            // 
+            this.SwimZonesTextBox31.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox31.Location = new System.Drawing.Point(3, 369);
+            this.SwimZonesTextBox31.Name = "SwimZonesTextBox31";
+            this.SwimZonesTextBox31.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox31.TabIndex = 30;
+            // 
+            // SwimZonesTextBox32
+            // 
+            this.SwimZonesTextBox32.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox32.Location = new System.Drawing.Point(211, 369);
+            this.SwimZonesTextBox32.Name = "SwimZonesTextBox32";
+            this.SwimZonesTextBox32.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox32.TabIndex = 31;
+            // 
+            // SwimZonesTextBox33
+            // 
+            this.SwimZonesTextBox33.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox33.Location = new System.Drawing.Point(419, 369);
+            this.SwimZonesTextBox33.Name = "SwimZonesTextBox33";
+            this.SwimZonesTextBox33.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox33.TabIndex = 32;
+            // 
+            // SwimZonesTextBox34
+            // 
+            this.SwimZonesTextBox34.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox34.Location = new System.Drawing.Point(627, 369);
+            this.SwimZonesTextBox34.Name = "SwimZonesTextBox34";
+            this.SwimZonesTextBox34.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox34.TabIndex = 33;
+            // 
+            // SwimZonesTextBox35
+            // 
+            this.SwimZonesTextBox35.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox35.Location = new System.Drawing.Point(835, 369);
+            this.SwimZonesTextBox35.Name = "SwimZonesTextBox35";
+            this.SwimZonesTextBox35.Size = new System.Drawing.Size(206, 31);
+            this.SwimZonesTextBox35.TabIndex = 34;
+            // 
+            // SwimZonesTextBox36
+            // 
+            this.SwimZonesTextBox36.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox36.Location = new System.Drawing.Point(3, 430);
+            this.SwimZonesTextBox36.Name = "SwimZonesTextBox36";
+            this.SwimZonesTextBox36.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox36.TabIndex = 35;
+            // 
+            // SwimZonesTextBox37
+            // 
+            this.SwimZonesTextBox37.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox37.Location = new System.Drawing.Point(211, 430);
+            this.SwimZonesTextBox37.Name = "SwimZonesTextBox37";
+            this.SwimZonesTextBox37.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox37.TabIndex = 36;
+            // 
+            // SwimZonesTextBox38
+            // 
+            this.SwimZonesTextBox38.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox38.Location = new System.Drawing.Point(419, 430);
+            this.SwimZonesTextBox38.Name = "SwimZonesTextBox38";
+            this.SwimZonesTextBox38.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox38.TabIndex = 37;
+            // 
+            // SwimZonesTextBox39
+            // 
+            this.SwimZonesTextBox39.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox39.Location = new System.Drawing.Point(627, 430);
+            this.SwimZonesTextBox39.Name = "SwimZonesTextBox39";
+            this.SwimZonesTextBox39.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox39.TabIndex = 38;
+            // 
+            // SwimZonesTextBox40
+            // 
+            this.SwimZonesTextBox40.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox40.Location = new System.Drawing.Point(835, 430);
+            this.SwimZonesTextBox40.Name = "SwimZonesTextBox40";
+            this.SwimZonesTextBox40.Size = new System.Drawing.Size(206, 31);
+            this.SwimZonesTextBox40.TabIndex = 39;
+            // 
+            // SwimZonesTextBox41
+            // 
+            this.SwimZonesTextBox41.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox41.Location = new System.Drawing.Point(3, 491);
+            this.SwimZonesTextBox41.Name = "SwimZonesTextBox41";
+            this.SwimZonesTextBox41.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox41.TabIndex = 40;
+            // 
+            // SwimZonesTextBox42
+            // 
+            this.SwimZonesTextBox42.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox42.Location = new System.Drawing.Point(211, 491);
+            this.SwimZonesTextBox42.Name = "SwimZonesTextBox42";
+            this.SwimZonesTextBox42.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox42.TabIndex = 41;
+            // 
+            // SwimZonesTextBox43
+            // 
+            this.SwimZonesTextBox43.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox43.Location = new System.Drawing.Point(419, 491);
+            this.SwimZonesTextBox43.Name = "SwimZonesTextBox43";
+            this.SwimZonesTextBox43.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox43.TabIndex = 42;
+            // 
+            // SwimZonesTextBox44
+            // 
+            this.SwimZonesTextBox44.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox44.Location = new System.Drawing.Point(627, 491);
+            this.SwimZonesTextBox44.Name = "SwimZonesTextBox44";
+            this.SwimZonesTextBox44.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox44.TabIndex = 43;
+            // 
+            // SwimZonesTextBox45
+            // 
+            this.SwimZonesTextBox45.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox45.Location = new System.Drawing.Point(835, 491);
+            this.SwimZonesTextBox45.Name = "SwimZonesTextBox45";
+            this.SwimZonesTextBox45.Size = new System.Drawing.Size(206, 31);
+            this.SwimZonesTextBox45.TabIndex = 44;
+            // 
+            // SwimZonesTextBox46
+            // 
+            this.SwimZonesTextBox46.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox46.Location = new System.Drawing.Point(3, 552);
+            this.SwimZonesTextBox46.Name = "SwimZonesTextBox46";
+            this.SwimZonesTextBox46.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox46.TabIndex = 45;
+            // 
+            // SwimZonesTextBox47
+            // 
+            this.SwimZonesTextBox47.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox47.Location = new System.Drawing.Point(211, 552);
+            this.SwimZonesTextBox47.Name = "SwimZonesTextBox47";
+            this.SwimZonesTextBox47.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox47.TabIndex = 46;
+            // 
+            // SwimZonesTextBox48
+            // 
+            this.SwimZonesTextBox48.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox48.Location = new System.Drawing.Point(419, 552);
+            this.SwimZonesTextBox48.Name = "SwimZonesTextBox48";
+            this.SwimZonesTextBox48.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox48.TabIndex = 47;
+            // 
+            // SwimZonesTextBox49
+            // 
+            this.SwimZonesTextBox49.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox49.Location = new System.Drawing.Point(627, 552);
+            this.SwimZonesTextBox49.Name = "SwimZonesTextBox49";
+            this.SwimZonesTextBox49.Size = new System.Drawing.Size(202, 31);
+            this.SwimZonesTextBox49.TabIndex = 48;
+            // 
+            // SwimZonesTextBox50
+            // 
+            this.SwimZonesTextBox50.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SwimZonesTextBox50.Location = new System.Drawing.Point(835, 552);
+            this.SwimZonesTextBox50.Name = "SwimZonesTextBox50";
+            this.SwimZonesTextBox50.Size = new System.Drawing.Size(206, 31);
+            this.SwimZonesTextBox50.TabIndex = 49;
             // 
             // TrainingForm
             // 
@@ -1595,9 +2231,12 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TimeSeconds500)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TimeMinutes500)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TimeSeconds3k)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TimeMinutes3k)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.powerBikeFtp)).EndInit();
+            this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.bikePowerZones.ResumeLayout(false);
             this.bikePowerZones.PerformLayout();
@@ -1607,8 +2246,8 @@
             this.tabPage5.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TimeMinutes500)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TimeSeconds500)).EndInit();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1737,6 +2376,57 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.NumericUpDown TimeSeconds500;
         private System.Windows.Forms.NumericUpDown TimeMinutes500;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.TextBox SwimZonesTextBox50;
+        private System.Windows.Forms.TextBox SwimZonesTextBox49;
+        private System.Windows.Forms.TextBox SwimZonesTextBox48;
+        private System.Windows.Forms.TextBox SwimZonesTextBox47;
+        private System.Windows.Forms.TextBox SwimZonesTextBox46;
+        private System.Windows.Forms.TextBox SwimZonesTextBox45;
+        private System.Windows.Forms.TextBox SwimZonesTextBox44;
+        private System.Windows.Forms.TextBox SwimZonesTextBox43;
+        private System.Windows.Forms.TextBox SwimZonesTextBox42;
+        private System.Windows.Forms.TextBox SwimZonesTextBox41;
+        private System.Windows.Forms.TextBox SwimZonesTextBox40;
+        private System.Windows.Forms.TextBox SwimZonesTextBox39;
+        private System.Windows.Forms.TextBox SwimZonesTextBox38;
+        private System.Windows.Forms.TextBox SwimZonesTextBox37;
+        private System.Windows.Forms.TextBox SwimZonesTextBox36;
+        private System.Windows.Forms.TextBox SwimZonesTextBox35;
+        private System.Windows.Forms.TextBox SwimZonesTextBox34;
+        private System.Windows.Forms.TextBox SwimZonesTextBox33;
+        private System.Windows.Forms.TextBox SwimZonesTextBox32;
+        private System.Windows.Forms.TextBox SwimZonesTextBox31;
+        private System.Windows.Forms.TextBox SwimZonesTextBox30;
+        private System.Windows.Forms.TextBox SwimZonesTextBox29;
+        private System.Windows.Forms.TextBox SwimZonesTextBox28;
+        private System.Windows.Forms.TextBox SwimZonesTextBox27;
+        private System.Windows.Forms.TextBox SwimZonesTextBox26;
+        private System.Windows.Forms.TextBox SwimZonesTextBox25;
+        private System.Windows.Forms.TextBox SwimZonesTextBox24;
+        private System.Windows.Forms.TextBox SwimZonesTextBox23;
+        private System.Windows.Forms.TextBox SwimZonesTextBox22;
+        private System.Windows.Forms.TextBox SwimZonesTextBox21;
+        private System.Windows.Forms.TextBox SwimZonesTextBox20;
+        private System.Windows.Forms.TextBox SwimZonesTextBox19;
+        private System.Windows.Forms.TextBox SwimZonesTextBox18;
+        private System.Windows.Forms.TextBox SwimZonesTextBox17;
+        private System.Windows.Forms.TextBox SwimZonesTextBox16;
+        private System.Windows.Forms.TextBox SwimZonesTextBox15;
+        private System.Windows.Forms.TextBox SwimZonesTextBox14;
+        private System.Windows.Forms.TextBox SwimZonesTextBox13;
+        private System.Windows.Forms.TextBox SwimZonesTextBox12;
+        private System.Windows.Forms.TextBox SwimZonesTextBox11;
+        private System.Windows.Forms.TextBox SwimZonesTextBox10;
+        private System.Windows.Forms.TextBox SwimZonesTextBox9;
+        private System.Windows.Forms.TextBox SwimZonesTextBox8;
+        private System.Windows.Forms.TextBox SwimZonesTextBox7;
+        private System.Windows.Forms.TextBox SwimZonesTextBox6;
+        private System.Windows.Forms.TextBox SwimZonesTextBox5;
+        private System.Windows.Forms.TextBox SwimZonesTextBox4;
+        private System.Windows.Forms.TextBox SwimZonesTextBox2;
+        private System.Windows.Forms.TextBox SwimZonesTextBox1;
+        private System.Windows.Forms.TextBox SwimZonesTextBox3;
     }
 }
 

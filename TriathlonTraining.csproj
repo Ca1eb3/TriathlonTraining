@@ -51,6 +51,7 @@
     <Compile Include="RaceTimePredictor.cs" />
     <Compile Include="RunDistancePaceZones.cs" />
     <Compile Include="RunThresholdPaceZones.cs" />
+    <Compile Include="SwimPaceZones.cs" />
     <Compile Include="TimeConverter.cs" />
     <Compile Include="TrainingForm.cs">
       <SubType>Form</SubType>

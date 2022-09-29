@@ -14,7 +14,6 @@ namespace TriathlonTraining
 {
     public partial class TrainingForm : Form
     {
-        BikePowerZones powerZones = new BikePowerZones();
         // Methods
         public TrainingForm()
         {
@@ -32,6 +31,7 @@ namespace TriathlonTraining
         // Calculates bike zones after clicking the calculate button beneath FTP benchmark
         private void button1_Click(object sender, EventArgs e)
         {
+            BikePowerZones powerZones = new BikePowerZones();
             powerZones.BikeFtpPower = Convert.ToInt32(powerBikeFtp.Text);
             bikeZonesTextBox4.Text = Convert.ToString(powerZones.ZonesArray(0, 0));
             bikeZonesTextBox5.Text = Convert.ToString(powerZones.ZonesArray(1, 0));
@@ -225,6 +225,8 @@ namespace TriathlonTraining
         // Calculates swim zones after clicking the calculate button beneath 500yd benchmark
         private void button2_Click(object sender, EventArgs e)
         {
+            // 500 yard zone
+            SwimPaceZones SwimZone500 = new SwimPaceZones(Convert.ToInt32(TimeMinutes500.Value), Convert.ToInt32(TimeSeconds500.Value), 500);
 
         }
     }
