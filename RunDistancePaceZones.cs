@@ -35,11 +35,11 @@ namespace TriathlonTraining
         {
             this.DistanceMeasured = DistanceMeasured;
         }
-        public RunDistancePaceZones(int RunMinutes, int RunSeconds, double DistanceMeasured) : this(0, RunMinutes, RunSeconds, DistanceMeasured)
+        public RunDistancePaceZones(int Minutes, int Seconds, double DistanceMeasured) : this(0, Minutes, Seconds, DistanceMeasured)
         {
 
         }
-        public RunDistancePaceZones( int RunSeconds, double DistanceMeasured) : this(0, 0, RunSeconds, DistanceMeasured)
+        public RunDistancePaceZones( int Seconds, double DistanceMeasured) : this(0, 0, Seconds, DistanceMeasured)
         {
 
         }

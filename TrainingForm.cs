@@ -54,7 +54,6 @@ namespace TriathlonTraining
             bikeZonesTextBox22.Text = Convert.ToString(powerZones.ZonesArray(0, 6));
             bikeZonesTextBox23.Text = Convert.ToString(powerZones.ZonesArray(1, 6));
             bikeZonesTextBox24.Text = Convert.ToString(powerZones.ZonesArray(2, 6));
-            // testValues.Text = Convert.ToString(powerZones.ZonesArray());
         }
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         { 
@@ -96,6 +95,7 @@ namespace TriathlonTraining
         // Calculates run zones after clicking the calculate button beneath 3k benchmark
         private void button3_Click(object sender, EventArgs e)
         {
+            // Run Distance Pace Zones
             // 3000 Pace Zones
             RunDistancePaceZones Zone3000 = new RunDistancePaceZones(Convert.ToInt32(TimeMinutes3k.Value), Convert.ToInt32(TimeSeconds3k.Value), 3000);
             RunningZonesTextBox16.Text = Convert.ToString(Zone3000.DistanceMeasured);
@@ -172,6 +172,60 @@ namespace TriathlonTraining
             RunningZonesTextBox38.Text = Zone42195.PaceString(Zone42195.PaceLower());
             RunningZonesTextBox39.Text = Zone42195.PaceString(Zone42195.PaceActual());
             RunningZonesTextBox40.Text = Zone42195.PaceString(Zone42195.PaceUpper());
+
+            // Run Threshold Pace Zones
+            // T1 Zones
+            RunThresholdPaceZones T1 = new RunThresholdPaceZones("T1-Detraining", 1.7, Zone3000.Hours, Zone3000.Minutes, Zone3000.Seconds);
+            RunThresholdTextBox5.Text = T1.ZoneName;
+            RunThresholdTextBox6.Text = T1.PaceString(T1.PaceLower());
+            RunThresholdTextBox7.Text = T1.PaceString(T1.PaceActual());
+            RunThresholdTextBox8.Text = T1.PaceString(T1 .PaceUpper());
+            // T2 Zones
+            RunThresholdPaceZones T2 = new RunThresholdPaceZones("T2-Low Aerobic", 1.5, Zone3000.Hours, Zone3000.Minutes, Zone3000.Seconds);
+            RunThresholdTextBox9.Text = T2.ZoneName;
+            RunThresholdTextBox10.Text = T2.PaceString(T2.PaceLower());
+            RunThresholdTextBox11.Text = T2.PaceString(T2.PaceActual());
+            RunThresholdTextBox12.Text = T2.PaceString(T2.PaceUpper());
+            // T3 Zones
+            RunThresholdPaceZones T3 = new RunThresholdPaceZones("T3-Mid Aerobic", 1.3, Zone3000.Hours, Zone3000.Minutes, Zone3000.Seconds);
+            RunThresholdTextBox13.Text = T3.ZoneName;
+            RunThresholdTextBox14.Text = T3.PaceString(T3.PaceLower());
+            RunThresholdTextBox15.Text = T3.PaceString(T3.PaceActual());
+            RunThresholdTextBox16.Text = T3.PaceString(T3.PaceUpper());
+            // T4 Zones
+            RunThresholdPaceZones T4 = new RunThresholdPaceZones("T4-High Aerobic", Zone3000.Hours, Zone3000.Minutes, Zone3000.Seconds);
+            RunThresholdTextBox17.Text = T4.ZoneName;
+            RunThresholdTextBox18.Text = T4.PaceString(Zone21097.PaceLower());
+            RunThresholdTextBox19.Text = T4.PaceString((Zone21097.PaceLower() + Zone42195.PaceUpper())/2);
+            RunThresholdTextBox20.Text = T4.PaceString(Zone42195.PaceUpper());
+            // T5 Zones
+            RunThresholdPaceZones T5 = new RunThresholdPaceZones("T5-Aerobic Threshold", Zone3000.Hours, Zone3000.Minutes, Zone3000.Seconds);
+            RunThresholdTextBox21.Text = T5.ZoneName;
+            RunThresholdTextBox22.Text = T5.PaceString(Zone5000.PaceLower());
+            RunThresholdTextBox23.Text = T5.PaceString((Zone10000.PaceUpper() + Zone5000.PaceLower()) / 2);
+            RunThresholdTextBox24.Text = T5.PaceString(Zone10000.PaceUpper());
+            // T6 Zones
+            RunThresholdPaceZones T6 = new RunThresholdPaceZones("T6-Anaerobic Threshold", 1.125, Zone800.Hours, Zone800.Minutes, Zone800.Seconds);
+            RunThresholdTextBox25.Text = T6.ZoneName;
+            RunThresholdTextBox26.Text = T6.PaceString(T6.PaceLower() * 3);
+            RunThresholdTextBox27.Text = T6.PaceString(T6.PaceActual() * 3);
+            RunThresholdTextBox28.Text = T6.PaceString(T6.PaceUpper() * 3);
+            // T7 Zones
+            RunThresholdPaceZones T7 = new RunThresholdPaceZones("T7-Neuromuscular Threshold", 1, Zone800.Hours, Zone800.Minutes, Zone800.Seconds);
+            RunThresholdTextBox29.Text = T7.ZoneName;
+            RunThresholdTextBox30.Text = T7.PaceString(T7.PaceLower() * 3);
+            RunThresholdTextBox31.Text = T7.PaceString(T7.PaceActual() * 3);
+            RunThresholdTextBox32.Text = T7.PaceString(T7.PaceUpper() * 3);
+        }
+
+        private void ftpPower_Click(object sender, EventArgs e)
+        {
+
+        }
+        // Calculates swim zones after clicking the calculate button beneath 500yd benchmark
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

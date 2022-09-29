@@ -42,6 +42,10 @@ namespace TriathlonTraining
         public RunThresholdPaceZones(string ZoneName, double PaceFactor, int RunSeconds) : this(ZoneName, PaceFactor, 0, 0, RunSeconds)
         {
 
+        } 
+        public RunThresholdPaceZones(string ZoneName, int RunHours, int RunMinutes, int RunSeconds) : this(ZoneName, 0.00, RunHours, RunMinutes, RunSeconds)
+        {
+
         }
 
         // methods
@@ -51,10 +55,10 @@ namespace TriathlonTraining
             message += $"Time: {Hours}:{Minutes}:{Seconds}\n";
             return message;
         }
-        // incomplete method
         public override int PaceActual()
         {
-            int pace = Convert.ToInt32(TimeConverter.ConvertedToSeconds(Hours, Minutes, Seconds) * PaceFactor);
+            double paceDouble = TimeConverter.ConvertedToSeconds(Hours, Minutes, Seconds) / 3 * PaceFactor;
+            int pace = Convert.ToInt32(paceDouble);
             return pace;
         }
     }

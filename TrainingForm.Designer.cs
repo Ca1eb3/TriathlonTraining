@@ -110,6 +110,46 @@
             this.RunningZonesTextBox3 = new System.Windows.Forms.TextBox();
             this.RunningZonesTextBox2 = new System.Windows.Forms.TextBox();
             this.RunningZonesTextBox1 = new System.Windows.Forms.TextBox();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.RunThresholdTextBox28 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox27 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox26 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox25 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox24 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox23 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox22 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox21 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox20 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox19 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox18 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox17 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox16 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox15 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox14 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox13 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox12 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox11 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox10 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox9 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox8 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox7 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox6 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox5 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox4 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox3 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox2 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox1 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox29 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox30 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox31 = new System.Windows.Forms.TextBox();
+            this.RunThresholdTextBox32 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.TimeMinutes500 = new System.Windows.Forms.NumericUpDown();
+            this.TimeSeconds500 = new System.Windows.Forms.NumericUpDown();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TimeSeconds3k)).BeginInit();
@@ -119,6 +159,10 @@
             this.bikePowerZones.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TimeMinutes500)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TimeSeconds500)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -130,6 +174,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -138,6 +183,12 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.button2);
+            this.tabPage4.Controls.Add(this.label7);
+            this.tabPage4.Controls.Add(this.label6);
+            this.tabPage4.Controls.Add(this.TimeSeconds500);
+            this.tabPage4.Controls.Add(this.TimeMinutes500);
+            this.tabPage4.Controls.Add(this.label5);
             this.tabPage4.Controls.Add(this.button3);
             this.tabPage4.Controls.Add(this.label4);
             this.tabPage4.Controls.Add(this.TimeSeconds3k);
@@ -159,7 +210,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(59, 440);
+            this.button3.Location = new System.Drawing.Point(29, 526);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(193, 38);
             this.button3.TabIndex = 11;
@@ -170,7 +221,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(406, 378);
+            this.label4.Location = new System.Drawing.Point(376, 464);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(96, 25);
             this.label4.TabIndex = 9;
@@ -178,7 +229,7 @@
             // 
             // TimeSeconds3k
             // 
-            this.TimeSeconds3k.Location = new System.Drawing.Point(280, 371);
+            this.TimeSeconds3k.Location = new System.Drawing.Point(250, 457);
             this.TimeSeconds3k.Maximum = new decimal(new int[] {
             59,
             0,
@@ -192,7 +243,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(185, 378);
+            this.label3.Location = new System.Drawing.Point(155, 464);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 25);
             this.label3.TabIndex = 7;
@@ -200,7 +251,7 @@
             // 
             // TimeMinutes3k
             // 
-            this.TimeMinutes3k.Location = new System.Drawing.Point(59, 372);
+            this.TimeMinutes3k.Location = new System.Drawing.Point(29, 458);
             this.TimeMinutes3k.Name = "TimeMinutes3k";
             this.TimeMinutes3k.Size = new System.Drawing.Size(120, 31);
             this.TimeMinutes3k.TabIndex = 6;
@@ -208,7 +259,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(59, 324);
+            this.label2.Location = new System.Drawing.Point(29, 410);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(265, 25);
             this.label2.TabIndex = 5;
@@ -218,14 +269,14 @@
             // testValues
             // 
             this.testValues.AutoSize = true;
-            this.testValues.Location = new System.Drawing.Point(59, 324);
+            this.testValues.Location = new System.Drawing.Point(47, 518);
             this.testValues.Name = "testValues";
             this.testValues.Size = new System.Drawing.Size(0, 25);
             this.testValues.TabIndex = 4;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(59, 247);
+            this.button1.Location = new System.Drawing.Point(29, 333);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(193, 38);
             this.button1.TabIndex = 3;
@@ -236,7 +287,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(185, 179);
+            this.label1.Location = new System.Drawing.Point(155, 265);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 25);
             this.label1.TabIndex = 2;
@@ -246,15 +297,16 @@
             // ftpPower
             // 
             this.ftpPower.AutoSize = true;
-            this.ftpPower.Location = new System.Drawing.Point(54, 135);
+            this.ftpPower.Location = new System.Drawing.Point(24, 221);
             this.ftpPower.Name = "ftpPower";
             this.ftpPower.Size = new System.Drawing.Size(166, 25);
             this.ftpPower.TabIndex = 1;
             this.ftpPower.Text = "Bike FTP Power";
+            this.ftpPower.Click += new System.EventHandler(this.ftpPower_Click);
             // 
             // powerBikeFtp
             // 
-            this.powerBikeFtp.Location = new System.Drawing.Point(59, 173);
+            this.powerBikeFtp.Location = new System.Drawing.Point(29, 259);
             this.powerBikeFtp.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -271,7 +323,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(1268, 675);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Swimming Metrics";
+            this.tabPage2.Text = "Swim Pace Zones";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabPage3
@@ -281,7 +333,7 @@
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(1268, 675);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Bike Metrics";
+            this.tabPage3.Text = "Bike Power Zones";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // bikePowerZones
@@ -609,7 +661,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(1268, 675);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Running Metrics";
+            this.tabPage1.Text = "Run Distance Zones";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel1
@@ -1085,6 +1137,453 @@
             this.RunningZonesTextBox1.Text = "Distance (m)";
             this.RunningZonesTextBox1.TextChanged += new System.EventHandler(this.RunningZonesTextBox1_TextChanged);
             // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.tableLayoutPanel2);
+            this.tabPage5.Location = new System.Drawing.Point(8, 39);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1268, 675);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Run Threshold Zones";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.ColumnCount = 4;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox28, 3, 6);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox27, 2, 6);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox26, 1, 6);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox25, 0, 6);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox24, 3, 5);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox23, 2, 5);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox22, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox21, 0, 5);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox20, 3, 4);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox19, 2, 4);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox18, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox17, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox16, 3, 3);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox15, 2, 3);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox14, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox13, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox12, 3, 2);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox11, 2, 2);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox10, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox9, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox8, 3, 1);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox7, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox6, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox5, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox4, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox3, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox2, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox29, 0, 7);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox30, 1, 7);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox31, 2, 7);
+            this.tableLayoutPanel2.Controls.Add(this.RunThresholdTextBox32, 3, 7);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(125, 93);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 8;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(977, 528);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // RunThresholdTextBox28
+            // 
+            this.RunThresholdTextBox28.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox28.Location = new System.Drawing.Point(735, 399);
+            this.RunThresholdTextBox28.Name = "RunThresholdTextBox28";
+            this.RunThresholdTextBox28.Size = new System.Drawing.Size(239, 31);
+            this.RunThresholdTextBox28.TabIndex = 27;
+            // 
+            // RunThresholdTextBox27
+            // 
+            this.RunThresholdTextBox27.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox27.Location = new System.Drawing.Point(491, 399);
+            this.RunThresholdTextBox27.Name = "RunThresholdTextBox27";
+            this.RunThresholdTextBox27.Size = new System.Drawing.Size(238, 31);
+            this.RunThresholdTextBox27.TabIndex = 26;
+            // 
+            // RunThresholdTextBox26
+            // 
+            this.RunThresholdTextBox26.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox26.Location = new System.Drawing.Point(247, 399);
+            this.RunThresholdTextBox26.Name = "RunThresholdTextBox26";
+            this.RunThresholdTextBox26.Size = new System.Drawing.Size(238, 31);
+            this.RunThresholdTextBox26.TabIndex = 25;
+            // 
+            // RunThresholdTextBox25
+            // 
+            this.RunThresholdTextBox25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox25.Location = new System.Drawing.Point(3, 399);
+            this.RunThresholdTextBox25.Name = "RunThresholdTextBox25";
+            this.RunThresholdTextBox25.Size = new System.Drawing.Size(238, 31);
+            this.RunThresholdTextBox25.TabIndex = 24;
+            // 
+            // RunThresholdTextBox24
+            // 
+            this.RunThresholdTextBox24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox24.Location = new System.Drawing.Point(735, 333);
+            this.RunThresholdTextBox24.Name = "RunThresholdTextBox24";
+            this.RunThresholdTextBox24.Size = new System.Drawing.Size(239, 31);
+            this.RunThresholdTextBox24.TabIndex = 23;
+            // 
+            // RunThresholdTextBox23
+            // 
+            this.RunThresholdTextBox23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox23.Location = new System.Drawing.Point(491, 333);
+            this.RunThresholdTextBox23.Name = "RunThresholdTextBox23";
+            this.RunThresholdTextBox23.Size = new System.Drawing.Size(238, 31);
+            this.RunThresholdTextBox23.TabIndex = 22;
+            // 
+            // RunThresholdTextBox22
+            // 
+            this.RunThresholdTextBox22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox22.Location = new System.Drawing.Point(247, 333);
+            this.RunThresholdTextBox22.Name = "RunThresholdTextBox22";
+            this.RunThresholdTextBox22.Size = new System.Drawing.Size(238, 31);
+            this.RunThresholdTextBox22.TabIndex = 21;
+            // 
+            // RunThresholdTextBox21
+            // 
+            this.RunThresholdTextBox21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox21.Location = new System.Drawing.Point(3, 333);
+            this.RunThresholdTextBox21.Name = "RunThresholdTextBox21";
+            this.RunThresholdTextBox21.Size = new System.Drawing.Size(238, 31);
+            this.RunThresholdTextBox21.TabIndex = 20;
+            // 
+            // RunThresholdTextBox20
+            // 
+            this.RunThresholdTextBox20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox20.Location = new System.Drawing.Point(735, 267);
+            this.RunThresholdTextBox20.Name = "RunThresholdTextBox20";
+            this.RunThresholdTextBox20.Size = new System.Drawing.Size(239, 31);
+            this.RunThresholdTextBox20.TabIndex = 19;
+            // 
+            // RunThresholdTextBox19
+            // 
+            this.RunThresholdTextBox19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox19.Location = new System.Drawing.Point(491, 267);
+            this.RunThresholdTextBox19.Name = "RunThresholdTextBox19";
+            this.RunThresholdTextBox19.Size = new System.Drawing.Size(238, 31);
+            this.RunThresholdTextBox19.TabIndex = 18;
+            // 
+            // RunThresholdTextBox18
+            // 
+            this.RunThresholdTextBox18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox18.Location = new System.Drawing.Point(247, 267);
+            this.RunThresholdTextBox18.Name = "RunThresholdTextBox18";
+            this.RunThresholdTextBox18.Size = new System.Drawing.Size(238, 31);
+            this.RunThresholdTextBox18.TabIndex = 17;
+            // 
+            // RunThresholdTextBox17
+            // 
+            this.RunThresholdTextBox17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox17.Location = new System.Drawing.Point(3, 267);
+            this.RunThresholdTextBox17.Name = "RunThresholdTextBox17";
+            this.RunThresholdTextBox17.Size = new System.Drawing.Size(238, 31);
+            this.RunThresholdTextBox17.TabIndex = 16;
+            // 
+            // RunThresholdTextBox16
+            // 
+            this.RunThresholdTextBox16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox16.Location = new System.Drawing.Point(735, 201);
+            this.RunThresholdTextBox16.Name = "RunThresholdTextBox16";
+            this.RunThresholdTextBox16.Size = new System.Drawing.Size(239, 31);
+            this.RunThresholdTextBox16.TabIndex = 15;
+            // 
+            // RunThresholdTextBox15
+            // 
+            this.RunThresholdTextBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox15.Location = new System.Drawing.Point(491, 201);
+            this.RunThresholdTextBox15.Name = "RunThresholdTextBox15";
+            this.RunThresholdTextBox15.Size = new System.Drawing.Size(238, 31);
+            this.RunThresholdTextBox15.TabIndex = 14;
+            // 
+            // RunThresholdTextBox14
+            // 
+            this.RunThresholdTextBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox14.Location = new System.Drawing.Point(247, 201);
+            this.RunThresholdTextBox14.Name = "RunThresholdTextBox14";
+            this.RunThresholdTextBox14.Size = new System.Drawing.Size(238, 31);
+            this.RunThresholdTextBox14.TabIndex = 13;
+            // 
+            // RunThresholdTextBox13
+            // 
+            this.RunThresholdTextBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox13.Location = new System.Drawing.Point(3, 201);
+            this.RunThresholdTextBox13.Name = "RunThresholdTextBox13";
+            this.RunThresholdTextBox13.Size = new System.Drawing.Size(238, 31);
+            this.RunThresholdTextBox13.TabIndex = 12;
+            // 
+            // RunThresholdTextBox12
+            // 
+            this.RunThresholdTextBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox12.Location = new System.Drawing.Point(735, 135);
+            this.RunThresholdTextBox12.Name = "RunThresholdTextBox12";
+            this.RunThresholdTextBox12.Size = new System.Drawing.Size(239, 31);
+            this.RunThresholdTextBox12.TabIndex = 11;
+            // 
+            // RunThresholdTextBox11
+            // 
+            this.RunThresholdTextBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox11.Location = new System.Drawing.Point(491, 135);
+            this.RunThresholdTextBox11.Name = "RunThresholdTextBox11";
+            this.RunThresholdTextBox11.Size = new System.Drawing.Size(238, 31);
+            this.RunThresholdTextBox11.TabIndex = 10;
+            // 
+            // RunThresholdTextBox10
+            // 
+            this.RunThresholdTextBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox10.Location = new System.Drawing.Point(247, 135);
+            this.RunThresholdTextBox10.Name = "RunThresholdTextBox10";
+            this.RunThresholdTextBox10.Size = new System.Drawing.Size(238, 31);
+            this.RunThresholdTextBox10.TabIndex = 9;
+            // 
+            // RunThresholdTextBox9
+            // 
+            this.RunThresholdTextBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox9.Location = new System.Drawing.Point(3, 135);
+            this.RunThresholdTextBox9.Name = "RunThresholdTextBox9";
+            this.RunThresholdTextBox9.Size = new System.Drawing.Size(238, 31);
+            this.RunThresholdTextBox9.TabIndex = 8;
+            // 
+            // RunThresholdTextBox8
+            // 
+            this.RunThresholdTextBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox8.Location = new System.Drawing.Point(735, 69);
+            this.RunThresholdTextBox8.Name = "RunThresholdTextBox8";
+            this.RunThresholdTextBox8.Size = new System.Drawing.Size(239, 31);
+            this.RunThresholdTextBox8.TabIndex = 7;
+            // 
+            // RunThresholdTextBox7
+            // 
+            this.RunThresholdTextBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox7.Location = new System.Drawing.Point(491, 69);
+            this.RunThresholdTextBox7.Name = "RunThresholdTextBox7";
+            this.RunThresholdTextBox7.Size = new System.Drawing.Size(238, 31);
+            this.RunThresholdTextBox7.TabIndex = 6;
+            // 
+            // RunThresholdTextBox6
+            // 
+            this.RunThresholdTextBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox6.Location = new System.Drawing.Point(247, 69);
+            this.RunThresholdTextBox6.Name = "RunThresholdTextBox6";
+            this.RunThresholdTextBox6.Size = new System.Drawing.Size(238, 31);
+            this.RunThresholdTextBox6.TabIndex = 5;
+            // 
+            // RunThresholdTextBox5
+            // 
+            this.RunThresholdTextBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox5.Location = new System.Drawing.Point(3, 69);
+            this.RunThresholdTextBox5.Name = "RunThresholdTextBox5";
+            this.RunThresholdTextBox5.Size = new System.Drawing.Size(238, 31);
+            this.RunThresholdTextBox5.TabIndex = 4;
+            // 
+            // RunThresholdTextBox4
+            // 
+            this.RunThresholdTextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox4.Location = new System.Drawing.Point(735, 3);
+            this.RunThresholdTextBox4.Name = "RunThresholdTextBox4";
+            this.RunThresholdTextBox4.Size = new System.Drawing.Size(239, 31);
+            this.RunThresholdTextBox4.TabIndex = 3;
+            this.RunThresholdTextBox4.Text = "Pace/km (upper)";
+            // 
+            // RunThresholdTextBox3
+            // 
+            this.RunThresholdTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox3.Location = new System.Drawing.Point(491, 3);
+            this.RunThresholdTextBox3.Name = "RunThresholdTextBox3";
+            this.RunThresholdTextBox3.Size = new System.Drawing.Size(238, 31);
+            this.RunThresholdTextBox3.TabIndex = 2;
+            this.RunThresholdTextBox3.Text = "Pace/km (actual)";
+            // 
+            // RunThresholdTextBox2
+            // 
+            this.RunThresholdTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox2.Location = new System.Drawing.Point(247, 3);
+            this.RunThresholdTextBox2.Name = "RunThresholdTextBox2";
+            this.RunThresholdTextBox2.Size = new System.Drawing.Size(238, 31);
+            this.RunThresholdTextBox2.TabIndex = 1;
+            this.RunThresholdTextBox2.Text = "Pace/km (lower)";
+            // 
+            // RunThresholdTextBox1
+            // 
+            this.RunThresholdTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox1.Location = new System.Drawing.Point(3, 3);
+            this.RunThresholdTextBox1.Name = "RunThresholdTextBox1";
+            this.RunThresholdTextBox1.Size = new System.Drawing.Size(238, 31);
+            this.RunThresholdTextBox1.TabIndex = 0;
+            this.RunThresholdTextBox1.Text = "Zone";
+            // 
+            // RunThresholdTextBox29
+            // 
+            this.RunThresholdTextBox29.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox29.Location = new System.Drawing.Point(3, 465);
+            this.RunThresholdTextBox29.Name = "RunThresholdTextBox29";
+            this.RunThresholdTextBox29.Size = new System.Drawing.Size(238, 31);
+            this.RunThresholdTextBox29.TabIndex = 28;
+            // 
+            // RunThresholdTextBox30
+            // 
+            this.RunThresholdTextBox30.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox30.Location = new System.Drawing.Point(247, 465);
+            this.RunThresholdTextBox30.Name = "RunThresholdTextBox30";
+            this.RunThresholdTextBox30.Size = new System.Drawing.Size(238, 31);
+            this.RunThresholdTextBox30.TabIndex = 29;
+            // 
+            // RunThresholdTextBox31
+            // 
+            this.RunThresholdTextBox31.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox31.Location = new System.Drawing.Point(491, 465);
+            this.RunThresholdTextBox31.Name = "RunThresholdTextBox31";
+            this.RunThresholdTextBox31.Size = new System.Drawing.Size(238, 31);
+            this.RunThresholdTextBox31.TabIndex = 30;
+            // 
+            // RunThresholdTextBox32
+            // 
+            this.RunThresholdTextBox32.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunThresholdTextBox32.Location = new System.Drawing.Point(735, 465);
+            this.RunThresholdTextBox32.Name = "RunThresholdTextBox32";
+            this.RunThresholdTextBox32.Size = new System.Drawing.Size(239, 31);
+            this.RunThresholdTextBox32.TabIndex = 31;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(24, 22);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(313, 25);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Swim Time for 500yd Time Trial";
+            // 
+            // TimeMinutes500
+            // 
+            this.TimeMinutes500.Location = new System.Drawing.Point(19, 89);
+            this.TimeMinutes500.Name = "TimeMinutes500";
+            this.TimeMinutes500.Size = new System.Drawing.Size(120, 31);
+            this.TimeMinutes500.TabIndex = 13;
+            // 
+            // TimeSeconds500
+            // 
+            this.TimeSeconds500.Location = new System.Drawing.Point(240, 89);
+            this.TimeSeconds500.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+            this.TimeSeconds500.Name = "TimeSeconds500";
+            this.TimeSeconds500.Size = new System.Drawing.Size(120, 31);
+            this.TimeSeconds500.TabIndex = 14;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(145, 95);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(88, 25);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Minutes";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(366, 95);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(96, 25);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Seconds";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(19, 163);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(193, 38);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "Calculate";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // TrainingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -1105,6 +1604,11 @@
             this.tabPage1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TimeMinutes500)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TimeSeconds500)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1193,6 +1697,46 @@
         private System.Windows.Forms.TextBox RunningZonesTextBox3;
         private System.Windows.Forms.TextBox RunningZonesTextBox2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TextBox RunThresholdTextBox28;
+        private System.Windows.Forms.TextBox RunThresholdTextBox27;
+        private System.Windows.Forms.TextBox RunThresholdTextBox26;
+        private System.Windows.Forms.TextBox RunThresholdTextBox25;
+        private System.Windows.Forms.TextBox RunThresholdTextBox24;
+        private System.Windows.Forms.TextBox RunThresholdTextBox23;
+        private System.Windows.Forms.TextBox RunThresholdTextBox22;
+        private System.Windows.Forms.TextBox RunThresholdTextBox21;
+        private System.Windows.Forms.TextBox RunThresholdTextBox20;
+        private System.Windows.Forms.TextBox RunThresholdTextBox19;
+        private System.Windows.Forms.TextBox RunThresholdTextBox18;
+        private System.Windows.Forms.TextBox RunThresholdTextBox17;
+        private System.Windows.Forms.TextBox RunThresholdTextBox16;
+        private System.Windows.Forms.TextBox RunThresholdTextBox15;
+        private System.Windows.Forms.TextBox RunThresholdTextBox14;
+        private System.Windows.Forms.TextBox RunThresholdTextBox13;
+        private System.Windows.Forms.TextBox RunThresholdTextBox12;
+        private System.Windows.Forms.TextBox RunThresholdTextBox11;
+        private System.Windows.Forms.TextBox RunThresholdTextBox10;
+        private System.Windows.Forms.TextBox RunThresholdTextBox9;
+        private System.Windows.Forms.TextBox RunThresholdTextBox8;
+        private System.Windows.Forms.TextBox RunThresholdTextBox7;
+        private System.Windows.Forms.TextBox RunThresholdTextBox6;
+        private System.Windows.Forms.TextBox RunThresholdTextBox5;
+        private System.Windows.Forms.TextBox RunThresholdTextBox4;
+        private System.Windows.Forms.TextBox RunThresholdTextBox3;
+        private System.Windows.Forms.TextBox RunThresholdTextBox2;
+        private System.Windows.Forms.TextBox RunThresholdTextBox1;
+        private System.Windows.Forms.TextBox RunThresholdTextBox29;
+        private System.Windows.Forms.TextBox RunThresholdTextBox30;
+        private System.Windows.Forms.TextBox RunThresholdTextBox31;
+        private System.Windows.Forms.TextBox RunThresholdTextBox32;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.NumericUpDown TimeSeconds500;
+        private System.Windows.Forms.NumericUpDown TimeMinutes500;
     }
 }
 
