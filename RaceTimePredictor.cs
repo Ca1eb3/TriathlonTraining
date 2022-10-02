@@ -13,6 +13,7 @@ namespace TriathlonTraining
         // Methods
         // t2=t1* (d2/d1)^b
         // b = 1.06 typically for running
+        // b = 1.15 current estimate for swimming
 
         public static int PredictTime2(int timeSeconds1, int distance1, int distance2)
         {
