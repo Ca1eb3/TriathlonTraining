@@ -30,6 +30,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.CalculateAllButton = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -201,7 +202,6 @@
             this.RunThresholdTextBox30 = new System.Windows.Forms.TextBox();
             this.RunThresholdTextBox31 = new System.Windows.Forms.TextBox();
             this.RunThresholdTextBox32 = new System.Windows.Forms.TextBox();
-            this.CalculateAllButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TimeSeconds500)).BeginInit();
@@ -262,6 +262,16 @@
             this.tabPage4.Text = "Benchmark Tests";
             this.tabPage4.UseVisualStyleBackColor = true;
             this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
+            // 
+            // CalculateAllButton
+            // 
+            this.CalculateAllButton.Location = new System.Drawing.Point(29, 624);
+            this.CalculateAllButton.Name = "CalculateAllButton";
+            this.CalculateAllButton.Size = new System.Drawing.Size(193, 38);
+            this.CalculateAllButton.TabIndex = 18;
+            this.CalculateAllButton.Text = "Calculate All";
+            this.CalculateAllButton.UseVisualStyleBackColor = true;
+            this.CalculateAllButton.Click += new System.EventHandler(this.button4_Click);
             // 
             // button2
             // 
@@ -2221,16 +2231,6 @@
             this.RunThresholdTextBox32.Name = "RunThresholdTextBox32";
             this.RunThresholdTextBox32.Size = new System.Drawing.Size(239, 31);
             this.RunThresholdTextBox32.TabIndex = 31;
-            // 
-            // CalculateAllButton
-            // 
-            this.CalculateAllButton.Location = new System.Drawing.Point(29, 624);
-            this.CalculateAllButton.Name = "CalculateAllButton";
-            this.CalculateAllButton.Size = new System.Drawing.Size(193, 38);
-            this.CalculateAllButton.TabIndex = 18;
-            this.CalculateAllButton.Text = "Calculate All";
-            this.CalculateAllButton.UseVisualStyleBackColor = true;
-            this.CalculateAllButton.Click += new System.EventHandler(this.button4_Click);
             // 
             // TrainingForm
             // 
