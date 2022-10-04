@@ -261,7 +261,6 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Benchmark Tests";
             this.tabPage4.UseVisualStyleBackColor = true;
-            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
             // 
             // CalculateAllButton
             // 
@@ -359,7 +358,6 @@
             this.TimeSeconds3k.Name = "TimeSeconds3k";
             this.TimeSeconds3k.Size = new System.Drawing.Size(120, 31);
             this.TimeSeconds3k.TabIndex = 8;
-            this.TimeSeconds3k.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
             // 
             // label3
             // 
@@ -385,7 +383,6 @@
             this.label2.Size = new System.Drawing.Size(265, 25);
             this.label2.TabIndex = 5;
             this.label2.Text = "Run Time for 3k Time Trial";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // testValues
             // 
@@ -413,7 +410,6 @@
             this.label1.Size = new System.Drawing.Size(67, 25);
             this.label1.TabIndex = 2;
             this.label1.Text = "Watts";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // ftpPower
             // 
@@ -423,7 +419,6 @@
             this.ftpPower.Size = new System.Drawing.Size(166, 25);
             this.ftpPower.TabIndex = 1;
             this.ftpPower.Text = "Bike FTP Power";
-            this.ftpPower.Click += new System.EventHandler(this.ftpPower_Click);
             // 
             // powerBikeFtp
             // 
@@ -1086,7 +1081,6 @@
             this.bikePowerZones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.bikePowerZones.Size = new System.Drawing.Size(753, 449);
             this.bikePowerZones.TabIndex = 0;
-            this.bikePowerZones.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // bikeZonesTextBox24
             // 
@@ -1318,7 +1312,6 @@
             this.bikeZonesTextBox4.Size = new System.Drawing.Size(244, 31);
             this.bikeZonesTextBox4.TabIndex = 3;
             this.bikeZonesTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.bikeZonesTextBox4.TextChanged += new System.EventHandler(this.bikeZonesTextBox4_TextChanged);
             // 
             // bikeZonesTextBox3
             // 
@@ -1355,7 +1348,6 @@
             this.bikeZonesTextBox1.TabIndex = 0;
             this.bikeZonesTextBox1.Text = "Zone";
             this.bikeZonesTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.bikeZonesTextBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // tabPage1
             // 
@@ -1432,7 +1424,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(943, 493);
             this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint_1);
             // 
             // RunningZonesTextBox40
             // 
@@ -1493,7 +1484,6 @@
             this.RunningZonesTextBox35.Name = "RunningZonesTextBox35";
             this.RunningZonesTextBox35.Size = new System.Drawing.Size(185, 31);
             this.RunningZonesTextBox35.TabIndex = 34;
-            this.RunningZonesTextBox35.TextChanged += new System.EventHandler(this.textBox34_TextChanged);
             // 
             // RunningZonesTextBox34
             // 
@@ -1839,7 +1829,6 @@
             this.RunningZonesTextBox1.Size = new System.Drawing.Size(182, 31);
             this.RunningZonesTextBox1.TabIndex = 0;
             this.RunningZonesTextBox1.Text = "Distance (m)";
-            this.RunningZonesTextBox1.TextChanged += new System.EventHandler(this.RunningZonesTextBox1_TextChanged);
             // 
             // tabPage5
             // 

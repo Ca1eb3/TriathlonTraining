@@ -19,15 +19,6 @@ namespace TriathlonTraining
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage4_Click(object sender, EventArgs e)
-        {
-        }
         // Calculates bike zones after clicking the calculate button beneath FTP benchmark
         private void button1_Click(object sender, EventArgs e)
         {
@@ -54,43 +45,6 @@ namespace TriathlonTraining
             bikeZonesTextBox22.Text = Convert.ToString(powerZones.ZonesArray(0, 6));
             bikeZonesTextBox23.Text = Convert.ToString(powerZones.ZonesArray(1, 6));
             bikeZonesTextBox24.Text = Convert.ToString(powerZones.ZonesArray(2, 6));
-        }
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        { 
-
-        }
-        private void bikeZonesTextBox4_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void RunningZonesTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox34_TextChanged(object sender, EventArgs e)
-        {
-
         }
         // Calculates run zones after clicking the calculate button beneath 3k benchmark
         private void button3_Click(object sender, EventArgs e)
@@ -211,11 +165,6 @@ namespace TriathlonTraining
             RunThresholdTextBox30.Text = T7.PaceString(T7.PaceLower() * 3);
             RunThresholdTextBox31.Text = T7.PaceString(T7.PaceActual() * 3);
             RunThresholdTextBox32.Text = T7.PaceString(T7.PaceUpper() * 3);
-        }
-
-        private void ftpPower_Click(object sender, EventArgs e)
-        {
-
         }
         // Calculates swim zones after clicking the calculate button beneath 500yd benchmark
         // Currently uses 1.15 as b factor to predict time 2
