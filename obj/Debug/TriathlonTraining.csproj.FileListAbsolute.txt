@@ -19,4 +19,4 @@ C:\Users\caleb\OneDrive\Documents\Computer Science Classes\GitHub\TriathlonTrain
 C:\Users\caleb\OneDrive\Documents\Computer Science Classes\GitHub\TriathlonTraining\obj\Debug\TriathlonTraining.csproj.CoreCompileInputs.cache
 C:\Users\caleb\OneDrive\Documents\Computer Science Classes\GitHub\TriathlonTraining\obj\Debug\TriathlonTraining.exe
 C:\Users\caleb\OneDrive\Documents\Computer Science Classes\GitHub\TriathlonTraining\obj\Debug\TriathlonTraining.pdb
-C:\Users\caleb\OneDrive\Documents\Computer Science Classes\GitHub\TriathlonTraining\obj\Debug\TriathlonTraining.TrainingForm.resources
+C:\Users\caleb\OneDrive\Documents\Computer Science Classes\GitHub\TriathlonTraining\obj\Debug\TriathlonTraining.BenchmarkTests.resources

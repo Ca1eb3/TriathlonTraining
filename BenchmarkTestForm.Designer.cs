@@ -1,6 +1,6 @@
 ﻿namespace TriathlonTraining
 {
-    partial class TrainingForm
+    partial class BenchmarkTests
     {
         /// <summary>
         /// Required designer variable.
@@ -31,20 +31,20 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.CalculateAllButton = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.SwimCalculateButton = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.TimeSeconds500 = new System.Windows.Forms.NumericUpDown();
             this.TimeMinutes500 = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.RunCalculateButton = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.TimeSeconds3k = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.TimeMinutes3k = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.testValues = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BikeCalculateButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.ftpPower = new System.Windows.Forms.Label();
             this.powerBikeFtp = new System.Windows.Forms.NumericUpDown();
@@ -221,8 +221,8 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage2);
@@ -238,20 +238,20 @@
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.CalculateAllButton);
-            this.tabPage4.Controls.Add(this.button2);
+            this.tabPage4.Controls.Add(this.SwimCalculateButton);
             this.tabPage4.Controls.Add(this.label7);
             this.tabPage4.Controls.Add(this.label6);
             this.tabPage4.Controls.Add(this.TimeSeconds500);
             this.tabPage4.Controls.Add(this.TimeMinutes500);
             this.tabPage4.Controls.Add(this.label5);
-            this.tabPage4.Controls.Add(this.button3);
+            this.tabPage4.Controls.Add(this.RunCalculateButton);
             this.tabPage4.Controls.Add(this.label4);
             this.tabPage4.Controls.Add(this.TimeSeconds3k);
             this.tabPage4.Controls.Add(this.label3);
             this.tabPage4.Controls.Add(this.TimeMinutes3k);
             this.tabPage4.Controls.Add(this.label2);
             this.tabPage4.Controls.Add(this.testValues);
-            this.tabPage4.Controls.Add(this.button1);
+            this.tabPage4.Controls.Add(this.BikeCalculateButton);
             this.tabPage4.Controls.Add(this.label1);
             this.tabPage4.Controls.Add(this.ftpPower);
             this.tabPage4.Controls.Add(this.powerBikeFtp);
@@ -270,17 +270,17 @@
             this.CalculateAllButton.TabIndex = 18;
             this.CalculateAllButton.Text = "Calculate All";
             this.CalculateAllButton.UseVisualStyleBackColor = true;
-            this.CalculateAllButton.Click += new System.EventHandler(this.button4_Click);
+            this.CalculateAllButton.Click += new System.EventHandler(this.CalculateButton);
             // 
-            // button2
+            // SwimCalculateButton
             // 
-            this.button2.Location = new System.Drawing.Point(29, 164);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(193, 38);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Calculate";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.SwimCalculateButton.Location = new System.Drawing.Point(29, 164);
+            this.SwimCalculateButton.Name = "SwimCalculateButton";
+            this.SwimCalculateButton.Size = new System.Drawing.Size(193, 38);
+            this.SwimCalculateButton.TabIndex = 17;
+            this.SwimCalculateButton.Text = "Calculate";
+            this.SwimCalculateButton.UseVisualStyleBackColor = true;
+            this.SwimCalculateButton.Click += new System.EventHandler(this.SwimCalculateButtonClick);
             // 
             // label7
             // 
@@ -328,15 +328,15 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Swim Time for 500yd Time Trial";
             // 
-            // button3
+            // RunCalculateButton
             // 
-            this.button3.Location = new System.Drawing.Point(29, 526);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(193, 38);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Calculate";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.RunCalculateButton.Location = new System.Drawing.Point(29, 526);
+            this.RunCalculateButton.Name = "RunCalculateButton";
+            this.RunCalculateButton.Size = new System.Drawing.Size(193, 38);
+            this.RunCalculateButton.TabIndex = 11;
+            this.RunCalculateButton.Text = "Calculate";
+            this.RunCalculateButton.UseVisualStyleBackColor = true;
+            this.RunCalculateButton.Click += new System.EventHandler(this.RunCalculateButtonClick);
             // 
             // label4
             // 
@@ -392,15 +392,15 @@
             this.testValues.Size = new System.Drawing.Size(0, 25);
             this.testValues.TabIndex = 4;
             // 
-            // button1
+            // BikeCalculateButton
             // 
-            this.button1.Location = new System.Drawing.Point(29, 333);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(193, 38);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Calculate";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BikeCalculateButton.Location = new System.Drawing.Point(29, 333);
+            this.BikeCalculateButton.Name = "BikeCalculateButton";
+            this.BikeCalculateButton.Size = new System.Drawing.Size(193, 38);
+            this.BikeCalculateButton.TabIndex = 3;
+            this.BikeCalculateButton.Text = "Calculate";
+            this.BikeCalculateButton.UseVisualStyleBackColor = true;
+            this.BikeCalculateButton.Click += new System.EventHandler(this.BikeCalculateButtonClick);
             // 
             // label1
             // 
@@ -445,8 +445,8 @@
             // 
             // tableLayoutPanel3
             // 
-            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.ColumnCount = 5;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -522,8 +522,8 @@
             // 
             // SwimZonesTextBox50
             // 
-            this.SwimZonesTextBox50.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox50.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox50.Location = new System.Drawing.Point(903, 552);
             this.SwimZonesTextBox50.Name = "SwimZonesTextBox50";
@@ -532,8 +532,8 @@
             // 
             // SwimZonesTextBox49
             // 
-            this.SwimZonesTextBox49.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox49.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox49.Location = new System.Drawing.Point(678, 552);
             this.SwimZonesTextBox49.Name = "SwimZonesTextBox49";
@@ -542,8 +542,8 @@
             // 
             // SwimZonesTextBox48
             // 
-            this.SwimZonesTextBox48.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox48.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox48.Location = new System.Drawing.Point(453, 552);
             this.SwimZonesTextBox48.Name = "SwimZonesTextBox48";
@@ -552,8 +552,8 @@
             // 
             // SwimZonesTextBox47
             // 
-            this.SwimZonesTextBox47.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox47.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox47.Location = new System.Drawing.Point(228, 552);
             this.SwimZonesTextBox47.Name = "SwimZonesTextBox47";
@@ -562,8 +562,8 @@
             // 
             // SwimZonesTextBox46
             // 
-            this.SwimZonesTextBox46.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox46.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox46.Location = new System.Drawing.Point(3, 552);
             this.SwimZonesTextBox46.Name = "SwimZonesTextBox46";
@@ -572,8 +572,8 @@
             // 
             // SwimZonesTextBox45
             // 
-            this.SwimZonesTextBox45.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox45.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox45.Location = new System.Drawing.Point(903, 491);
             this.SwimZonesTextBox45.Name = "SwimZonesTextBox45";
@@ -582,8 +582,8 @@
             // 
             // SwimZonesTextBox44
             // 
-            this.SwimZonesTextBox44.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox44.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox44.Location = new System.Drawing.Point(678, 491);
             this.SwimZonesTextBox44.Name = "SwimZonesTextBox44";
@@ -592,8 +592,8 @@
             // 
             // SwimZonesTextBox43
             // 
-            this.SwimZonesTextBox43.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox43.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox43.Location = new System.Drawing.Point(453, 491);
             this.SwimZonesTextBox43.Name = "SwimZonesTextBox43";
@@ -602,8 +602,8 @@
             // 
             // SwimZonesTextBox42
             // 
-            this.SwimZonesTextBox42.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox42.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox42.Location = new System.Drawing.Point(228, 491);
             this.SwimZonesTextBox42.Name = "SwimZonesTextBox42";
@@ -612,8 +612,8 @@
             // 
             // SwimZonesTextBox41
             // 
-            this.SwimZonesTextBox41.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox41.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox41.Location = new System.Drawing.Point(3, 491);
             this.SwimZonesTextBox41.Name = "SwimZonesTextBox41";
@@ -622,8 +622,8 @@
             // 
             // SwimZonesTextBox40
             // 
-            this.SwimZonesTextBox40.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox40.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox40.Location = new System.Drawing.Point(903, 430);
             this.SwimZonesTextBox40.Name = "SwimZonesTextBox40";
@@ -632,8 +632,8 @@
             // 
             // SwimZonesTextBox39
             // 
-            this.SwimZonesTextBox39.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox39.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox39.Location = new System.Drawing.Point(678, 430);
             this.SwimZonesTextBox39.Name = "SwimZonesTextBox39";
@@ -642,8 +642,8 @@
             // 
             // SwimZonesTextBox38
             // 
-            this.SwimZonesTextBox38.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox38.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox38.Location = new System.Drawing.Point(453, 430);
             this.SwimZonesTextBox38.Name = "SwimZonesTextBox38";
@@ -652,8 +652,8 @@
             // 
             // SwimZonesTextBox37
             // 
-            this.SwimZonesTextBox37.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox37.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox37.Location = new System.Drawing.Point(228, 430);
             this.SwimZonesTextBox37.Name = "SwimZonesTextBox37";
@@ -662,8 +662,8 @@
             // 
             // SwimZonesTextBox36
             // 
-            this.SwimZonesTextBox36.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox36.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox36.Location = new System.Drawing.Point(3, 430);
             this.SwimZonesTextBox36.Name = "SwimZonesTextBox36";
@@ -672,8 +672,8 @@
             // 
             // SwimZonesTextBox35
             // 
-            this.SwimZonesTextBox35.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox35.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox35.Location = new System.Drawing.Point(903, 369);
             this.SwimZonesTextBox35.Name = "SwimZonesTextBox35";
@@ -682,8 +682,8 @@
             // 
             // SwimZonesTextBox34
             // 
-            this.SwimZonesTextBox34.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox34.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox34.Location = new System.Drawing.Point(678, 369);
             this.SwimZonesTextBox34.Name = "SwimZonesTextBox34";
@@ -692,8 +692,8 @@
             // 
             // SwimZonesTextBox33
             // 
-            this.SwimZonesTextBox33.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox33.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox33.Location = new System.Drawing.Point(453, 369);
             this.SwimZonesTextBox33.Name = "SwimZonesTextBox33";
@@ -702,8 +702,8 @@
             // 
             // SwimZonesTextBox32
             // 
-            this.SwimZonesTextBox32.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox32.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox32.Location = new System.Drawing.Point(228, 369);
             this.SwimZonesTextBox32.Name = "SwimZonesTextBox32";
@@ -712,8 +712,8 @@
             // 
             // SwimZonesTextBox31
             // 
-            this.SwimZonesTextBox31.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox31.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox31.Location = new System.Drawing.Point(3, 369);
             this.SwimZonesTextBox31.Name = "SwimZonesTextBox31";
@@ -722,8 +722,8 @@
             // 
             // SwimZonesTextBox30
             // 
-            this.SwimZonesTextBox30.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox30.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox30.Location = new System.Drawing.Point(903, 308);
             this.SwimZonesTextBox30.Name = "SwimZonesTextBox30";
@@ -732,8 +732,8 @@
             // 
             // SwimZonesTextBox29
             // 
-            this.SwimZonesTextBox29.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox29.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox29.Location = new System.Drawing.Point(678, 308);
             this.SwimZonesTextBox29.Name = "SwimZonesTextBox29";
@@ -742,8 +742,8 @@
             // 
             // SwimZonesTextBox28
             // 
-            this.SwimZonesTextBox28.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox28.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox28.Location = new System.Drawing.Point(453, 308);
             this.SwimZonesTextBox28.Name = "SwimZonesTextBox28";
@@ -752,8 +752,8 @@
             // 
             // SwimZonesTextBox27
             // 
-            this.SwimZonesTextBox27.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox27.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox27.Location = new System.Drawing.Point(228, 308);
             this.SwimZonesTextBox27.Name = "SwimZonesTextBox27";
@@ -762,8 +762,8 @@
             // 
             // SwimZonesTextBox26
             // 
-            this.SwimZonesTextBox26.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox26.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox26.Location = new System.Drawing.Point(3, 308);
             this.SwimZonesTextBox26.Name = "SwimZonesTextBox26";
@@ -772,8 +772,8 @@
             // 
             // SwimZonesTextBox25
             // 
-            this.SwimZonesTextBox25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox25.Location = new System.Drawing.Point(903, 247);
             this.SwimZonesTextBox25.Name = "SwimZonesTextBox25";
@@ -782,8 +782,8 @@
             // 
             // SwimZonesTextBox24
             // 
-            this.SwimZonesTextBox24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox24.Location = new System.Drawing.Point(678, 247);
             this.SwimZonesTextBox24.Name = "SwimZonesTextBox24";
@@ -792,8 +792,8 @@
             // 
             // SwimZonesTextBox23
             // 
-            this.SwimZonesTextBox23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox23.Location = new System.Drawing.Point(453, 247);
             this.SwimZonesTextBox23.Name = "SwimZonesTextBox23";
@@ -802,8 +802,8 @@
             // 
             // SwimZonesTextBox22
             // 
-            this.SwimZonesTextBox22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox22.Location = new System.Drawing.Point(228, 247);
             this.SwimZonesTextBox22.Name = "SwimZonesTextBox22";
@@ -812,8 +812,8 @@
             // 
             // SwimZonesTextBox21
             // 
-            this.SwimZonesTextBox21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox21.Location = new System.Drawing.Point(3, 247);
             this.SwimZonesTextBox21.Name = "SwimZonesTextBox21";
@@ -822,8 +822,8 @@
             // 
             // SwimZonesTextBox20
             // 
-            this.SwimZonesTextBox20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox20.Location = new System.Drawing.Point(903, 186);
             this.SwimZonesTextBox20.Name = "SwimZonesTextBox20";
@@ -832,8 +832,8 @@
             // 
             // SwimZonesTextBox19
             // 
-            this.SwimZonesTextBox19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox19.Location = new System.Drawing.Point(678, 186);
             this.SwimZonesTextBox19.Name = "SwimZonesTextBox19";
@@ -842,8 +842,8 @@
             // 
             // SwimZonesTextBox18
             // 
-            this.SwimZonesTextBox18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox18.Location = new System.Drawing.Point(453, 186);
             this.SwimZonesTextBox18.Name = "SwimZonesTextBox18";
@@ -852,8 +852,8 @@
             // 
             // SwimZonesTextBox17
             // 
-            this.SwimZonesTextBox17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox17.Location = new System.Drawing.Point(228, 186);
             this.SwimZonesTextBox17.Name = "SwimZonesTextBox17";
@@ -862,8 +862,8 @@
             // 
             // SwimZonesTextBox16
             // 
-            this.SwimZonesTextBox16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox16.Location = new System.Drawing.Point(3, 186);
             this.SwimZonesTextBox16.Name = "SwimZonesTextBox16";
@@ -872,8 +872,8 @@
             // 
             // SwimZonesTextBox15
             // 
-            this.SwimZonesTextBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox15.Location = new System.Drawing.Point(903, 125);
             this.SwimZonesTextBox15.Name = "SwimZonesTextBox15";
@@ -882,8 +882,8 @@
             // 
             // SwimZonesTextBox14
             // 
-            this.SwimZonesTextBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox14.Location = new System.Drawing.Point(678, 125);
             this.SwimZonesTextBox14.Name = "SwimZonesTextBox14";
@@ -892,8 +892,8 @@
             // 
             // SwimZonesTextBox13
             // 
-            this.SwimZonesTextBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox13.Location = new System.Drawing.Point(453, 125);
             this.SwimZonesTextBox13.Name = "SwimZonesTextBox13";
@@ -902,8 +902,8 @@
             // 
             // SwimZonesTextBox12
             // 
-            this.SwimZonesTextBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox12.Location = new System.Drawing.Point(228, 125);
             this.SwimZonesTextBox12.Name = "SwimZonesTextBox12";
@@ -912,8 +912,8 @@
             // 
             // SwimZonesTextBox11
             // 
-            this.SwimZonesTextBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox11.Location = new System.Drawing.Point(3, 125);
             this.SwimZonesTextBox11.Name = "SwimZonesTextBox11";
@@ -922,8 +922,8 @@
             // 
             // SwimZonesTextBox10
             // 
-            this.SwimZonesTextBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox10.Location = new System.Drawing.Point(903, 64);
             this.SwimZonesTextBox10.Name = "SwimZonesTextBox10";
@@ -932,8 +932,8 @@
             // 
             // SwimZonesTextBox9
             // 
-            this.SwimZonesTextBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox9.Location = new System.Drawing.Point(678, 64);
             this.SwimZonesTextBox9.Name = "SwimZonesTextBox9";
@@ -942,8 +942,8 @@
             // 
             // SwimZonesTextBox8
             // 
-            this.SwimZonesTextBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox8.Location = new System.Drawing.Point(453, 64);
             this.SwimZonesTextBox8.Name = "SwimZonesTextBox8";
@@ -952,8 +952,8 @@
             // 
             // SwimZonesTextBox7
             // 
-            this.SwimZonesTextBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox7.Location = new System.Drawing.Point(228, 64);
             this.SwimZonesTextBox7.Name = "SwimZonesTextBox7";
@@ -962,8 +962,8 @@
             // 
             // SwimZonesTextBox6
             // 
-            this.SwimZonesTextBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox6.Location = new System.Drawing.Point(3, 64);
             this.SwimZonesTextBox6.Name = "SwimZonesTextBox6";
@@ -972,8 +972,8 @@
             // 
             // SwimZonesTextBox5
             // 
-            this.SwimZonesTextBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox5.Location = new System.Drawing.Point(903, 3);
             this.SwimZonesTextBox5.Name = "SwimZonesTextBox5";
@@ -983,8 +983,8 @@
             // 
             // SwimZonesTextBox4
             // 
-            this.SwimZonesTextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox4.Location = new System.Drawing.Point(678, 3);
             this.SwimZonesTextBox4.Name = "SwimZonesTextBox4";
@@ -994,8 +994,8 @@
             // 
             // SwimZonesTextBox2
             // 
-            this.SwimZonesTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox2.Location = new System.Drawing.Point(228, 3);
             this.SwimZonesTextBox2.Name = "SwimZonesTextBox2";
@@ -1005,8 +1005,8 @@
             // 
             // SwimZonesTextBox1
             // 
-            this.SwimZonesTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox1.Location = new System.Drawing.Point(3, 3);
             this.SwimZonesTextBox1.Name = "SwimZonesTextBox1";
@@ -1016,8 +1016,8 @@
             // 
             // SwimZonesTextBox3
             // 
-            this.SwimZonesTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.SwimZonesTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SwimZonesTextBox3.Location = new System.Drawing.Point(453, 3);
             this.SwimZonesTextBox3.Name = "SwimZonesTextBox3";
@@ -1037,8 +1037,8 @@
             // 
             // bikePowerZones
             // 
-            this.bikePowerZones.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikePowerZones.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikePowerZones.ColumnCount = 3;
             this.bikePowerZones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -1084,8 +1084,8 @@
             // 
             // bikeZonesTextBox24
             // 
-            this.bikeZonesTextBox24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikeZonesTextBox24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikeZonesTextBox24.Location = new System.Drawing.Point(504, 395);
             this.bikeZonesTextBox24.Name = "bikeZonesTextBox24";
@@ -1095,8 +1095,8 @@
             // 
             // bikeZonesTextBox23
             // 
-            this.bikeZonesTextBox23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikeZonesTextBox23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikeZonesTextBox23.Location = new System.Drawing.Point(253, 395);
             this.bikeZonesTextBox23.Name = "bikeZonesTextBox23";
@@ -1106,8 +1106,8 @@
             // 
             // bikeZonesTextBox22
             // 
-            this.bikeZonesTextBox22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikeZonesTextBox22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikeZonesTextBox22.Location = new System.Drawing.Point(3, 395);
             this.bikeZonesTextBox22.Name = "bikeZonesTextBox22";
@@ -1117,8 +1117,8 @@
             // 
             // bikeZonesTextBox21
             // 
-            this.bikeZonesTextBox21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikeZonesTextBox21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikeZonesTextBox21.Location = new System.Drawing.Point(504, 339);
             this.bikeZonesTextBox21.Name = "bikeZonesTextBox21";
@@ -1128,8 +1128,8 @@
             // 
             // bikeZonesTextBox20
             // 
-            this.bikeZonesTextBox20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikeZonesTextBox20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikeZonesTextBox20.Location = new System.Drawing.Point(253, 339);
             this.bikeZonesTextBox20.Name = "bikeZonesTextBox20";
@@ -1139,8 +1139,8 @@
             // 
             // bikeZonesTextBox19
             // 
-            this.bikeZonesTextBox19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikeZonesTextBox19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikeZonesTextBox19.Location = new System.Drawing.Point(3, 339);
             this.bikeZonesTextBox19.Name = "bikeZonesTextBox19";
@@ -1150,8 +1150,8 @@
             // 
             // bikeZonesTextBox18
             // 
-            this.bikeZonesTextBox18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikeZonesTextBox18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikeZonesTextBox18.Location = new System.Drawing.Point(504, 283);
             this.bikeZonesTextBox18.Name = "bikeZonesTextBox18";
@@ -1161,8 +1161,8 @@
             // 
             // bikeZonesTextBox17
             // 
-            this.bikeZonesTextBox17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikeZonesTextBox17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikeZonesTextBox17.Location = new System.Drawing.Point(253, 283);
             this.bikeZonesTextBox17.Name = "bikeZonesTextBox17";
@@ -1172,8 +1172,8 @@
             // 
             // bikeZonesTextBox16
             // 
-            this.bikeZonesTextBox16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikeZonesTextBox16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikeZonesTextBox16.Location = new System.Drawing.Point(3, 283);
             this.bikeZonesTextBox16.Name = "bikeZonesTextBox16";
@@ -1183,8 +1183,8 @@
             // 
             // bikeZonesTextBox15
             // 
-            this.bikeZonesTextBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikeZonesTextBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikeZonesTextBox15.Location = new System.Drawing.Point(504, 227);
             this.bikeZonesTextBox15.Name = "bikeZonesTextBox15";
@@ -1194,8 +1194,8 @@
             // 
             // bikeZonesTextBox14
             // 
-            this.bikeZonesTextBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikeZonesTextBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikeZonesTextBox14.Location = new System.Drawing.Point(253, 227);
             this.bikeZonesTextBox14.Name = "bikeZonesTextBox14";
@@ -1205,8 +1205,8 @@
             // 
             // bikeZonesTextBox13
             // 
-            this.bikeZonesTextBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikeZonesTextBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikeZonesTextBox13.Location = new System.Drawing.Point(3, 227);
             this.bikeZonesTextBox13.Name = "bikeZonesTextBox13";
@@ -1216,8 +1216,8 @@
             // 
             // bikeZonesTextBox12
             // 
-            this.bikeZonesTextBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikeZonesTextBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikeZonesTextBox12.Location = new System.Drawing.Point(504, 171);
             this.bikeZonesTextBox12.Name = "bikeZonesTextBox12";
@@ -1227,8 +1227,8 @@
             // 
             // bikeZonesTextBox11
             // 
-            this.bikeZonesTextBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikeZonesTextBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikeZonesTextBox11.Location = new System.Drawing.Point(253, 171);
             this.bikeZonesTextBox11.Name = "bikeZonesTextBox11";
@@ -1238,8 +1238,8 @@
             // 
             // bikeZonesTextBox10
             // 
-            this.bikeZonesTextBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikeZonesTextBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikeZonesTextBox10.Location = new System.Drawing.Point(3, 171);
             this.bikeZonesTextBox10.Name = "bikeZonesTextBox10";
@@ -1249,8 +1249,8 @@
             // 
             // bikeZonesTextBox9
             // 
-            this.bikeZonesTextBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikeZonesTextBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikeZonesTextBox9.Location = new System.Drawing.Point(504, 115);
             this.bikeZonesTextBox9.Name = "bikeZonesTextBox9";
@@ -1260,8 +1260,8 @@
             // 
             // bikeZonesTextBox8
             // 
-            this.bikeZonesTextBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikeZonesTextBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikeZonesTextBox8.Location = new System.Drawing.Point(253, 115);
             this.bikeZonesTextBox8.Name = "bikeZonesTextBox8";
@@ -1271,8 +1271,8 @@
             // 
             // bikeZonesTextBox7
             // 
-            this.bikeZonesTextBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikeZonesTextBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikeZonesTextBox7.Location = new System.Drawing.Point(3, 115);
             this.bikeZonesTextBox7.Name = "bikeZonesTextBox7";
@@ -1282,8 +1282,8 @@
             // 
             // bikeZonesTextBox6
             // 
-            this.bikeZonesTextBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikeZonesTextBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikeZonesTextBox6.Location = new System.Drawing.Point(504, 59);
             this.bikeZonesTextBox6.Name = "bikeZonesTextBox6";
@@ -1293,8 +1293,8 @@
             // 
             // bikeZonesTextBox5
             // 
-            this.bikeZonesTextBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikeZonesTextBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikeZonesTextBox5.Location = new System.Drawing.Point(253, 59);
             this.bikeZonesTextBox5.Name = "bikeZonesTextBox5";
@@ -1304,8 +1304,8 @@
             // 
             // bikeZonesTextBox4
             // 
-            this.bikeZonesTextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikeZonesTextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikeZonesTextBox4.Location = new System.Drawing.Point(3, 59);
             this.bikeZonesTextBox4.Name = "bikeZonesTextBox4";
@@ -1315,8 +1315,8 @@
             // 
             // bikeZonesTextBox3
             // 
-            this.bikeZonesTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikeZonesTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikeZonesTextBox3.Location = new System.Drawing.Point(504, 3);
             this.bikeZonesTextBox3.Name = "bikeZonesTextBox3";
@@ -1327,8 +1327,8 @@
             // 
             // bikeZonesTextBox2
             // 
-            this.bikeZonesTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikeZonesTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikeZonesTextBox2.Location = new System.Drawing.Point(253, 3);
             this.bikeZonesTextBox2.Name = "bikeZonesTextBox2";
@@ -1339,8 +1339,8 @@
             // 
             // bikeZonesTextBox1
             // 
-            this.bikeZonesTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.bikeZonesTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bikeZonesTextBox1.Location = new System.Drawing.Point(3, 3);
             this.bikeZonesTextBox1.Name = "bikeZonesTextBox1";
@@ -1362,8 +1362,8 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 5;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -1427,8 +1427,8 @@
             // 
             // RunningZonesTextBox40
             // 
-            this.RunningZonesTextBox40.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox40.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox40.Location = new System.Drawing.Point(755, 430);
             this.RunningZonesTextBox40.Name = "RunningZonesTextBox40";
@@ -1437,8 +1437,8 @@
             // 
             // RunningZonesTextBox39
             // 
-            this.RunningZonesTextBox39.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox39.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox39.Location = new System.Drawing.Point(567, 430);
             this.RunningZonesTextBox39.Name = "RunningZonesTextBox39";
@@ -1447,8 +1447,8 @@
             // 
             // RunningZonesTextBox38
             // 
-            this.RunningZonesTextBox38.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox38.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox38.Location = new System.Drawing.Point(379, 430);
             this.RunningZonesTextBox38.Name = "RunningZonesTextBox38";
@@ -1457,8 +1457,8 @@
             // 
             // RunningZonesTextBox37
             // 
-            this.RunningZonesTextBox37.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox37.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox37.Location = new System.Drawing.Point(191, 430);
             this.RunningZonesTextBox37.Name = "RunningZonesTextBox37";
@@ -1467,8 +1467,8 @@
             // 
             // RunningZonesTextBox36
             // 
-            this.RunningZonesTextBox36.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox36.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox36.Location = new System.Drawing.Point(3, 430);
             this.RunningZonesTextBox36.Name = "RunningZonesTextBox36";
@@ -1477,8 +1477,8 @@
             // 
             // RunningZonesTextBox35
             // 
-            this.RunningZonesTextBox35.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox35.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox35.Location = new System.Drawing.Point(755, 369);
             this.RunningZonesTextBox35.Name = "RunningZonesTextBox35";
@@ -1487,8 +1487,8 @@
             // 
             // RunningZonesTextBox34
             // 
-            this.RunningZonesTextBox34.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox34.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox34.Location = new System.Drawing.Point(567, 369);
             this.RunningZonesTextBox34.Name = "RunningZonesTextBox34";
@@ -1497,8 +1497,8 @@
             // 
             // RunningZonesTextBox33
             // 
-            this.RunningZonesTextBox33.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox33.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox33.Location = new System.Drawing.Point(379, 369);
             this.RunningZonesTextBox33.Name = "RunningZonesTextBox33";
@@ -1507,8 +1507,8 @@
             // 
             // RunningZonesTextBox32
             // 
-            this.RunningZonesTextBox32.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox32.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox32.Location = new System.Drawing.Point(191, 369);
             this.RunningZonesTextBox32.Name = "RunningZonesTextBox32";
@@ -1517,8 +1517,8 @@
             // 
             // RunningZonesTextBox31
             // 
-            this.RunningZonesTextBox31.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox31.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox31.Location = new System.Drawing.Point(3, 369);
             this.RunningZonesTextBox31.Name = "RunningZonesTextBox31";
@@ -1527,8 +1527,8 @@
             // 
             // RunningZonesTextBox30
             // 
-            this.RunningZonesTextBox30.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox30.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox30.Location = new System.Drawing.Point(755, 308);
             this.RunningZonesTextBox30.Name = "RunningZonesTextBox30";
@@ -1537,8 +1537,8 @@
             // 
             // RunningZonesTextBox29
             // 
-            this.RunningZonesTextBox29.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox29.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox29.Location = new System.Drawing.Point(567, 308);
             this.RunningZonesTextBox29.Name = "RunningZonesTextBox29";
@@ -1547,8 +1547,8 @@
             // 
             // RunningZonesTextBox28
             // 
-            this.RunningZonesTextBox28.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox28.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox28.Location = new System.Drawing.Point(379, 308);
             this.RunningZonesTextBox28.Name = "RunningZonesTextBox28";
@@ -1557,8 +1557,8 @@
             // 
             // RunningZonesTextBox27
             // 
-            this.RunningZonesTextBox27.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox27.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox27.Location = new System.Drawing.Point(191, 308);
             this.RunningZonesTextBox27.Name = "RunningZonesTextBox27";
@@ -1567,8 +1567,8 @@
             // 
             // RunningZonesTextBox26
             // 
-            this.RunningZonesTextBox26.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox26.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox26.Location = new System.Drawing.Point(3, 308);
             this.RunningZonesTextBox26.Name = "RunningZonesTextBox26";
@@ -1577,8 +1577,8 @@
             // 
             // RunningZonesTextBox25
             // 
-            this.RunningZonesTextBox25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox25.Location = new System.Drawing.Point(755, 247);
             this.RunningZonesTextBox25.Name = "RunningZonesTextBox25";
@@ -1587,8 +1587,8 @@
             // 
             // RunningZonesTextBox24
             // 
-            this.RunningZonesTextBox24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox24.Location = new System.Drawing.Point(567, 247);
             this.RunningZonesTextBox24.Name = "RunningZonesTextBox24";
@@ -1597,8 +1597,8 @@
             // 
             // RunningZonesTextBox23
             // 
-            this.RunningZonesTextBox23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox23.Location = new System.Drawing.Point(379, 247);
             this.RunningZonesTextBox23.Name = "RunningZonesTextBox23";
@@ -1607,8 +1607,8 @@
             // 
             // RunningZonesTextBox22
             // 
-            this.RunningZonesTextBox22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox22.Location = new System.Drawing.Point(191, 247);
             this.RunningZonesTextBox22.Name = "RunningZonesTextBox22";
@@ -1617,8 +1617,8 @@
             // 
             // RunningZonesTextBox21
             // 
-            this.RunningZonesTextBox21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox21.Location = new System.Drawing.Point(3, 247);
             this.RunningZonesTextBox21.Name = "RunningZonesTextBox21";
@@ -1627,8 +1627,8 @@
             // 
             // RunningZonesTextBox20
             // 
-            this.RunningZonesTextBox20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox20.Location = new System.Drawing.Point(755, 186);
             this.RunningZonesTextBox20.Name = "RunningZonesTextBox20";
@@ -1637,8 +1637,8 @@
             // 
             // RunningZonesTextBox19
             // 
-            this.RunningZonesTextBox19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox19.Location = new System.Drawing.Point(567, 186);
             this.RunningZonesTextBox19.Name = "RunningZonesTextBox19";
@@ -1647,8 +1647,8 @@
             // 
             // RunningZonesTextBox18
             // 
-            this.RunningZonesTextBox18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox18.Location = new System.Drawing.Point(379, 186);
             this.RunningZonesTextBox18.Name = "RunningZonesTextBox18";
@@ -1657,8 +1657,8 @@
             // 
             // RunningZonesTextBox17
             // 
-            this.RunningZonesTextBox17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox17.Location = new System.Drawing.Point(191, 186);
             this.RunningZonesTextBox17.Name = "RunningZonesTextBox17";
@@ -1667,8 +1667,8 @@
             // 
             // RunningZonesTextBox16
             // 
-            this.RunningZonesTextBox16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox16.Location = new System.Drawing.Point(3, 186);
             this.RunningZonesTextBox16.Name = "RunningZonesTextBox16";
@@ -1677,8 +1677,8 @@
             // 
             // RunningZonesTextBox15
             // 
-            this.RunningZonesTextBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox15.Location = new System.Drawing.Point(755, 125);
             this.RunningZonesTextBox15.Name = "RunningZonesTextBox15";
@@ -1687,8 +1687,8 @@
             // 
             // RunningZonesTextBox14
             // 
-            this.RunningZonesTextBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox14.Location = new System.Drawing.Point(567, 125);
             this.RunningZonesTextBox14.Name = "RunningZonesTextBox14";
@@ -1697,8 +1697,8 @@
             // 
             // RunningZonesTextBox13
             // 
-            this.RunningZonesTextBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox13.Location = new System.Drawing.Point(379, 125);
             this.RunningZonesTextBox13.Name = "RunningZonesTextBox13";
@@ -1707,8 +1707,8 @@
             // 
             // RunningZonesTextBox12
             // 
-            this.RunningZonesTextBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox12.Location = new System.Drawing.Point(191, 125);
             this.RunningZonesTextBox12.Name = "RunningZonesTextBox12";
@@ -1717,8 +1717,8 @@
             // 
             // RunningZonesTextBox11
             // 
-            this.RunningZonesTextBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox11.Location = new System.Drawing.Point(3, 125);
             this.RunningZonesTextBox11.Name = "RunningZonesTextBox11";
@@ -1727,8 +1727,8 @@
             // 
             // RunningZonesTextBox10
             // 
-            this.RunningZonesTextBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox10.Location = new System.Drawing.Point(755, 64);
             this.RunningZonesTextBox10.Name = "RunningZonesTextBox10";
@@ -1737,8 +1737,8 @@
             // 
             // RunningZonesTextBox9
             // 
-            this.RunningZonesTextBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox9.Location = new System.Drawing.Point(567, 64);
             this.RunningZonesTextBox9.Name = "RunningZonesTextBox9";
@@ -1747,8 +1747,8 @@
             // 
             // RunningZonesTextBox8
             // 
-            this.RunningZonesTextBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox8.Location = new System.Drawing.Point(379, 64);
             this.RunningZonesTextBox8.Name = "RunningZonesTextBox8";
@@ -1757,8 +1757,8 @@
             // 
             // RunningZonesTextBox7
             // 
-            this.RunningZonesTextBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox7.Location = new System.Drawing.Point(191, 64);
             this.RunningZonesTextBox7.Name = "RunningZonesTextBox7";
@@ -1767,8 +1767,8 @@
             // 
             // RunningZonesTextBox6
             // 
-            this.RunningZonesTextBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox6.Location = new System.Drawing.Point(3, 64);
             this.RunningZonesTextBox6.Name = "RunningZonesTextBox6";
@@ -1777,8 +1777,8 @@
             // 
             // RunningZonesTextBox5
             // 
-            this.RunningZonesTextBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox5.Location = new System.Drawing.Point(755, 3);
             this.RunningZonesTextBox5.Name = "RunningZonesTextBox5";
@@ -1788,8 +1788,8 @@
             // 
             // RunningZonesTextBox4
             // 
-            this.RunningZonesTextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox4.Location = new System.Drawing.Point(567, 3);
             this.RunningZonesTextBox4.Name = "RunningZonesTextBox4";
@@ -1799,8 +1799,8 @@
             // 
             // RunningZonesTextBox3
             // 
-            this.RunningZonesTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox3.Location = new System.Drawing.Point(379, 3);
             this.RunningZonesTextBox3.Name = "RunningZonesTextBox3";
@@ -1810,8 +1810,8 @@
             // 
             // RunningZonesTextBox2
             // 
-            this.RunningZonesTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox2.Location = new System.Drawing.Point(191, 3);
             this.RunningZonesTextBox2.Name = "RunningZonesTextBox2";
@@ -1821,8 +1821,8 @@
             // 
             // RunningZonesTextBox1
             // 
-            this.RunningZonesTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunningZonesTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunningZonesTextBox1.Location = new System.Drawing.Point(3, 3);
             this.RunningZonesTextBox1.Name = "RunningZonesTextBox1";
@@ -1843,8 +1843,8 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 4;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -1899,8 +1899,8 @@
             // 
             // RunThresholdTextBox28
             // 
-            this.RunThresholdTextBox28.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox28.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox28.Location = new System.Drawing.Point(735, 399);
             this.RunThresholdTextBox28.Name = "RunThresholdTextBox28";
@@ -1909,8 +1909,8 @@
             // 
             // RunThresholdTextBox27
             // 
-            this.RunThresholdTextBox27.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox27.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox27.Location = new System.Drawing.Point(491, 399);
             this.RunThresholdTextBox27.Name = "RunThresholdTextBox27";
@@ -1919,8 +1919,8 @@
             // 
             // RunThresholdTextBox26
             // 
-            this.RunThresholdTextBox26.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox26.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox26.Location = new System.Drawing.Point(247, 399);
             this.RunThresholdTextBox26.Name = "RunThresholdTextBox26";
@@ -1929,8 +1929,8 @@
             // 
             // RunThresholdTextBox25
             // 
-            this.RunThresholdTextBox25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox25.Location = new System.Drawing.Point(3, 399);
             this.RunThresholdTextBox25.Name = "RunThresholdTextBox25";
@@ -1939,8 +1939,8 @@
             // 
             // RunThresholdTextBox24
             // 
-            this.RunThresholdTextBox24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox24.Location = new System.Drawing.Point(735, 333);
             this.RunThresholdTextBox24.Name = "RunThresholdTextBox24";
@@ -1949,8 +1949,8 @@
             // 
             // RunThresholdTextBox23
             // 
-            this.RunThresholdTextBox23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox23.Location = new System.Drawing.Point(491, 333);
             this.RunThresholdTextBox23.Name = "RunThresholdTextBox23";
@@ -1959,8 +1959,8 @@
             // 
             // RunThresholdTextBox22
             // 
-            this.RunThresholdTextBox22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox22.Location = new System.Drawing.Point(247, 333);
             this.RunThresholdTextBox22.Name = "RunThresholdTextBox22";
@@ -1969,8 +1969,8 @@
             // 
             // RunThresholdTextBox21
             // 
-            this.RunThresholdTextBox21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox21.Location = new System.Drawing.Point(3, 333);
             this.RunThresholdTextBox21.Name = "RunThresholdTextBox21";
@@ -1979,8 +1979,8 @@
             // 
             // RunThresholdTextBox20
             // 
-            this.RunThresholdTextBox20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox20.Location = new System.Drawing.Point(735, 267);
             this.RunThresholdTextBox20.Name = "RunThresholdTextBox20";
@@ -1989,8 +1989,8 @@
             // 
             // RunThresholdTextBox19
             // 
-            this.RunThresholdTextBox19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox19.Location = new System.Drawing.Point(491, 267);
             this.RunThresholdTextBox19.Name = "RunThresholdTextBox19";
@@ -1999,8 +1999,8 @@
             // 
             // RunThresholdTextBox18
             // 
-            this.RunThresholdTextBox18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox18.Location = new System.Drawing.Point(247, 267);
             this.RunThresholdTextBox18.Name = "RunThresholdTextBox18";
@@ -2009,8 +2009,8 @@
             // 
             // RunThresholdTextBox17
             // 
-            this.RunThresholdTextBox17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox17.Location = new System.Drawing.Point(3, 267);
             this.RunThresholdTextBox17.Name = "RunThresholdTextBox17";
@@ -2019,8 +2019,8 @@
             // 
             // RunThresholdTextBox16
             // 
-            this.RunThresholdTextBox16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox16.Location = new System.Drawing.Point(735, 201);
             this.RunThresholdTextBox16.Name = "RunThresholdTextBox16";
@@ -2029,8 +2029,8 @@
             // 
             // RunThresholdTextBox15
             // 
-            this.RunThresholdTextBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox15.Location = new System.Drawing.Point(491, 201);
             this.RunThresholdTextBox15.Name = "RunThresholdTextBox15";
@@ -2039,8 +2039,8 @@
             // 
             // RunThresholdTextBox14
             // 
-            this.RunThresholdTextBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox14.Location = new System.Drawing.Point(247, 201);
             this.RunThresholdTextBox14.Name = "RunThresholdTextBox14";
@@ -2049,8 +2049,8 @@
             // 
             // RunThresholdTextBox13
             // 
-            this.RunThresholdTextBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox13.Location = new System.Drawing.Point(3, 201);
             this.RunThresholdTextBox13.Name = "RunThresholdTextBox13";
@@ -2059,8 +2059,8 @@
             // 
             // RunThresholdTextBox12
             // 
-            this.RunThresholdTextBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox12.Location = new System.Drawing.Point(735, 135);
             this.RunThresholdTextBox12.Name = "RunThresholdTextBox12";
@@ -2069,8 +2069,8 @@
             // 
             // RunThresholdTextBox11
             // 
-            this.RunThresholdTextBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox11.Location = new System.Drawing.Point(491, 135);
             this.RunThresholdTextBox11.Name = "RunThresholdTextBox11";
@@ -2079,8 +2079,8 @@
             // 
             // RunThresholdTextBox10
             // 
-            this.RunThresholdTextBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox10.Location = new System.Drawing.Point(247, 135);
             this.RunThresholdTextBox10.Name = "RunThresholdTextBox10";
@@ -2089,8 +2089,8 @@
             // 
             // RunThresholdTextBox9
             // 
-            this.RunThresholdTextBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox9.Location = new System.Drawing.Point(3, 135);
             this.RunThresholdTextBox9.Name = "RunThresholdTextBox9";
@@ -2099,8 +2099,8 @@
             // 
             // RunThresholdTextBox8
             // 
-            this.RunThresholdTextBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox8.Location = new System.Drawing.Point(735, 69);
             this.RunThresholdTextBox8.Name = "RunThresholdTextBox8";
@@ -2109,8 +2109,8 @@
             // 
             // RunThresholdTextBox7
             // 
-            this.RunThresholdTextBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox7.Location = new System.Drawing.Point(491, 69);
             this.RunThresholdTextBox7.Name = "RunThresholdTextBox7";
@@ -2119,8 +2119,8 @@
             // 
             // RunThresholdTextBox6
             // 
-            this.RunThresholdTextBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox6.Location = new System.Drawing.Point(247, 69);
             this.RunThresholdTextBox6.Name = "RunThresholdTextBox6";
@@ -2129,8 +2129,8 @@
             // 
             // RunThresholdTextBox5
             // 
-            this.RunThresholdTextBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox5.Location = new System.Drawing.Point(3, 69);
             this.RunThresholdTextBox5.Name = "RunThresholdTextBox5";
@@ -2139,8 +2139,8 @@
             // 
             // RunThresholdTextBox4
             // 
-            this.RunThresholdTextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox4.Location = new System.Drawing.Point(735, 3);
             this.RunThresholdTextBox4.Name = "RunThresholdTextBox4";
@@ -2150,8 +2150,8 @@
             // 
             // RunThresholdTextBox3
             // 
-            this.RunThresholdTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox3.Location = new System.Drawing.Point(491, 3);
             this.RunThresholdTextBox3.Name = "RunThresholdTextBox3";
@@ -2161,8 +2161,8 @@
             // 
             // RunThresholdTextBox2
             // 
-            this.RunThresholdTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox2.Location = new System.Drawing.Point(247, 3);
             this.RunThresholdTextBox2.Name = "RunThresholdTextBox2";
@@ -2172,8 +2172,8 @@
             // 
             // RunThresholdTextBox1
             // 
-            this.RunThresholdTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox1.Location = new System.Drawing.Point(3, 3);
             this.RunThresholdTextBox1.Name = "RunThresholdTextBox1";
@@ -2183,8 +2183,8 @@
             // 
             // RunThresholdTextBox29
             // 
-            this.RunThresholdTextBox29.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox29.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox29.Location = new System.Drawing.Point(3, 465);
             this.RunThresholdTextBox29.Name = "RunThresholdTextBox29";
@@ -2193,8 +2193,8 @@
             // 
             // RunThresholdTextBox30
             // 
-            this.RunThresholdTextBox30.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox30.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox30.Location = new System.Drawing.Point(247, 465);
             this.RunThresholdTextBox30.Name = "RunThresholdTextBox30";
@@ -2203,8 +2203,8 @@
             // 
             // RunThresholdTextBox31
             // 
-            this.RunThresholdTextBox31.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox31.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox31.Location = new System.Drawing.Point(491, 465);
             this.RunThresholdTextBox31.Name = "RunThresholdTextBox31";
@@ -2213,22 +2213,22 @@
             // 
             // RunThresholdTextBox32
             // 
-            this.RunThresholdTextBox32.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.RunThresholdTextBox32.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RunThresholdTextBox32.Location = new System.Drawing.Point(735, 465);
             this.RunThresholdTextBox32.Name = "RunThresholdTextBox32";
             this.RunThresholdTextBox32.Size = new System.Drawing.Size(239, 31);
             this.RunThresholdTextBox32.TabIndex = 31;
             // 
-            // TrainingForm
+            // BenchmarkTests
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1308, 746);
             this.Controls.Add(this.tabControl1);
-            this.Name = "TrainingForm";
-            this.Text = "Training Data";
+            this.Name = "BenchmarkTests";
+            this.Text = "Benchmark Data";
             this.tabControl1.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
@@ -2263,7 +2263,7 @@
         private System.Windows.Forms.NumericUpDown powerBikeFtp;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label ftpPower;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BikeCalculateButton;
         private System.Windows.Forms.TableLayoutPanel bikePowerZones;
         private System.Windows.Forms.Label testValues;
         private System.Windows.Forms.TextBox bikeZonesTextBox2;
@@ -2336,7 +2336,7 @@
         private System.Windows.Forms.TextBox RunningZonesTextBox4;
         private System.Windows.Forms.TextBox RunningZonesTextBox3;
         private System.Windows.Forms.TextBox RunningZonesTextBox2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button RunCalculateButton;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TextBox RunThresholdTextBox28;
@@ -2372,7 +2372,7 @@
         private System.Windows.Forms.TextBox RunThresholdTextBox31;
         private System.Windows.Forms.TextBox RunThresholdTextBox32;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button SwimCalculateButton;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.NumericUpDown TimeSeconds500;

@@ -1,29 +1,26 @@
 ﻿// Caleb Smith
 // 09/05/2022
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using TriathlonTraining.CalculationTools;
+using TriathlonTraining.BenchmarkData;
 
 namespace TriathlonTraining
 {
-    public partial class TrainingForm : Form
+    public partial class BenchmarkTests : Form
     {
         // Methods
-        public TrainingForm()
+        public BenchmarkTests()
         {
             InitializeComponent();
         }
         // Calculates bike zones after clicking the calculate button beneath FTP benchmark
-        private void button1_Click(object sender, EventArgs e)
+        private void BikeCalculateButtonClick(object sender, EventArgs e)
         {
-            BikePowerZones powerZones = new BikePowerZones();
-            powerZones.BikeFtpPower = Convert.ToInt32(powerBikeFtp.Text);
+            BikePowerZones powerZones = new BikePowerZones
+            {
+                BikeFtpPower = Convert.ToInt32(powerBikeFtp.Text)
+            };
             bikeZonesTextBox4.Text = Convert.ToString(powerZones.ZonesArray(0, 0));
             bikeZonesTextBox5.Text = Convert.ToString(powerZones.ZonesArray(1, 0));
             bikeZonesTextBox6.Text = Convert.ToString(powerZones.ZonesArray(2, 0));
@@ -47,7 +44,7 @@ namespace TriathlonTraining
             bikeZonesTextBox24.Text = Convert.ToString(powerZones.ZonesArray(2, 6));
         }
         // Calculates run zones after clicking the calculate button beneath 3k benchmark
-        private void button3_Click(object sender, EventArgs e)
+        private void RunCalculateButtonClick(object sender, EventArgs e)
         {
             // Run Distance Pace Zones
             // 3000 Pace Zones
@@ -168,7 +165,7 @@ namespace TriathlonTraining
         }
         // Calculates swim zones after clicking the calculate button beneath 500yd benchmark
         // Currently uses 1.15 as b factor to predict time 2
-        private void button2_Click(object sender, EventArgs e)
+        private void SwimCalculateButtonClick(object sender, EventArgs e)
         {
             // 500 yard pace zones
             SwimPaceZones SwimZone500 = new SwimPaceZones(Convert.ToInt32(TimeMinutes500.Value), Convert.ToInt32(TimeSeconds500.Value), 500);
@@ -263,11 +260,11 @@ namespace TriathlonTraining
             SwimZonesTextBox50.Text = SwimZone5000.PaceString(SwimZone5000.PaceUpper());
         }
         // Calculate all values
-        private void button4_Click(object sender, EventArgs e)
+        private void CalculateButton(object sender, EventArgs e)
         {
-            button1.PerformClick();
-            button2.PerformClick();
-            button3.PerformClick();
+            BikeCalculateButton.PerformClick();
+            SwimCalculateButton.PerformClick();
+            RunCalculateButton.PerformClick();
         }
     }
 }

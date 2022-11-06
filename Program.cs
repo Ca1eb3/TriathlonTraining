@@ -16,7 +16,7 @@ namespace TriathlonTraining
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TrainingForm());
+            Application.Run(new BenchmarkTests());
         }
     }
 }

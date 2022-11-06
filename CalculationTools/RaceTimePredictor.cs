@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TriathlonTraining
+namespace TriathlonTraining.CalculationTools
 {
     public static class RaceTimePredictor
     {
