@@ -21,27 +21,28 @@ namespace TriathlonTraining
             {
                 BikeFtpPower = Convert.ToInt32(powerBikeFtp.Text)
             };
-            bikeZonesTextBox4.Text = Convert.ToString(powerZones.ZonesArray(0, 0));
-            bikeZonesTextBox5.Text = Convert.ToString(powerZones.ZonesArray(1, 0));
-            bikeZonesTextBox6.Text = Convert.ToString(powerZones.ZonesArray(2, 0));
-            bikeZonesTextBox7.Text = Convert.ToString(powerZones.ZonesArray(0, 1));
-            bikeZonesTextBox8.Text = Convert.ToString(powerZones.ZonesArray(1, 1));
-            bikeZonesTextBox9.Text = Convert.ToString(powerZones.ZonesArray(2, 1));
-            bikeZonesTextBox10.Text = Convert.ToString(powerZones.ZonesArray(0, 2));
-            bikeZonesTextBox11.Text = Convert.ToString(powerZones.ZonesArray(1, 2));
-            bikeZonesTextBox12.Text = Convert.ToString(powerZones.ZonesArray(2, 2));
-            bikeZonesTextBox13.Text = Convert.ToString(powerZones.ZonesArray(0, 3));
-            bikeZonesTextBox14.Text = Convert.ToString(powerZones.ZonesArray(1, 3));
-            bikeZonesTextBox15.Text = Convert.ToString(powerZones.ZonesArray(2, 3));
-            bikeZonesTextBox16.Text = Convert.ToString(powerZones.ZonesArray(0, 4));
-            bikeZonesTextBox17.Text = Convert.ToString(powerZones.ZonesArray(1, 4));
-            bikeZonesTextBox18.Text = Convert.ToString(powerZones.ZonesArray(2, 4));
-            bikeZonesTextBox19.Text = Convert.ToString(powerZones.ZonesArray(0, 5));
-            bikeZonesTextBox20.Text = Convert.ToString(powerZones.ZonesArray(1, 5));
-            bikeZonesTextBox21.Text = Convert.ToString(powerZones.ZonesArray(2, 5));
-            bikeZonesTextBox22.Text = Convert.ToString(powerZones.ZonesArray(0, 6));
-            bikeZonesTextBox23.Text = Convert.ToString(powerZones.ZonesArray(1, 6));
-            bikeZonesTextBox24.Text = Convert.ToString(powerZones.ZonesArray(2, 6));
+            powerZones.SetZonesArray();
+            bikeZonesTextBox4.Text = Convert.ToString(powerZones.PowerZones[0]);
+            bikeZonesTextBox5.Text = Convert.ToString(powerZones.PowerZones[1]);
+            bikeZonesTextBox6.Text = Convert.ToString(powerZones.PowerZones[2]);
+            bikeZonesTextBox7.Text = Convert.ToString(powerZones.PowerZones[3]);
+            bikeZonesTextBox8.Text = Convert.ToString(powerZones.PowerZones[4]);
+            bikeZonesTextBox9.Text = Convert.ToString(powerZones.PowerZones[5]);
+            bikeZonesTextBox10.Text = Convert.ToString(powerZones.PowerZones[6]);
+            bikeZonesTextBox11.Text = Convert.ToString(powerZones.PowerZones[7]);
+            bikeZonesTextBox12.Text = Convert.ToString(powerZones.PowerZones[8]);
+            bikeZonesTextBox13.Text = Convert.ToString(powerZones.PowerZones[9]);
+            bikeZonesTextBox14.Text = Convert.ToString(powerZones.PowerZones[10]);
+            bikeZonesTextBox15.Text = Convert.ToString(powerZones.PowerZones[11]);
+            bikeZonesTextBox16.Text = Convert.ToString(powerZones.PowerZones[12]);
+            bikeZonesTextBox17.Text = Convert.ToString(powerZones.PowerZones[13]);
+            bikeZonesTextBox18.Text = Convert.ToString(powerZones.PowerZones[14]);
+            bikeZonesTextBox19.Text = Convert.ToString(powerZones.PowerZones[15]);
+            bikeZonesTextBox20.Text = Convert.ToString(powerZones.PowerZones[16]);
+            bikeZonesTextBox21.Text = Convert.ToString(powerZones.PowerZones[17]);
+            bikeZonesTextBox22.Text = Convert.ToString(powerZones.PowerZones[18]);
+            bikeZonesTextBox23.Text = Convert.ToString(powerZones.PowerZones[19]);
+            bikeZonesTextBox24.Text = Convert.ToString(powerZones.PowerZones[20]);
         }
         // Calculates run zones after clicking the calculate button beneath 3k benchmark
         private void RunCalculateButtonClick(object sender, EventArgs e)

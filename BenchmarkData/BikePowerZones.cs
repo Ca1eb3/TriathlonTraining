@@ -13,6 +13,7 @@ namespace TriathlonTraining.BenchmarkData
         // Class Variables
         private int bikeFtpPower = 0;
         private double[] zoneNumber = new double[7];
+        private int[] powerZones = new int[21];
 
 
         // Encapsulation
@@ -35,6 +36,11 @@ namespace TriathlonTraining.BenchmarkData
             { 
                 zoneNumber = value;
             }
+        }
+        public int[] PowerZones
+        {
+            get { return powerZones; }
+            set { powerZones = value; }
         }
 
         // Methods
@@ -69,24 +75,23 @@ namespace TriathlonTraining.BenchmarkData
             UpperPower[6] = BikeFtpPower * 3;
             return UpperPower[ArrayIndex];
         }
-        public double ZonesArray(int ArrayNumber, int NumberInArray)
+        public void SetZonesArray()
         {
-            if (ArrayNumber == 0)
+            for (int i = 0; i < PowerZones.Length; i++)
             {
-                return ZoneNumber[NumberInArray];
+                if (i % 3 == 0)
+                {
+                    PowerZones[i] = Convert.ToInt32(ZoneNumber[i / 3]);
+                }
+                else if (i % 3 == 1)
+                {
+                    PowerZones[i] = Convert.ToInt32(LowerPowerZones(i / 3));
+                }
+                else if (i % 3 == 2)
+                {
+                    PowerZones[i] = Convert.ToInt32(UpperPowerZones(i / 3));
+                }
             }
-            else if (ArrayNumber == 1)
-            {
-                return LowerPowerZones(NumberInArray);
-            }
-            else if (ArrayNumber == 2)
-            {
-                return UpperPowerZones(NumberInArray);
-            }
-            else
-            {
-                return 0.00;
-            }
-        }   
+        }
     }
 }
