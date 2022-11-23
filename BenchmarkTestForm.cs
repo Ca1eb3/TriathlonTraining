@@ -180,7 +180,7 @@ namespace TriathlonTraining
             // used for calculating other pace zones
             int TotalSeconds500 = TimeConverter.ConvertedToSeconds(SwimZone500.Hours, SwimZone500.Minutes, SwimZone500.Seconds);
             // 50 yard pace zones
-            int Seconds50 = RaceTimePredictor.PredictTime2Custom(TotalSeconds500, 500, 50, 1.15);
+            int Seconds50 = RaceTimePredictor.PredictTime2(TotalSeconds500, 500, 50, 1.15);
             SwimPaceZones SwimZone50 = new SwimPaceZones(TimeConverter.ConvertedToTime(Seconds50, 0), TimeConverter.ConvertedToTime(Seconds50, 1), TimeConverter.ConvertedToTime(Seconds50, 2), 50);
             SwimZonesTextBox6.Text = Convert.ToString(SwimZone50.DistanceMeasured);
             // Displays time
@@ -190,7 +190,7 @@ namespace TriathlonTraining
             SwimZonesTextBox9.Text = SwimZone50.PaceString(SwimZone50.PaceActual());
             SwimZonesTextBox10.Text = SwimZone50.PaceString(SwimZone50.PaceUpper());
             // 100 yard pace zones
-            int Seconds100 = RaceTimePredictor.PredictTime2Custom(TotalSeconds500, 500, 100, 1.15);
+            int Seconds100 = RaceTimePredictor.PredictTime2(TotalSeconds500, 500, 100, 1.15);
             SwimPaceZones SwimZone100 = new SwimPaceZones(TimeConverter.ConvertedToTime(Seconds100, 0), TimeConverter.ConvertedToTime(Seconds100, 1), TimeConverter.ConvertedToTime(Seconds100, 2), 100);
             SwimZonesTextBox11.Text = Convert.ToString(SwimZone100.DistanceMeasured);
             // Displays time
@@ -200,7 +200,7 @@ namespace TriathlonTraining
             SwimZonesTextBox14.Text = SwimZone100.PaceString(SwimZone100.PaceActual());
             SwimZonesTextBox15.Text = SwimZone100.PaceString(SwimZone100.PaceUpper());
             // 200 yard pace zones
-            int Seconds200 = RaceTimePredictor.PredictTime2Custom(TotalSeconds500, 500, 200, 1.15);
+            int Seconds200 = RaceTimePredictor.PredictTime2(TotalSeconds500, 500, 200, 1.15);
             SwimPaceZones SwimZone200 = new SwimPaceZones(TimeConverter.ConvertedToTime(Seconds200, 0), TimeConverter.ConvertedToTime(Seconds200, 1), TimeConverter.ConvertedToTime(Seconds200, 2), 200);
             SwimZonesTextBox16.Text = Convert.ToString(SwimZone200.DistanceMeasured);
             // Displays time
@@ -210,7 +210,7 @@ namespace TriathlonTraining
             SwimZonesTextBox19.Text = SwimZone200.PaceString(SwimZone200.PaceActual());
             SwimZonesTextBox20.Text = SwimZone200.PaceString(SwimZone200.PaceUpper());
             // 1000 yard pace zones
-            int Seconds1000 = RaceTimePredictor.PredictTime2Custom(TotalSeconds500, 500, 1000, 1.15);
+            int Seconds1000 = RaceTimePredictor.PredictTime2(TotalSeconds500, 500, 1000, 1.15);
             SwimPaceZones SwimZone1000 = new SwimPaceZones(TimeConverter.ConvertedToTime(Seconds1000, 0), TimeConverter.ConvertedToTime(Seconds1000, 1), TimeConverter.ConvertedToTime(Seconds1000, 2), 1000);
             SwimZonesTextBox26.Text = Convert.ToString(SwimZone1000.DistanceMeasured);
             // Displays time
@@ -220,7 +220,7 @@ namespace TriathlonTraining
             SwimZonesTextBox29.Text = SwimZone1000.PaceString(SwimZone1000.PaceActual());
             SwimZonesTextBox30.Text = SwimZone1000.PaceString(SwimZone1000.PaceUpper());
             // 1500 yard pace zones
-            int Seconds1500 = RaceTimePredictor.PredictTime2Custom(TotalSeconds500, 500, 1500, 1.15);
+            int Seconds1500 = RaceTimePredictor.PredictTime2(TotalSeconds500, 500, 1500, 1.15);
             SwimPaceZones SwimZone1500 = new SwimPaceZones(TimeConverter.ConvertedToTime(Seconds1500, 0), TimeConverter.ConvertedToTime(Seconds1500, 1), TimeConverter.ConvertedToTime(Seconds1500, 2), 1500);
             SwimZonesTextBox31.Text = Convert.ToString(SwimZone1500.DistanceMeasured);
             // Displays time
@@ -230,7 +230,7 @@ namespace TriathlonTraining
             SwimZonesTextBox34.Text = SwimZone1500.PaceString(SwimZone1500.PaceActual());
             SwimZonesTextBox35.Text = SwimZone1500.PaceString(SwimZone1500.PaceUpper());
             // 1650 yard pace zones
-            int Seconds1650 = RaceTimePredictor.PredictTime2Custom(TotalSeconds500, 500, 1650, 1.15);
+            int Seconds1650 = RaceTimePredictor.PredictTime2(TotalSeconds500, 500, 1650, 1.15);
             SwimPaceZones SwimZone1650 = new SwimPaceZones(TimeConverter.ConvertedToTime(Seconds1650, 0), TimeConverter.ConvertedToTime(Seconds1650, 1), TimeConverter.ConvertedToTime(Seconds1650, 2), 1650);
             SwimZonesTextBox36.Text = Convert.ToString(SwimZone1650.DistanceMeasured);
             // Displays time
@@ -240,7 +240,7 @@ namespace TriathlonTraining
             SwimZonesTextBox39.Text = SwimZone1650.PaceString(SwimZone1650.PaceActual());
             SwimZonesTextBox40.Text = SwimZone1650.PaceString(SwimZone1650.PaceUpper());
             // 3000 yard pace zones
-            int Seconds3000 = RaceTimePredictor.PredictTime2Custom(TotalSeconds500, 500, 3000, 1.15);
+            int Seconds3000 = RaceTimePredictor.PredictTime2(TotalSeconds500, 500, 3000, 1.15);
             SwimPaceZones SwimZone3000 = new SwimPaceZones(TimeConverter.ConvertedToTime(Seconds3000, 0), TimeConverter.ConvertedToTime(Seconds3000, 1), TimeConverter.ConvertedToTime(Seconds3000, 2), 3000);
             SwimZonesTextBox41.Text = Convert.ToString(SwimZone3000.DistanceMeasured);
             // Displays time
@@ -250,7 +250,7 @@ namespace TriathlonTraining
             SwimZonesTextBox44.Text = SwimZone3000.PaceString(SwimZone3000.PaceActual());
             SwimZonesTextBox45.Text = SwimZone3000.PaceString(SwimZone3000.PaceUpper());
             // 5000 yard pace zones
-            int Seconds5000 = RaceTimePredictor.PredictTime2Custom(TotalSeconds500, 500, 5000, 1.15);
+            int Seconds5000 = RaceTimePredictor.PredictTime2(TotalSeconds500, 500, 5000, 1.15);
             SwimPaceZones SwimZone5000 = new SwimPaceZones(TimeConverter.ConvertedToTime(Seconds5000, 0), TimeConverter.ConvertedToTime(Seconds5000, 1), TimeConverter.ConvertedToTime(Seconds5000, 2), 5000);
             SwimZonesTextBox46.Text = Convert.ToString(SwimZone5000.DistanceMeasured);
             // Displays time
