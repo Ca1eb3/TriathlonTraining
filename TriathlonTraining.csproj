@@ -74,6 +74,7 @@
     <Compile Include="BenchmarkTestForm.Designer.cs">
       <DependentUpon>BenchmarkTestForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataStore.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="BenchmarkTestForm.resx">
