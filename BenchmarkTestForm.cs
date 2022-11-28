@@ -22,6 +22,7 @@ namespace TriathlonTraining
                 BikeFtpPower = Convert.ToInt32(powerBikeFtp.Text)
             };
             powerZones.SetZonesArray();
+            DataStore.BikePowerZones = powerZones;
             bikeZonesTextBox4.Text = Convert.ToString(powerZones.PowerZones[0]);
             bikeZonesTextBox5.Text = Convert.ToString(powerZones.PowerZones[1]);
             bikeZonesTextBox6.Text = Convert.ToString(powerZones.PowerZones[2]);
@@ -50,6 +51,7 @@ namespace TriathlonTraining
             // Run Distance Pace Zones
             // 3000 Pace Zones
             RunDistancePaceZones Zone3000 = new RunDistancePaceZones(Convert.ToInt32(TimeMinutes3k.Value), Convert.ToInt32(TimeSeconds3k.Value), 3000);
+            DataStore.RunDistancePaceZones[3000] = Zone3000;
             RunningZonesTextBox16.Text = Convert.ToString(Zone3000.DistanceMeasured);
             // Displays Time
             RunningZonesTextBox17.Text = TimeConverter.DisplayTime(Zone3000.Hours, Zone3000.Minutes, Zone3000.Seconds);
@@ -62,6 +64,7 @@ namespace TriathlonTraining
             // 800 Pace Zones
             int Seconds800 = RaceTimePredictor.PredictTime2(TotalSeconds3000, 3000, 800);
             RunDistancePaceZones Zone800 = new RunDistancePaceZones(TimeConverter.ConvertedToTime(Seconds800, 0), TimeConverter.ConvertedToTime(Seconds800, 1), TimeConverter.ConvertedToTime(Seconds800, 2), 800);
+            DataStore.RunDistancePaceZones[800] = Zone800;
             RunningZonesTextBox6.Text = Convert.ToString(Zone800.DistanceMeasured);
             // Displays Time
             RunningZonesTextBox7.Text = TimeConverter.DisplayTime(Zone800.Hours, Zone800.Minutes, Zone800.Seconds);
@@ -72,6 +75,7 @@ namespace TriathlonTraining
             // 1609/Mile Pace Zones
             int Seconds1609 = RaceTimePredictor.PredictTime2(TotalSeconds3000, 3000, 1609);
             RunDistancePaceZones Zone1609 = new RunDistancePaceZones(TimeConverter.ConvertedToTime(Seconds1609, 0), TimeConverter.ConvertedToTime(Seconds1609, 1), TimeConverter.ConvertedToTime(Seconds1609, 2), 1609);
+            DataStore.RunDistancePaceZones[1609] = Zone1609;
             RunningZonesTextBox11.Text = Convert.ToString(Zone1609.DistanceMeasured);
             // Displays Time
             RunningZonesTextBox12.Text = TimeConverter.DisplayTime(Zone1609.Hours, Zone1609.Minutes, Zone1609.Seconds);
@@ -82,6 +86,7 @@ namespace TriathlonTraining
             // 5000 Pace Zones
             int Seconds5000 = RaceTimePredictor.PredictTime2(TotalSeconds3000, 3000, 5000);
             RunDistancePaceZones Zone5000 = new RunDistancePaceZones(TimeConverter.ConvertedToTime(Seconds5000, 0), TimeConverter.ConvertedToTime(Seconds5000, 1), TimeConverter.ConvertedToTime(Seconds5000, 2), 5000);
+            DataStore.RunDistancePaceZones[5000] = Zone5000;
             RunningZonesTextBox21.Text = Convert.ToString(Zone5000.DistanceMeasured);
             // Displays Time
             RunningZonesTextBox22.Text = TimeConverter.DisplayTime(Zone5000.Hours, Zone5000.Minutes, Zone5000.Seconds);
@@ -92,6 +97,7 @@ namespace TriathlonTraining
             // 10000 Pace Zones
             int Seconds10000 = RaceTimePredictor.PredictTime2(TotalSeconds3000, 3000, 10000);
             RunDistancePaceZones Zone10000 = new RunDistancePaceZones(TimeConverter.ConvertedToTime(Seconds10000, 0), TimeConverter.ConvertedToTime(Seconds10000, 1), TimeConverter.ConvertedToTime(Seconds10000, 2), 10000);
+            DataStore.RunDistancePaceZones[10000] = Zone10000;
             RunningZonesTextBox26.Text = Convert.ToString(Zone10000.DistanceMeasured);
             // Displays Time
             RunningZonesTextBox27.Text = TimeConverter.DisplayTime(Zone10000.Hours, Zone10000.Minutes, Zone10000.Seconds);
@@ -102,6 +108,7 @@ namespace TriathlonTraining
             // 21097/Half-Marathon Pace Zones
             int Seconds21097 = RaceTimePredictor.PredictTime2(TotalSeconds3000, 3000, 21097);
             RunDistancePaceZones Zone21097 = new RunDistancePaceZones(TimeConverter.ConvertedToTime(Seconds21097, 0), TimeConverter.ConvertedToTime(Seconds21097, 1), TimeConverter.ConvertedToTime(Seconds21097, 2), 21097);
+            DataStore.RunDistancePaceZones[21097] = Zone21097;
             RunningZonesTextBox31.Text = Convert.ToString(Zone21097.DistanceMeasured);
             // Displays Time
             RunningZonesTextBox32.Text = TimeConverter.DisplayTime(Zone21097.Hours, Zone21097.Minutes, Zone21097.Seconds);
@@ -112,6 +119,7 @@ namespace TriathlonTraining
             // 42195/Marathon Pace Zones
             int Seconds42195 = RaceTimePredictor.PredictTime2(TotalSeconds3000, 3000, 42195);
             RunDistancePaceZones Zone42195 = new RunDistancePaceZones(TimeConverter.ConvertedToTime(Seconds42195, 0), TimeConverter.ConvertedToTime(Seconds42195, 1), TimeConverter.ConvertedToTime(Seconds42195, 2), 42195);
+            DataStore.RunDistancePaceZones[42195] = Zone42195;
             RunningZonesTextBox36.Text = Convert.ToString(Zone42195.DistanceMeasured);
             // Displays Time
             RunningZonesTextBox37.Text = TimeConverter.DisplayTime(Zone42195.Hours, Zone42195.Minutes, Zone42195.Seconds);
@@ -123,42 +131,49 @@ namespace TriathlonTraining
             // Run Threshold Pace Zones
             // T1 Zones
             RunThresholdPaceZones T1 = new RunThresholdPaceZones("T1-Detraining", 1.7, Zone3000.Hours, Zone3000.Minutes, Zone3000.Seconds);
+            DataStore.RunThresholdPaceZones["T1"] = T1;
             RunThresholdTextBox5.Text = T1.ZoneName;
             RunThresholdTextBox6.Text = T1.PaceString(T1.PaceLower());
             RunThresholdTextBox7.Text = T1.PaceString(T1.PaceActual());
             RunThresholdTextBox8.Text = T1.PaceString(T1 .PaceUpper());
             // T2 Zones
             RunThresholdPaceZones T2 = new RunThresholdPaceZones("T2-Low Aerobic", 1.5, Zone3000.Hours, Zone3000.Minutes, Zone3000.Seconds);
+            DataStore.RunThresholdPaceZones["T2"] = T2;
             RunThresholdTextBox9.Text = T2.ZoneName;
             RunThresholdTextBox10.Text = T2.PaceString(T2.PaceLower());
             RunThresholdTextBox11.Text = T2.PaceString(T2.PaceActual());
             RunThresholdTextBox12.Text = T2.PaceString(T2.PaceUpper());
             // T3 Zones
             RunThresholdPaceZones T3 = new RunThresholdPaceZones("T3-Mid Aerobic", 1.3, Zone3000.Hours, Zone3000.Minutes, Zone3000.Seconds);
+            DataStore.RunThresholdPaceZones["T3"] = T3;
             RunThresholdTextBox13.Text = T3.ZoneName;
             RunThresholdTextBox14.Text = T3.PaceString(T3.PaceLower());
             RunThresholdTextBox15.Text = T3.PaceString(T3.PaceActual());
             RunThresholdTextBox16.Text = T3.PaceString(T3.PaceUpper());
             // T4 Zones
             RunThresholdPaceZones T4 = new RunThresholdPaceZones("T4-High Aerobic", Zone3000.Hours, Zone3000.Minutes, Zone3000.Seconds);
+            DataStore.RunThresholdPaceZones["T4"] = T4;
             RunThresholdTextBox17.Text = T4.ZoneName;
             RunThresholdTextBox18.Text = T4.PaceString(Zone21097.PaceLower());
             RunThresholdTextBox19.Text = T4.PaceString((Zone21097.PaceLower() + Zone42195.PaceUpper())/2);
             RunThresholdTextBox20.Text = T4.PaceString(Zone42195.PaceUpper());
             // T5 Zones
             RunThresholdPaceZones T5 = new RunThresholdPaceZones("T5-Aerobic Threshold", Zone3000.Hours, Zone3000.Minutes, Zone3000.Seconds);
+            DataStore.RunThresholdPaceZones["T5"] = T5;
             RunThresholdTextBox21.Text = T5.ZoneName;
             RunThresholdTextBox22.Text = T5.PaceString(Zone5000.PaceLower());
             RunThresholdTextBox23.Text = T5.PaceString((Zone10000.PaceUpper() + Zone5000.PaceLower()) / 2);
             RunThresholdTextBox24.Text = T5.PaceString(Zone10000.PaceUpper());
             // T6 Zones
             RunThresholdPaceZones T6 = new RunThresholdPaceZones("T6-Anaerobic Threshold", 1.125, Zone800.Hours, Zone800.Minutes, Zone800.Seconds);
+            DataStore.RunThresholdPaceZones["T6"] = T6;
             RunThresholdTextBox25.Text = T6.ZoneName;
             RunThresholdTextBox26.Text = T6.PaceString(T6.PaceLower() * 3);
             RunThresholdTextBox27.Text = T6.PaceString(T6.PaceActual() * 3);
             RunThresholdTextBox28.Text = T6.PaceString(T6.PaceUpper() * 3);
             // T7 Zones
             RunThresholdPaceZones T7 = new RunThresholdPaceZones("T7-Neuromuscular Threshold", 1, Zone800.Hours, Zone800.Minutes, Zone800.Seconds);
+            DataStore.RunThresholdPaceZones["T7"] = T7;
             RunThresholdTextBox29.Text = T7.ZoneName;
             RunThresholdTextBox30.Text = T7.PaceString(T7.PaceLower() * 3);
             RunThresholdTextBox31.Text = T7.PaceString(T7.PaceActual() * 3);
@@ -170,6 +185,7 @@ namespace TriathlonTraining
         {
             // 500 yard pace zones
             SwimPaceZones SwimZone500 = new SwimPaceZones(Convert.ToInt32(TimeMinutes500.Value), Convert.ToInt32(TimeSeconds500.Value), 500);
+            DataStore.SwimPaceZones[500] = SwimZone500;
             SwimZonesTextBox21.Text = Convert.ToString(SwimZone500.DistanceMeasured);
             // Displays time
             SwimZonesTextBox22.Text = TimeConverter.DisplayTime(SwimZone500.Hours, SwimZone500.Minutes, SwimZone500.Seconds);
@@ -182,6 +198,7 @@ namespace TriathlonTraining
             // 50 yard pace zones
             int Seconds50 = RaceTimePredictor.PredictTime2Custom(TotalSeconds500, 500, 50, 1.15);
             SwimPaceZones SwimZone50 = new SwimPaceZones(TimeConverter.ConvertedToTime(Seconds50, 0), TimeConverter.ConvertedToTime(Seconds50, 1), TimeConverter.ConvertedToTime(Seconds50, 2), 50);
+            DataStore.SwimPaceZones[50] = SwimZone50;
             SwimZonesTextBox6.Text = Convert.ToString(SwimZone50.DistanceMeasured);
             // Displays time
             SwimZonesTextBox7.Text = TimeConverter.DisplayTime(SwimZone50.Hours, SwimZone50.Minutes, SwimZone50.Seconds);
@@ -192,6 +209,7 @@ namespace TriathlonTraining
             // 100 yard pace zones
             int Seconds100 = RaceTimePredictor.PredictTime2Custom(TotalSeconds500, 500, 100, 1.15);
             SwimPaceZones SwimZone100 = new SwimPaceZones(TimeConverter.ConvertedToTime(Seconds100, 0), TimeConverter.ConvertedToTime(Seconds100, 1), TimeConverter.ConvertedToTime(Seconds100, 2), 100);
+            DataStore.SwimPaceZones[100] = SwimZone100;
             SwimZonesTextBox11.Text = Convert.ToString(SwimZone100.DistanceMeasured);
             // Displays time
             SwimZonesTextBox12.Text = TimeConverter.DisplayTime(SwimZone100.Hours, SwimZone100.Minutes, SwimZone100.Seconds);
@@ -202,6 +220,7 @@ namespace TriathlonTraining
             // 200 yard pace zones
             int Seconds200 = RaceTimePredictor.PredictTime2Custom(TotalSeconds500, 500, 200, 1.15);
             SwimPaceZones SwimZone200 = new SwimPaceZones(TimeConverter.ConvertedToTime(Seconds200, 0), TimeConverter.ConvertedToTime(Seconds200, 1), TimeConverter.ConvertedToTime(Seconds200, 2), 200);
+            DataStore.SwimPaceZones[200] = SwimZone200;
             SwimZonesTextBox16.Text = Convert.ToString(SwimZone200.DistanceMeasured);
             // Displays time
             SwimZonesTextBox17.Text = TimeConverter.DisplayTime(SwimZone200.Hours, SwimZone200.Minutes, SwimZone200.Seconds);
@@ -212,6 +231,7 @@ namespace TriathlonTraining
             // 1000 yard pace zones
             int Seconds1000 = RaceTimePredictor.PredictTime2Custom(TotalSeconds500, 500, 1000, 1.15);
             SwimPaceZones SwimZone1000 = new SwimPaceZones(TimeConverter.ConvertedToTime(Seconds1000, 0), TimeConverter.ConvertedToTime(Seconds1000, 1), TimeConverter.ConvertedToTime(Seconds1000, 2), 1000);
+            DataStore.SwimPaceZones[1000] = SwimZone1000;
             SwimZonesTextBox26.Text = Convert.ToString(SwimZone1000.DistanceMeasured);
             // Displays time
             SwimZonesTextBox27.Text = TimeConverter.DisplayTime(SwimZone1000.Hours, SwimZone1000.Minutes, SwimZone1000.Seconds);
@@ -222,6 +242,7 @@ namespace TriathlonTraining
             // 1500 yard pace zones
             int Seconds1500 = RaceTimePredictor.PredictTime2Custom(TotalSeconds500, 500, 1500, 1.15);
             SwimPaceZones SwimZone1500 = new SwimPaceZones(TimeConverter.ConvertedToTime(Seconds1500, 0), TimeConverter.ConvertedToTime(Seconds1500, 1), TimeConverter.ConvertedToTime(Seconds1500, 2), 1500);
+            DataStore.SwimPaceZones[1500] = SwimZone1500;
             SwimZonesTextBox31.Text = Convert.ToString(SwimZone1500.DistanceMeasured);
             // Displays time
             SwimZonesTextBox32.Text = TimeConverter.DisplayTime(SwimZone1500.Hours, SwimZone1500.Minutes, SwimZone1500.Seconds);
@@ -232,6 +253,7 @@ namespace TriathlonTraining
             // 1650 yard pace zones
             int Seconds1650 = RaceTimePredictor.PredictTime2Custom(TotalSeconds500, 500, 1650, 1.15);
             SwimPaceZones SwimZone1650 = new SwimPaceZones(TimeConverter.ConvertedToTime(Seconds1650, 0), TimeConverter.ConvertedToTime(Seconds1650, 1), TimeConverter.ConvertedToTime(Seconds1650, 2), 1650);
+            DataStore.SwimPaceZones[1650] = SwimZone1650;
             SwimZonesTextBox36.Text = Convert.ToString(SwimZone1650.DistanceMeasured);
             // Displays time
             SwimZonesTextBox37.Text = TimeConverter.DisplayTime(SwimZone1650.Hours, SwimZone1650.Minutes, SwimZone1650.Seconds);
@@ -242,6 +264,7 @@ namespace TriathlonTraining
             // 3000 yard pace zones
             int Seconds3000 = RaceTimePredictor.PredictTime2Custom(TotalSeconds500, 500, 3000, 1.15);
             SwimPaceZones SwimZone3000 = new SwimPaceZones(TimeConverter.ConvertedToTime(Seconds3000, 0), TimeConverter.ConvertedToTime(Seconds3000, 1), TimeConverter.ConvertedToTime(Seconds3000, 2), 3000);
+            DataStore.SwimPaceZones[3000] = SwimZone3000;
             SwimZonesTextBox41.Text = Convert.ToString(SwimZone3000.DistanceMeasured);
             // Displays time
             SwimZonesTextBox42.Text = TimeConverter.DisplayTime(SwimZone3000.Hours, SwimZone3000.Minutes, SwimZone3000.Seconds);
@@ -252,6 +275,7 @@ namespace TriathlonTraining
             // 5000 yard pace zones
             int Seconds5000 = RaceTimePredictor.PredictTime2Custom(TotalSeconds500, 500, 5000, 1.15);
             SwimPaceZones SwimZone5000 = new SwimPaceZones(TimeConverter.ConvertedToTime(Seconds5000, 0), TimeConverter.ConvertedToTime(Seconds5000, 1), TimeConverter.ConvertedToTime(Seconds5000, 2), 5000);
+            DataStore.SwimPaceZones[5000] = SwimZone5000;
             SwimZonesTextBox46.Text = Convert.ToString(SwimZone5000.DistanceMeasured);
             // Displays time
             SwimZonesTextBox47.Text = TimeConverter.DisplayTime(SwimZone5000.Hours, SwimZone5000.Minutes, SwimZone5000.Seconds);
