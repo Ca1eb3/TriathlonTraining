@@ -4,6 +4,8 @@ using System;
 using System.Windows.Forms;
 using TriathlonTraining.CalculationTools;
 using TriathlonTraining.BenchmarkData;
+using System.Threading;
+using TriathlonTraining.MainApplication;
 
 namespace TriathlonTraining
 {
@@ -290,6 +292,12 @@ namespace TriathlonTraining
             BikeCalculateButton.PerformClick();
             SwimCalculateButton.PerformClick();
             RunCalculateButton.PerformClick();
+        }
+
+        private void TrainingCalendarButton_Click(object sender, EventArgs e)
+        {
+            Thread thread2 = new Thread(ThreadTasks.TrainingLog);
+            thread2.Start();
         }
     }
 }

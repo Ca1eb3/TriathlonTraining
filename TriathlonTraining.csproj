@@ -75,10 +75,20 @@
       <DependentUpon>BenchmarkTestForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DataStore.cs" />
+    <Compile Include="MesaCycleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MesaCycleForm.Designer.cs">
+      <DependentUpon>MesaCycleForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MainApplication\ThreadTasks.cs" />
     <EmbeddedResource Include="BenchmarkTestForm.resx">
       <DependentUpon>BenchmarkTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MesaCycleForm.resx">
+      <DependentUpon>MesaCycleForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

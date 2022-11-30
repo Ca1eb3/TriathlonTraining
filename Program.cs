@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace TriathlonTraining
@@ -11,7 +12,6 @@ namespace TriathlonTraining
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
