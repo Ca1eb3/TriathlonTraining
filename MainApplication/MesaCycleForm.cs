@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TriathlonTraining
+namespace TriathlonTraining.MainApplication
 {
     public partial class MesaCycleForm : Form
     {

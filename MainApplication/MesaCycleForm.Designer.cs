@@ -1,4 +1,4 @@
-﻿namespace TriathlonTraining
+﻿namespace TriathlonTraining.MainApplication
 {
     partial class MesaCycleForm
     {
@@ -33,17 +33,18 @@
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(2, 1);
-            this.monthCalendar1.Location = new System.Drawing.Point(471, 296);
+            this.monthCalendar1.Location = new System.Drawing.Point(39, 44);
+            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 0;
             // 
             // MesaCycleForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1820, 931);
+            this.ClientSize = new System.Drawing.Size(910, 484);
             this.Controls.Add(this.monthCalendar1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MesaCycleForm";
             this.Text = "MesaCycleForm";
             this.ResumeLayout(false);

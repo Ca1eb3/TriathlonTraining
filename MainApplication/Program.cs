@@ -4,8 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Windows.Forms;
+using TriathlonTraining.MainApplication;
 
-namespace TriathlonTraining
+namespace TriathlonTraining.MainApplication
 {
     internal static class Program
     {
@@ -14,9 +15,8 @@ namespace TriathlonTraining
         /// </summary>
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BenchmarkTests());
+            Thread thread1 = new Thread(ThreadTasks.BenchmarkTestFormRun);
+            thread1.Start();
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TriathlonTraining.BenchmarkData;
 
-namespace TriathlonTraining
+namespace TriathlonTraining.BenchmarkData
 {
     public static class DataStore
     {

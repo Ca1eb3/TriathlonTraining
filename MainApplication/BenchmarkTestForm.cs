@@ -5,14 +5,13 @@ using System.Windows.Forms;
 using TriathlonTraining.CalculationTools;
 using TriathlonTraining.BenchmarkData;
 using System.Threading;
-using TriathlonTraining.MainApplication;
 
-namespace TriathlonTraining
+namespace TriathlonTraining.MainApplication
 {
-    public partial class BenchmarkTests : Form
+    public partial class BenchmarkTestForm : Form
     {
         // Methods
-        public BenchmarkTests()
+        public BenchmarkTestForm()
         {
             InitializeComponent();
         }
@@ -296,7 +295,7 @@ namespace TriathlonTraining
 
         private void TrainingCalendarButton_Click(object sender, EventArgs e)
         {
-            Thread thread2 = new Thread(ThreadTasks.TrainingLog);
+            Thread thread2 = new Thread(ThreadTasks.MesaCycleFormRun);
             thread2.Start();
         }
     }
