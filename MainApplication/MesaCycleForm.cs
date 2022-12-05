@@ -16,5 +16,10 @@ namespace TriathlonTraining.MainApplication
         {
             InitializeComponent();
         }
+
+        private void TrainingMonthCalendar_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
     }
 }
